@@ -1,0 +1,2 @@
+Sebelum mengerjakan: update
+Setelah mengerjakan: commit
