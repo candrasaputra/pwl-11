@@ -1,0 +1,49 @@
+.garis{
+	border:1px solid;
+}
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+.navbar-default .navbar-brand {
+	color: white;
+}
+.skl-banner{
+	width: 90%;
+	margin: auto;
+}
+.sambungfloat{
+	clear: both;
+}
+.txt-kanan{
+	text-align: right;
+}
+.skl-content{
+	padding: 14px;
+	border-bottom: 1px solid #5bc0de;
+}
+.biru-tua{
+	background-color: #428bca;
+}
+.biru-muda{
+	background-color: #5bc0de;
+	border-color: #5bc0de;
+}
+.bg-putih{
+	padding: 10px;
+	background-color: white;
+}
+.skl-radius{
+	border-radius: 4px;
+}
+.txt-putih{
+	color: white;
+}
+.bts-atas{
+	margin-top: 10px;
+}
+.skl-shadow{
+	box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+.padding-9	{
+	padding: 9px;
+}
