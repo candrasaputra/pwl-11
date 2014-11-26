@@ -66,7 +66,7 @@
 			<div class="bg-putih skl-radius skl-shadow">
 				<div class="col-md-4">
 					<div class="skl-content">agenda</div>
-					<div class="skl-content">
+						<div class="skl-content">
 						<div class="row">
 							<div class="col-md-4 garis">Gambar</div>
 						<div class="col-md-8 garis">Ini Isi</div>
