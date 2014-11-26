@@ -1,3 +1,10 @@
+a{
+	text-decoration: inherit;
+}
+a:hover, a:focus{
+	text-decoration: inherit;
+	color: yellow;
+}
 .garis{
 	border:1px solid;
 }
