@@ -1,55 +1,37 @@
-<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Login extends CI_Controller
-{
-    public $data = array('pesan'=> '');
+class Login extends CI_Controller {
 
-	public function __construct()
-    {
-		parent::__construct();
-        $this->load->helper('form');
-        $this->load->library('form_validation');
-		$this->load->model('Login_model', 'login', TRUE);
-	}
 
-	public function index()
-    {
-		// status user login = BENAR, pindah ke halaman absen
-        if ($this->session->userdata('login') == TRUE)
-        {
-			redirect('dashbord');
-		}
-        // status login salah, tampilkan form login
-        else
-        {
-            // validasi sukses
-            if($this->login->validasi())
-            {
-                // cek di database sukses
-                if($this->login->cek_user())
-                {
-                    redirect('dashbord');
+    public function index(){
+        $post = $this->input->post('submit');
+        if($post){
+
+            $this->load->model('account');
+
+            $this->account->set_user($this->input->post('usr'));
+            $this->account->set_password($this->input->post('pwd'));
+
+            $this->form_validation->set_rules('usr', 'Nama Pengguna', 'required|alpha_dash');
+            $this->form_validation->set_rules('pwd', 'Kata Sandi', 'required|alpha_dash');
+
+            if ($this->form_validation->run() == FALSE){
+                $data['error'] = validation_errors();
+            }else{
+
+                if($this->account->do_login()){
+                    header('location: '.site_url().'/home');
+                }else{
+                    $data['error'] = 'User dan Password tidak sesuai,<br />silahkan periksa kembali';
                 }
-                // cek database gagal
-                else
-                {
-                    $this->data['pesan'] = 'Username atau Password salah.';
-                    $this->load->view('login/login_form', $this->data);
-                }
-            }
-            // validasi gagal
-            else
-            {
-                $this->load->view('admin/pages/examples/login', $this->data);
-            }
-		}
-	}
+            }   
+        }else{
 
-	public function logout()
-	{
-        $this->login->logout();
-		redirect('login');
-	}
-}
-/* End of file login.php */
-/* Location: ./application/controllers/login.php */
+            $data['error']   = $this->session->flashdata('error');          
+        }       
+
+        $this->load->view('admin/login', $data);
+
+    }
+
+}   
