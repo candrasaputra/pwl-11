@@ -10,13 +10,12 @@
 	<div class="skl-banner">
 		<div class="col-md-6 ">
 			<h1 class="txt-putih"> <i class="fa  fa-graduation-cap"></i>&nbsp; SMP Prestasi</h1>
-			<h5 class="txt-putih">berkembang lebih baik</h5>
+			<h5 class="txt-putih">menjunjung tinggi prestasi akademik yang dilandasi dengan iman</h5>
 		</div>
 		<div class="col-md-6  txt-kanan">
 			<p>
-				<a href="" class="txt-putih"> <i class="fa fa-home"></i>&nbsp;Home</a>&nbsp;| 
-				<a href="" class="txt-putih"> <i class="fa fa-users"></i>&nbsp;Students Login</a> | 
-				<a href="" class="txt-putih"> <i class="fa fa-user"></i>&nbsp;Staff Login</a>
+				<a href="" class="txt-putih"> <i class="fa fa-home"></i>&nbsp;Home</a>&nbsp;|  
+				<a href="" class="txt-putih"> <i class="fa fa-user"></i>&nbsp;Login</a>
 			</p>
 			 <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group">
@@ -66,13 +65,12 @@
 			<div class="bg-putih skl-radius skl-shadow">
 				<div class="col-md-4">
 					<div class="skl-content">agenda</div>
-						<div class="skl-content">
+					<div class="skl-content">
 						<div class="row">
 							<div class="col-md-4 garis">Gambar</div>
-						<div class="col-md-8 garis">Ini Isi</div>
-						<div class="sambungfloat"></div>
+							<div class="col-md-8 garis">Ini Isi</div>
+							<div class="sambungfloat"></div>
 						</div>
-						
 					</div>
 				</div>	
 				<div class="col-md-5">
