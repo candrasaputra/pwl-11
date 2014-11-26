@@ -15,7 +15,7 @@
 		<div class="col-md-6  txt-kanan">
 			<p>
 				<a href="" class="txt-putih"> <i class="fa fa-home"></i>&nbsp;Home</a>&nbsp;|  
-				<a href="" class="txt-putih"> <i class="fa fa-user"></i>&nbsp;Login</a>
+				<a href="<?php echo base_url()?>login" class="txt-putih"> <i class="fa fa-user"></i>&nbsp;Login</a>
 			</p>
 			 <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group">
