@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>AdminLTE | Dashboard</title>
+        <title>Welcome Admin</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -267,7 +267,7 @@
                                         <a href="#" class="btn btn-default btn-flat">Profile</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        <a href="<?php echo base_url()?>admin/logout" class="btn btn-default btn-flat">Sign out</a>
                                     </div>
                                 </li>
                             </ul>
@@ -311,7 +311,7 @@
                         </li>
                         <li>
                             <a href="pages/widgets.html">
-                                <i class="fa fa-th"></i> <span>Widgets</span> <small class="badge pull-right bg-green">new</small>
+                                <i class="fa fa-th"></i> <span>Profil</span> <small class="badge pull-right bg-green">new</small>
                             </a>
                         </li>
                         <li class="treeview">
