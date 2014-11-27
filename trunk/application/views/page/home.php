@@ -44,7 +44,7 @@
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav ">
-			        <li><a href="#" class="txt-putih" >Profile</a></li>
+			        <li><a href="<?php echo base_url()?>profile" class="txt-putih" >Profile</a></li>
 			        <li><a href="#">Berita</a></li>
 			        <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -64,7 +64,12 @@
 			</nav>
 			<div class="bg-putih skl-radius skl-shadow">
 				<div class="col-md-4">
-					<div class="skl-content">agenda</div>
+
+					<div class="col-md-4 merah skl-radius-ats  txt-putih ">Agenda</div>
+					<div class="col-md-8 skl-content "></div>
+						
+						<div class="sambungfloat"></div>
+					<!--<div class="skl-content">agenda</div>-->
 					<div class="skl-content">
 						<div class="row">
 							<div class="col-md-4 garis">Gambar</div>
@@ -74,7 +79,10 @@
 					</div>
 				</div>	
 				<div class="col-md-5">
-					<div class="skl-content">Berita</div>
+					<div class="col-md-4 merah skl-radius-ats  txt-putih ">Berita</div>
+					<div class="col-md-8 skl-content "></div>
+						
+						<div class="sambungfloat"></div>
 					<div class="skl-content">
 						<div class="row">
 							<div class="col-md-4 garis">Gambar</div>
@@ -84,7 +92,10 @@
 					</div>
 				</div>	
 				<div class="col-md-3">
-					<div class="skl-content">Info</div>
+					<div class="col-md-4 merah skl-radius-ats  txt-putih ">Info</div>
+					<div class="col-md-8 skl-content "></div>
+					<div class="sambungfloat"></div>
+					
 					<div class="skl-content">
 						<div class="row">
 							<div class="col-md-4 garis">Gambar</div>
@@ -98,7 +109,10 @@
 			<!--ini footer-->
 			<div class="bg-putih skl-radius skl-shadow bts-atas">
 				<div class="col-md-3">
-					<div class="skl-content">Map</div>
+					<div class="col-md-4 kuning skl-radius-ats  txt-putih ">Map</div>
+					<div class="col-md-8 skl-content "></div>
+						
+						<div class="sambungfloat"></div>
 					<div class="skl-content">
 						<div class="row">
 							<div class="garis">map</div>
@@ -106,7 +120,10 @@
 					</div>
 				</div>	
 				<div class="col-md-6">
-					<div class="skl-content">Sosial Media</div>
+					<div class="col-md-4 kuning skl-radius-ats  txt-putih ">Soscial media</div>
+					<div class="col-md-8 skl-content "></div>
+						
+						<div class="sambungfloat"></div>
 					<div class="skl-content">
 						<div class="row">
 							<div class="garis">icon</div>
@@ -114,7 +131,10 @@
 					</div>
 				</div>	
 				<div class="col-md-3">
-					<div class="skl-content">Contact</div>
+					<div class="col-md-4 kuning skl-radius-ats  txt-putih ">Contact</div>
+					<div class="col-md-8 skl-content "></div>
+						
+						<div class="sambungfloat"></div>
 					<div class="skl-content">
 						<div class="row">
 							<div class="garis">isi</div>
