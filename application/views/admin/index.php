@@ -238,14 +238,14 @@
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
-                                <span>Jane Doe <i class="caret"></i></span>
+                                <span><?php echo $cookie['c_fullname']?><i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
                                     <img src="<?php echo base_url()?>assets/lte/img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
-                                        Jane Doe - Web Developer
+                                        <?php echo $cookie['c_fullname']?>
                                         <small>Member since Nov. 2012</small>
                                     </p>
                                 </li>
@@ -287,7 +287,7 @@
                             <img src="<?php echo base_url()?>assets/lte/img/avatar3.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
-                            <p>Hello, Jane</p>
+                            <p>Hello, <?php echo $cookie['c_fullname']?></p>
 
                             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                         </div>
@@ -311,7 +311,7 @@
                         </li>
                         <li>
                             <a href="pages/widgets.html">
-                                <i class="fa fa-th"></i> <span>Profil</span> <small class="badge pull-right bg-green">new</small>
+                                <i class="fa fa-th"></i> <span>Profil Sekolah</span> <small class="badge pull-right bg-green">new</small>
                             </a>
                         </li>
                         <li class="treeview">
