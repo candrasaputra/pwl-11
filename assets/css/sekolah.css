@@ -25,15 +25,24 @@ a:hover, a:focus{
 	text-align: right;
 }
 .skl-content{
-	padding: 14px;
-	border-bottom: 1px solid #5bc0de;
+	padding: 21.5px;
+	border-bottom: 1px solid #f0ad4e;
+
 }
 .biru-tua{
-	background-color: #428bca;
+	background-color: #299caf;
 }
 .biru-muda{
-	background-color: #5bc0de;
-	border-color: #5bc0de;
+	background-color: #5cb85c;
+	border-color: #5cb85c;
+}
+.merah{
+	padding: 12px;
+	background-color: #d9534f;
+}
+.kuning{
+	padding: 12px;
+	background-color: #f0ad4e;
 }
 .bg-putih{
 	padding: 10px;
@@ -41,6 +50,10 @@ a:hover, a:focus{
 }
 .skl-radius{
 	border-radius: 4px;
+}
+.skl-radius-ats{
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
 }
 .txt-putih{
 	color: white;
@@ -53,4 +66,10 @@ a:hover, a:focus{
 }
 .padding-9	{
 	padding: 9px;
+}
+.warna-merah{
+	background-color: red;
+}
+.jarak {
+	height:   2px;
 }
