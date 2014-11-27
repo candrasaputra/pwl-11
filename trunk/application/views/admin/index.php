@@ -60,7 +60,7 @@
                                         <li><!-- start message -->
                                             <a href="#">
                                                 <div class="pull-left">
-                                                    <img src="img/avatar3.png" class="img-circle" alt="User Image"/>
+                                                    <img src="<?php echo base_url()?>assets/lte/img/avatar3.png" class="img-circle" alt="User Image"/>
                                                 </div>
                                                 <h4>
                                                     Support Team
@@ -72,7 +72,7 @@
                                         <li>
                                             <a href="#">
                                                 <div class="pull-left">
-                                                    <img src="img/avatar2.png" class="img-circle" alt="user image"/>
+                                                    <img src="<?php echo base_url()?>assets/lte/img/avatar2.png" class="img-circle" alt="user image"/>
                                                 </div>
                                                 <h4>
                                                     AdminLTE Design Team
@@ -84,7 +84,7 @@
                                         <li>
                                             <a href="#">
                                                 <div class="pull-left">
-                                                    <img src="img/avatar.png" class="img-circle" alt="user image"/>
+                                                    <img src="<?php echo base_url()?>assets/lte/img/avatar.png" class="img-circle" alt="user image"/>
                                                 </div>
                                                 <h4>
                                                     Developers
@@ -96,7 +96,7 @@
                                         <li>
                                             <a href="#">
                                                 <div class="pull-left">
-                                                    <img src="img/avatar2.png" class="img-circle" alt="user image"/>
+                                                    <img src="<?php echo base_url()?>assets/lte/img/avatar2.png" class="img-circle" alt="<?php echo base_url()?>assets/lte/ge"/>
                                                 </div>
                                                 <h4>
                                                     Sales Department
@@ -108,7 +108,7 @@
                                         <li>
                                             <a href="#">
                                                 <div class="pull-left">
-                                                    <img src="img/avatar.png" class="img-circle" alt="user image"/>
+                                                    <img src="<?php echo base_url()?>assets/lte/img/avatar.png" class="img-circle" alt="user image"/>
                                                 </div>
                                                 <h4>
                                                     Reviewers
@@ -243,7 +243,7 @@
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
-                                    <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                                    <img src="<?php echo base_url()?>assets/lte/img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
                                         Jane Doe - Web Developer
                                         <small>Member since Nov. 2012</small>
@@ -284,7 +284,7 @@
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                            <img src="<?php echo base_url()?>assets/lte/img/avatar3.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
                             <p>Hello, Jane</p>
@@ -526,7 +526,7 @@
                                 <div class="box-body chat" id="chat-box">
                                     <!-- chat item -->
                                     <div class="item">
-                                        <img src="img/avatar.png" alt="user image" class="online"/>
+                                        <img src="<?php echo base_url()?>assets/lte/img/avatar.png" alt="user image" class="online"/>
                                         <p class="message">
                                             <a href="#" class="name">
                                                 <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
@@ -548,7 +548,7 @@
                                     </div><!-- /.item -->
                                     <!-- chat item -->
                                     <div class="item">
-                                        <img src="img/avatar2.png" alt="user image" class="offline"/>
+                                        <img src="<?php echo base_url()?>assets/lte/img/avatar2.png" alt="user image" class="offline"/>
                                         <p class="message">
                                             <a href="#" class="name">
                                                 <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
@@ -561,7 +561,7 @@
                                     </div><!-- /.item -->
                                     <!-- chat item -->
                                     <div class="item">
-                                        <img src="img/avatar3.png" alt="user image" class="offline"/>
+                                        <img src="<?php echo base_url()?>assets/lte/img/avatar3.png" alt="user image" class="offline"/>
                                         <p class="message">
                                             <a href="#" class="name">
                                                 <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
@@ -865,11 +865,11 @@
         <!-- add new calendar event modal -->
 
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url()?>assets/lte/tambahan/jquery.min.js"></script>
+        <script src="<?php echo base_url()?>assets/lte/tambahan/bootstrap.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url()?>assets/lte/tambahan/jquery-ui.min.js" type="text/javascript"></script>
         <!-- Morris.js charts -->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="<?php echo base_url()?>assets/lte/tambahan/raphael-min.js"></script>
         <script src="<?php echo base_url()?>assets/lte/js/plugins/morris/morris.min.js" type="text/javascript"></script>
         <!-- Sparkline -->
         <script src="<?php echo base_url()?>assets/lte/js/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
