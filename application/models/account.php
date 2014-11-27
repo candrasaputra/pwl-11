@@ -28,12 +28,12 @@ class Account extends CI_Model {
 
 		if ($this->db->affected_rows() > 0) {
 
-			$this->usr_data['c_fullname'] = $rows['fullname'];
+			$this->usr_data['c_fullname'] = $rows['nama'];
 			$this->usr_data['c_lastlog']  = $rows['lastlog'];
-			$this->usr_data['c_id']  	  = $rows['idadmin'];
+			$this->usr_data['c_id']  	  = $rows['id_login'];
 
 			$this->set_cookie();
-			$this->_update_log($rows['idadmin']);
+			$this->_update_log($rows['id_login']);
 
             return true;
         } else {
@@ -56,7 +56,7 @@ class Account extends CI_Model {
 	}
 
 	public function get_admin($id){
-		$this->db->where('idadmin', $id);
+		$this->db->where('id_login', $id);
 		$query = $this->db->get('admin');
 
 		return $query->row_array();
@@ -86,7 +86,7 @@ class Account extends CI_Model {
 	}
 
 	private function _update_log($id) {
-        $str = "update admin set lastlog=now() where idadmin=$id";
+        $str = "update tbadmin set lastlog=now() where id_login=$id";
         $query = $this->db->query($str);
 
         if ($this->db->affected_rows() > 0) {

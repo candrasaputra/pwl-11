@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <title>AdminLTE | Log in</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url()?>assets/lte/tambahan/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url()?>assets/lte/tambahan/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="<?php echo base_url()?>assets/lte/css/AdminLTE.css" rel="stylesheet" type="text/css" />
 
@@ -23,7 +23,7 @@
 
         <div class="form-box" id="login-box">
             <div class="header">Sign In</div>
-            <form action="" method="post" method="POST">     
+            <form action="" method="post">     
 
                 <?php if (!empty($error)):?>
                 <div class="alert alert-error">
@@ -38,18 +38,15 @@
                     <div class="form-group">
                         <input type="password" name="pwd" class="form-control" placeholder="Password"/>
                     </div>          
-                    <div class="form-group">
-                        <input type="checkbox" name="remember_me"/> Remember me
-                    </div>
                 </div>
                 <div class="footer">                                                               
-                    <button type="submit" name="submit" class="btn bg-olive btn-block">Sign me in</button>  
+                    <button type="submit" name="submit" value="submit" class="btn bg-olive btn-block">Sign me in</button>  
                 </div>
             </form>
         </div>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url()?>assets/lte/tambahan/jquery.min.js"></script>
+        <script src="<?php echo base_url()?>assets/lte/tambahan/bootstrap.min.js" type="text/javascript"></script>
 
     </body>
 </html>
