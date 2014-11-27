@@ -79,7 +79,7 @@
 					</div>
 				</div>	
 				<div class="col-md-5">
-					<div class="col-md-4 merah skl-radius-ats  txt-putih ">Berita</div>
+					<div class="col-md-4 merah skl-radius-ats  txt-putih ">Berita Terbaru</div>
 					<div class="col-md-8 skl-content "></div>
 						
 						<div class="sambungfloat"></div>
