@@ -24,7 +24,15 @@ class Admin extends CI_Controller {
 
 		$this->data['page']  = 'home';
 		$this->data['title'] = 'admin';
-		$this->load->view('admin/index', $this->data);
+		$this->load->view('admin/dashboard', $this->data);
+
+	}
+
+	public function dashboard(){
+
+		$this->data['page']  = 'home';
+		$this->data['title'] = 'admin';
+		$this->load->view('admin/dashboard', $this->data);
 
 	}
 
@@ -36,7 +44,7 @@ class Admin extends CI_Controller {
 		$this->data['page']  = 'profile';
 		$this->data['title'] = 'Edit Profile';
 
-		$this->load->view('admin', $this->data);
+		$this->load->view('admin/pages/profile', $this->data);
 	}
 
 	public function negara(){

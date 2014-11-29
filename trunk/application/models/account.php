@@ -57,7 +57,7 @@ class Account extends CI_Model {
 
 	public function get_admin($id){
 		$this->db->where('id_login', $id);
-		$query = $this->db->get('admin');
+		$query = $this->db->get('tbadmin');
 
 		return $query->row_array();
 	}
