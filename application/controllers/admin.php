@@ -3,6 +3,7 @@
 class Admin extends CI_Controller {
 
 	var $data;
+	var $count_tbbukutamu;
 
 	public function __construct(){
 		parent::__construct();
@@ -21,6 +22,11 @@ class Admin extends CI_Controller {
 	}
 
 	public function index(){
+		$this->load->model('count');
+		$this->data['count_artikel']  = $this->count->count_artikel();
+		$this->data['count_agenda']  = $this->count->count_agenda();
+		$this->data['count_info']  = $this->count->count_info();
+		$this->data['count_bukutamu']  = $this->count->count_bukutamu();
 
 		$this->data['page']  = 'home';
 		$this->data['title'] = 'admin';
@@ -29,6 +35,11 @@ class Admin extends CI_Controller {
 	}
 
 	public function dashboard(){
+		$this->load->model('count');
+		$this->data['count_artikel']  = $this->count->count_artikel();
+		$this->data['count_agenda']  = $this->count->count_agenda();
+		$this->data['count_info']  = $this->count->count_info();
+		$this->data['count_bukutamu']  = $this->count->count_bukutamu();
 
 		$this->data['page']  = 'home';
 		$this->data['title'] = 'admin';
@@ -67,6 +78,16 @@ class Admin extends CI_Controller {
 		$this->data['title'] = 'Daftar Siswa';
 
 		$this->load->view('admin', $this->data);
+	}
+
+	public function bukutamu(){
+		$this->load->model('bukutamu');		
+
+		$this->data['bukutamu'] = $this->bukutamu->get_bukutamu();
+		$this->data['page']  = 'bukutamu';
+		$this->data['title'] = 'Daftar Buku Tamu';
+
+		$this->load->view('admin/bukutamu', $this->data);
 	}
 
 	public function logout(){

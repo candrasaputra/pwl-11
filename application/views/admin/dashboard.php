@@ -370,7 +370,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="pages/calendar.html">
+                            <a href="<?php echo base_url()?>admin/bukutamu">
                                 <i class="fa fa-calendar"></i> <span>Buku Tamu</span>
                                 <small class="badge pull-right bg-red">3</small>
                             </a>
@@ -414,7 +414,7 @@
                             <div class="small-box bg-aqua">
                                 <div class="inner">
                                     <h3>
-                                        150
+                                        <?php echo $count_artikel; ?>
                                     </h3>
                                     <p>
                                         Artikel
@@ -433,7 +433,7 @@
                             <div class="small-box bg-green">
                                 <div class="inner">
                                     <h3>
-                                        53<sup style="font-size: 20px">%</sup>
+                                        <?php echo $count_agenda; ?>
                                     </h3>
                                     <p>
                                         Agenda
@@ -452,10 +452,10 @@
                             <div class="small-box bg-yellow">
                                 <div class="inner">
                                     <h3>
-                                        44
+                                        <?php echo $count_info; ?>
                                     </h3>
                                     <p>
-                                        Info Sekolah
+                                        Info
                                     </p>
                                 </div>
                                 <div class="icon">
@@ -471,7 +471,7 @@
                             <div class="small-box bg-red">
                                 <div class="inner">
                                     <h3>
-                                        65
+                                        <?php echo $count_bukutamu; ?>
                                     </h3>
                                     <p>
                                         Buku Tamu
