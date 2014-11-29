@@ -29,7 +29,7 @@ class Admin extends CI_Controller {
 		$this->data['count_bukutamu']  = $this->count->count_bukutamu();
 
 		$this->data['page']  = 'home';
-		$this->data['title'] = 'admin';
+		$this->data['title'] = 'Dashboard';
 		$this->load->view('admin/dashboard', $this->data);
 
 	}
@@ -42,7 +42,7 @@ class Admin extends CI_Controller {
 		$this->data['count_bukutamu']  = $this->count->count_bukutamu();
 
 		$this->data['page']  = 'home';
-		$this->data['title'] = 'admin';
+		$this->data['title'] = 'Dashboard';
 		$this->load->view('admin/dashboard', $this->data);
 
 	}
@@ -53,7 +53,7 @@ class Admin extends CI_Controller {
 
 		$this->data['profile'] = $this->account->get_admin($id);
 		$this->data['page']  = 'profile';
-		$this->data['title'] = 'Edit Profile';
+		$this->data['title'] = 'Profile';
 
 		$this->load->view('admin/pages/profile', $this->data);
 	}
