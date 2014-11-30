@@ -82,16 +82,17 @@
                         <div class='col-xs-12'>
                             <div class="nav-tabs-custom">
                                 <ul class="nav nav-tabs">
-                                    <li class="active"><a href="#fa-icons" data-toggle="tab">Font Awesome</a></li>
+                                    <li class="active"><a href="#fa-icons" data-toggle="tab"><?php echo $title; ?></a></li>
                                 </ul>
                                 <div class="tab-content">
                                 <table class="table table-hover">
                                     <tr>
-                                        <th>#</th>
-                                        <th>Tanggal</th>
-                                        <th>Nama</th>
-                                        <th>isi</th>
-                                        <th>Action</th>
+                                        <th align="center" width="1%"><b>#</b></th>
+                                        <th width="1%"><b>Tanggal</b></th>
+                                        <th align="center">Nama</th>
+                                        <th align="center">isi</th>
+                                        <th align="center" width="1%">Stats</th>
+                                        <th align="center" width="1%">Action</th>
                                     </tr>
                                     <?php $no=1?>
                                     <?php foreach($bukutamu as $n):?>
@@ -100,6 +101,7 @@
                                         <td><?php echo $n->tgl_bt?></td>
                                         <td><?php echo $n->nm_bt?></td>
                                         <td><?php echo $n->isi_bt?></td>
+                                        <td><p class="label label-info"><?php echo $n->stats_bt?></p></td>
                                         <td><?php echo "
                                             <input type='image' src='http://localhost/pwl/assets/img/edit.png' name='submit' value= EDIT />
                                             <input type='image' src='http://localhost/pwl/assets/img/delete.png' name='submit' value= DELETE />

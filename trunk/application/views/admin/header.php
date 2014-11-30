@@ -214,21 +214,11 @@
                                     <img src="<?php echo base_url()?>assets/lte/img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
                                         <?php echo $cookie['c_fullname']?>
-                                        <small>Member since Nov. 2012</small>
+                                        <small>Last Login</small>
+                                        <small>01 Desember 2013 01.23</small>
                                     </p>
                                 </li>
-                                <!-- Menu Body -->
-                                <li class="user-body">
-                                    <div class="col-xs-4 text-center">
-                                        <a href="#">Followers</a>
-                                    </div>
-                                    <div class="col-xs-4 text-center">
-                                        <a href="#">Sales</a>
-                                    </div>
-                                    <div class="col-xs-4 text-center">
-                                        <a href="#">Friends</a>
-                                    </div>
-                                </li>
+                                
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">

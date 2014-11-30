@@ -83,7 +83,7 @@ class Admin extends CI_Controller {
 
 		$this->data['bukutamu'] = $this->bukutamu->get_bukutamu();
 		$this->data['page']  = 'bukutamu';
-		$this->data['title'] = 'Daftar Buku Tamu';
+		$this->data['title'] = 'Buku Tamu';
 
 		$this->load->view('admin/pages/bukutamu/bukutamu', $this->data);
 	}
