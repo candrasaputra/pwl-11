@@ -9,12 +9,4 @@ class Bukutamu extends CI_Model {
 		return $rs->result();
 
 	}
-
-	public function count_bukutamu(){
-	
-		$rs = $this->db->count_all('tbbukutamu');
-
-		return $rs;
-	}
-
 }

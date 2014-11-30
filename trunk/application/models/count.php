@@ -20,4 +20,10 @@ class Count extends CI_Model {
 		return $rs;
 	}
 
+	public function count_siswa(){
+		$this->db->like('agama_siswa', 'ISLAM');
+		$this->db->from('tbsiswa');
+		$rs = $this->db->count_all_results();
+		return $rs;
+	}
 }
