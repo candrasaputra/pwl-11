@@ -8,6 +8,8 @@
     }elseif ($title == "Tambah Artikel") {
         $priksaartikel = "active";
         $priksa3 = "active";
+    }elseif ($title == "Buku Tamu") {
+        $priksabk = "active";
     }
     else{
         $priksa = "active";
@@ -19,6 +21,7 @@
     if (empty($priksa3)) $priksa3 = '';
 
     if (empty($priksaartikel)) $priksaartikel = '';
+    if (empty($priksabk)) $priksabk = '';
 
  ?>
 
@@ -114,7 +117,7 @@
                                 <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Kelas</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="<?php echo $priksabk; ?>">
                             <a href="<?php echo base_url()?>admin/bukutamu">
                                 <i class="fa fa-comments-o"></i> <span>Buku Tamu</span>
                                 <small class="badge pull-right bg-red"><?php echo $count_bukutamu; ?></small>
