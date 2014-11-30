@@ -19,31 +19,29 @@ class Admin extends CI_Controller {
 
 			$this->data['cookie'] = $this->account->get_cookie();
 		}
-	}
 
-	public function index(){
 		$this->load->model('count');
 		$this->data['count_artikel']  = $this->count->count_artikel();
 		$this->data['count_agenda']  = $this->count->count_agenda();
 		$this->data['count_info']  = $this->count->count_info();
 		$this->data['count_bukutamu']  = $this->count->count_bukutamu();
+		$this->data['count_siswa']  = $this->count->count_siswa();
+	}
+
+	public function index(){
+		
 
 		$this->data['page']  = 'home';
 		$this->data['title'] = 'Dashboard';
-		$this->load->view('admin/dashboard', $this->data);
+		$this->load->view('admin/index', $this->data);
 
 	}
 
 	public function dashboard(){
-		$this->load->model('count');
-		$this->data['count_artikel']  = $this->count->count_artikel();
-		$this->data['count_agenda']  = $this->count->count_agenda();
-		$this->data['count_info']  = $this->count->count_info();
-		$this->data['count_bukutamu']  = $this->count->count_bukutamu();
 
 		$this->data['page']  = 'home';
 		$this->data['title'] = 'Dashboard';
-		$this->load->view('admin/dashboard', $this->data);
+		$this->load->view('admin/index', $this->data);
 
 	}
 
@@ -87,7 +85,14 @@ class Admin extends CI_Controller {
 		$this->data['page']  = 'bukutamu';
 		$this->data['title'] = 'Daftar Buku Tamu';
 
-		$this->load->view('admin/bukutamu', $this->data);
+		$this->load->view('admin/pages/bukutamu/bukutamu', $this->data);
+	}
+
+	public function tambahartikel(){
+		$this->data['page']  = 'tambahartikel';
+		$this->data['title'] = 'Tambah Artikel';
+
+		$this->load->view('admin/pages/artikel/tambahartikel', $this->data);
 	}
 
 	public function logout(){

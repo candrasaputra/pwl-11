@@ -1,3 +1,27 @@
+<?php 
+    //error_reporting(E_ALL ^ (E_NOTICE | E_WARNING | E_ALL));
+
+    if ($title == "Profile") {
+        $priksa1 = "active";
+    }else if ($title == "Profile"){
+        $priksa2 = "active";
+    }elseif ($title == "Tambah Artikel") {
+        $priksaartikel = "active";
+        $priksa3 = "active";
+    }
+    else{
+        $priksa = "active";
+    }
+
+    if (empty($priksa)) $priksa = '';
+    if (empty($priksa1)) $priksa1 = '';
+    if (empty($priksa2)) $priksa2 = '';
+    if (empty($priksa3)) $priksa3 = '';
+
+    if (empty($priksaartikel)) $priksaartikel = '';
+
+ ?>
+
 <aside class="left-side sidebar-offcanvas">
                 <!-- sidebar: style can be found in sidebar.less -->
                 <section class="sidebar">
@@ -24,30 +48,31 @@
                     <!-- /.search form -->
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <ul class="sidebar-menu">
-                        <li class="active">
+                        <li class="<?php echo "$priksa" ?>">
                             <a href="<?php echo base_url()?>admin/dashboard">
                                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="<?php echo "$priksa1" ?>">
                             <a href="<?php echo base_url()?>admin/profile">
                                 <i class="fa fa-th"></i> <span>Profile Sekolah</span> <small class="badge pull-right bg-green">new</small>
                             </a>
                         </li>
-                        <li class="treeview">
+                        <li class="treeview <?php echo $priksaartikel; ?>">
                             <a href="#">
-                                <i class="fa fa-bar-chart-o"></i>
+                                <i class="fa fa-copy"></i>
                                 <span>Artikel</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="pages/charts/morris.html"><i class="fa fa-angle-double-right"></i> Tambah Artikel</a></li>
+                                <li class= <?php echo $priksa3; ?>><a href="<?php echo base_url()?>admin/tambahartikel"><i class="fa fa-angle-double-right"></i> Tambah Artikel</a></li>
                                 <li><a href="pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Semua Artikel</a></li>
+                                <li><a href="pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Kategori Artikel</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
                             <a href="#">
-                                <i class="fa fa-laptop"></i>
+                                <i class="fa fa-list"></i>
                                 <span>Agenda</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
@@ -58,7 +83,7 @@
                         </li>
                         <li class="treeview">
                             <a href="#">
-                                <i class="fa fa-edit"></i> <span>Info Sekolah</span>
+                                <i class="fa fa-info"></i> <span>Info Sekolah</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
@@ -79,7 +104,7 @@
                         </li>
                         <li class="treeview">
                             <a href="#">
-                                <i class="fa fa-table"></i> <span>Siswa</span>
+                                <i class="fa fa-graduation-cap"></i> <span>Siswa</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
@@ -91,13 +116,13 @@
                         </li>
                         <li>
                             <a href="<?php echo base_url()?>admin/bukutamu">
-                                <i class="fa fa-calendar"></i> <span>Buku Tamu</span>
-                                <small class="badge pull-right bg-red">3</small>
+                                <i class="fa fa-comments-o"></i> <span>Buku Tamu</span>
+                                <small class="badge pull-right bg-red"><?php echo $count_bukutamu; ?></small>
                             </a>
                         </li>
                         <li class="treeview">
                             <a href="#">
-                                <i class="fa fa-folder"></i> <span>Account</span>
+                                <i class="fa fa-key"></i> <span>Account</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
