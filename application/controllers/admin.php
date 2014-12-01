@@ -53,7 +53,7 @@ class Admin extends CI_Controller {
 		$this->data['page']  = 'profile';
 		$this->data['title'] = 'Profile';
 
-		$this->load->view('admin/pages/profile', $this->data);
+		$this->load->view('admin/profile/profile', $this->data);
 	}
 
 	public function negara(){
@@ -85,14 +85,14 @@ class Admin extends CI_Controller {
 		$this->data['page']  = 'bukutamu';
 		$this->data['title'] = 'Buku Tamu';
 
-		$this->load->view('admin/pages/bukutamu/bukutamu', $this->data);
+		$this->load->view('admin/bukutamu/bukutamu', $this->data);
 	}
 
 	public function tambahartikel(){
 		$this->data['page']  = 'tambahartikel';
 		$this->data['title'] = 'Tambah Artikel';
 
-		$this->load->view('admin/pages/artikel/tambahartikel', $this->data);
+		$this->load->view('admin/artikel/tambahartikel', $this->data);
 	}
 
 	public function logout(){
