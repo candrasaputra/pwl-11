@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Bukutamu extends CI_Model {
+class Bukutamu_m extends CI_Model {
 
 	public function get_bukutamu(){
 
@@ -7,6 +7,5 @@ class Bukutamu extends CI_Model {
 		$rs = $this->db->get('tbbukutamu');
 
 		return $rs->result();
-
 	}
 }
