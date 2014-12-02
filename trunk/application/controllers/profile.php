@@ -19,7 +19,42 @@ class Profile extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('page/profile');
+		// submit
+            if($this->input->post('publish'))
+            {
+                // validasi berhasil
+                if($this->kelas->validasi_edit() === TRUE)
+                {
+                    //update db
+                    $this->kelas->edit($this->session->userdata('id_kelas_sekarang'));
+                    $this->session->set_flashdata('pesan', 'Proses update data berhasil.');
+
+                    redirect('profile');
+                }
+                // validasi gagal
+                else
+                {
+                    $this->load->view('page/profile', $this->data);
+                }
+            }
+            // tidak disubmit, form pertama kali dimuat
+            else
+            {
+                // ambil data dari database, $form_value sebagai nilai dafault form
+                $profil = $this->kelas->cari('1');
+                foreach($kelas as $key => $value)
+                {
+                    $this->data['form_value'][$key] = $value;
+                }
+
+                // set temporary data for edit
+                $this->session->set_userdata('id_kelas_sekarang', $kelas->id_kelas);
+                $this->session->set_userdata('kelas_sekarang', $kelas->kelas);
+
+                $this->load->view('template', $this->data);
+            }
+
+		//$this->load->view('page/profile');
 	}
 }
 
