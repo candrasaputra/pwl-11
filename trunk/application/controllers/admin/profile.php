@@ -7,10 +7,10 @@ class Profile extends MY_Controller{
 		$id = $this->data['cookie']['c_id'];
 
 		$this->data['profile'] = $this->account->get_admin($id);
-		$this->data['page']  = 'profile';
+		$this->data['page']  = 'admin/profile/profile';
 		$this->data['title'] = 'Profile';
 
-		$this->load->view('admin/profile/profile', $this->data);
+		$this->load->view('admin/index', $this->data);
 
 	}
 }

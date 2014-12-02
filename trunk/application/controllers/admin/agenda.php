@@ -4,10 +4,10 @@ class Agenda extends MY_Controller{
 
 	public function tambahagenda(){
 
-		$this->data['page']  = 'tambahartikel';
+		$this->data['page']  = 'admin/artikel/tambahartikel';
 		$this->data['title'] = 'Tambah Artikel';
 
-		$this->load->view('admin/artikel/tambahartikel', $this->data);
+		$this->load->view('admin/index', $this->data);
 
 	}
 }
