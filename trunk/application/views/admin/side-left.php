@@ -68,7 +68,7 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li class= <?php echo $priksa3; ?>><a href="<?php echo base_url()?>admin/tambahartikel"><i class="fa fa-angle-double-right"></i> Tambah Artikel</a></li>
+                                <li class= <?php echo $priksa3; ?>><a href="<?php echo base_url()?>admin/artikel/tambahartikel"><i class="fa fa-angle-double-right"></i> Tambah Artikel</a></li>
                                 <li><a href="pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Semua Artikel</a></li>
                                 <li><a href="pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Kategori Artikel</a></li>
                             </ul>
