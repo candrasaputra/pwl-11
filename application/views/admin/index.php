@@ -41,7 +41,7 @@
                 <?php $this->load->view('admin/content-header'); ?>
 
                 <!-- Main content -->
-                <?php $this->load->view('admin/dashboard/dashboard'); ?>
+                <?php $this->load->view($page); ?>
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
 

@@ -100,18 +100,7 @@
 <!-- /TinyMCE -->
     </head>
     <body class="skin-blue">
-        <!-- header logo: style can be found in header.less -->
-        <?php $this->load->view('admin/header'); ?>
-        <div class="wrapper row-offcanvas row-offcanvas-left">
-            <!-- Left side column. contains the logo and sidebar -->
-            <?php $this->load->view('admin/side-left'); ?>
-
-            <!-- Right side column. Contains the navbar and content of the page -->
-            <aside class="right-side">
-                <!-- Content Header (Page header) -->
-                <?php $this->load->view('admin/content-header'); ?>
-
-                <!-- Main content -->
+               <!-- Main content -->
                 <section class="content">
                     <div class='row'>
                         <div class='col-xs-12'>
