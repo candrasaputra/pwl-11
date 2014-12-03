@@ -22,7 +22,7 @@
 							<div class="">
 
 								<div class="social">
-  									<a href="" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+  									<a href="https://www.facebook.com/afief.mustbeperfect" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
 	  								<a href="" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
 	  								<a href="" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
 								</div>
