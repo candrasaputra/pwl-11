@@ -1,9 +1,4 @@
 
-	 <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-	 <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
-	 <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
-	 <link href="assets/css/sekolah.css" rel="stylesheet" type="text/css" />
-
 <div class="bg-putih skl-radius skl-shadow">
 				<div class="col-md-4">
 

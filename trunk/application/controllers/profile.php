@@ -42,7 +42,7 @@ class Profile extends CI_Controller {
             {
                 // ambil data dari database, $form_value sebagai nilai dafault form
                 $profil = $this->kelas->cari('1');
-                foreach($kelas as $key => $value)
+                foreach($kelas as $key => $value);
                 {
                     $this->data['form_value'][$key] = $value;
                 }
