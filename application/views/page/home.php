@@ -5,6 +5,8 @@
 	 <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
 	 <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
 	 <link href="assets/css/sekolah.css" rel="stylesheet" type="text/css" />
+	  <link href="assets/css/sosmed.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body class="biru-tua">
 	<div class="skl-banner">
@@ -45,17 +47,10 @@
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav ">
 			        <li><a href="<?php echo base_url()?>profile" class="txt-putih" >Profile</a></li>
-			        <li><a href="#">Berita</a></li>
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-			          <ul class="dropdown-menu" role="menu">
-			            <li><a href="#">Action</a></li>
-			            <li><a href="#">Another action</a></li>
-			            <li><a href="#">Something else here</a></li>
-			            <li class="divider"></li>
-			            <li><a href="#">Separated link</a></li>
-			            <li class="divider"></li>
-			            <li><a href="#">One more separated link</a></li>
+			        <li><a href="#">Staff Pengajar</a></li>
+			        <li><a href="#">Daftar Siswa</a></li>
+			        <li><a href="#">Buku Tamu</a></li>
+			        
 			          </ul>
 			        </li>
 			      </ul>
@@ -64,43 +59,7 @@
 			</nav>
 			<?php $this->load->view('page/content') ?>
 			<!--ini footer-->
-			<div class="bg-putih skl-radius skl-shadow bts-atas">
-				<div class="col-md-3">
-					<div class="col-md-4 kuning skl-radius-ats  txt-putih ">Map</div>
-					<div class="col-md-8 skl-content "></div>
-						
-						<div class="sambungfloat"></div>
-					<div class="skl-content">
-						<div class="row">
-							<div class="garis">map</div>
-						</div>
-					</div>
-				</div>	
-				<div class="col-md-6">
-					<div class="col-md-4 kuning skl-radius-ats  txt-putih ">Soscial media</div>
-					<div class="col-md-8 skl-content "></div>
-						
-						<div class="sambungfloat"></div>
-					<div class="skl-content">
-						<div class="row">
-							<div class="garis">icon</div>
-						</div>
-					</div>
-				</div>	
-				<div class="col-md-3">
-					<div class="col-md-4 kuning skl-radius-ats  txt-putih ">Contact</div>
-					<div class="col-md-8 skl-content "></div>
-						
-						<div class="sambungfloat"></div>
-					<div class="skl-content">
-						<div class="row">
-							<div class="garis">isi</div>
-						</div>
-					</div>
-				</div>
-				<div class="sambungfloat"></div>
-			</div>
-			<!--bts akhir footer-->
+			<?php $this->load->view('page/footer') ?>
 		</div>
 	</div>
 
