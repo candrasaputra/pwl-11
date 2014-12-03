@@ -1,5 +1,5 @@
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel skl-radius skl-shadow">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel ">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -12,22 +12,22 @@
     <div class="item active">
       <img src="assets/img/sekolah2.jpg" width="2000" height="750"  alt="gambar">
       <div class="carousel-caption">
-        ...
+        <b>Beramal Untuk Pendidikan Anak Bangsa</b>
       </div>
     </div>
     <div class="item">
       <img src="assets/img/sekolah3.jpg" width="2000" height="750" alt="gambar">
       <div class="carousel-caption">
-        ...
+        <b>Musofahah setelah Apel Pagi</b> 
       </div>
     </div>
     <div class="item">
       <img src="assets/img/sekolah4.jpg" width="2000" height="750" alt="gambar">
       <div class="carousel-caption">
-        ...
+       <b>Lomba PBB tingkat kabupaten</b>
       </div>
     </div>
-    ...
+    .
   </div>
 
   <!-- Controls -->
