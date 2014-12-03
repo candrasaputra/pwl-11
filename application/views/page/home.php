@@ -4,8 +4,9 @@
 	 <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
 	 <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
 	 <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+	 <link rel="shortcut icon" href="assets/img"/>
 	 <link href="assets/css/sekolah.css" rel="stylesheet" type="text/css" />
-	  <link href="assets/css/sosmed.css" rel="stylesheet" type="text/css" />
+	 <link href="assets/css/sosmed.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body class="biru-tua">
@@ -57,6 +58,9 @@
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>
+			<!--slider-->
+			<?php $this->load->view('page/slider') ?>
+			<!--content-->
 			<?php $this->load->view('page/content') ?>
 			<!--ini footer-->
 			<?php $this->load->view('page/footer') ?>
