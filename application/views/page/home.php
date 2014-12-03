@@ -41,7 +41,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a class="navbar-brand active txt-putih" href="#"><i class="fa fa-home"></i>&nbsp;Home</a>
+			      <a class="navbar-brand active txt-putih" href="<?php echo base_url()?>home"><i class="fa fa-home"></i>&nbsp;Home</a>
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
