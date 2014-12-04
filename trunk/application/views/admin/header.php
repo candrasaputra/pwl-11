@@ -214,8 +214,11 @@
                                     <img src="<?php echo base_url()?>assets/lte/img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
                                         <?php echo $cookie['c_fullname']?>
-                                        <small>Last Login</small>
-                                        <small>01 Desember 2013 01.23</small>
+                                        <small>Last Login / IP</small>
+                                        <small>
+                                        <?php echo $cookie['c_lastlog']." / "?>
+                                        <?php echo $_SERVER['REMOTE_ADDR'];?>
+                                        </small>
                                     </p>
                                 </li>
                                 
