@@ -9,6 +9,8 @@ class MY_Controller extends CI_Controller
 
         $this->load->model('account');
 
+        //$this->output->enable_profiler(true);
+
         if(!$this->account->validate_cookie()){
             $this->session->set_flashdata('error', 'Anda tidak mempunyai akses ke halaman ini');
             header('location: '.site_url().'/login');
