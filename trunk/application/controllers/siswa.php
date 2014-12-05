@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class bukutamu extends CI_Controller {
+class Siswa extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,6 +19,9 @@ class bukutamu extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('page/bukutamu');
+		$this->load->view('page/Siswa');
 	}
 }
+
+/* End of file welcome.php */
+/* Location: ./application/controllers/welcome.php */

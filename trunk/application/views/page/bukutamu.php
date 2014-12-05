@@ -1,3 +1,7 @@
+<?php $this->load->view('page/header') ?>
+<?php $this->load->view('page/slider') ?>
+
+
 Ini merupakan buku tamu, silahkan isikan buku tamu disini:
 <br/>
 
@@ -33,3 +37,5 @@ Ini merupakan buku tamu, silahkan isikan buku tamu disini:
     <br/>
 ==================================================================
 <?php endforeach?>
+
+<?php $this->load->view('page/footer') ?>
