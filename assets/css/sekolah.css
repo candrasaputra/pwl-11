@@ -24,6 +24,9 @@ a:hover, a:focus{
 .txt-kanan{
 	text-align: right;
 }
+.txt-tengah{
+	text-align: center;
+}
 .skl-content{
 	padding: 21.5px;
 	border-bottom: 1px solid #f0ad4e;
@@ -72,4 +75,9 @@ a:hover, a:focus{
 }
 .jarak {
 	height:   2px;
+}
+.table-hover {
+	table-layout: 1px;
+	border: 1px;
+	
 }
