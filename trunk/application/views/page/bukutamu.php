@@ -1,7 +1,7 @@
 <?php $this->load->view('page/header') ?>
 <?php $this->load->view('page/slider') ?>
 
-
+<div class="bg-putih skl-radius skl-shadow">
 Ini merupakan buku tamu, silahkan isikan buku tamu disini:
 <br/>
 
@@ -37,5 +37,6 @@ Ini merupakan buku tamu, silahkan isikan buku tamu disini:
     <br/>
 ==================================================================
 <?php endforeach?>
+</div>
 
 <?php $this->load->view('page/footer') ?>

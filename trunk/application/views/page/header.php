@@ -48,7 +48,7 @@
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav ">
 			        <li><a href="<?php echo base_url()?>profile" class="txt-putih" >Profile</a></li>
-			        <li><a href="#">Staff Pengajar</a></li>
+			        <li><a href="<?php echo base_url()?>staff">Staff Pengajar</a></li>
 			        <li><a href="<?php echo base_url()?>siswa">Daftar Siswa</a></li>
 			        <li><a href="<?php echo base_url()?>bukutamu">Buku Tamu</a></li>
 			        
