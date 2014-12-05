@@ -42,7 +42,8 @@
 						<div class="row">
 							<div class=" txt-tengah">
 								<p><b>Telp: (0274) 884201 - 207</br> 
-									Fax: (0274) 884208 Kodepos: 55283</br>
+									Fax: (0274) 884208</br> 
+									Kodepos: 55283</br>
 									E-Mail: smpprestasi@gmail.com<b></p>	
 							</div>
 						</div>
