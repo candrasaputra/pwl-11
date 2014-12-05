@@ -27,7 +27,7 @@ class Bukutamu extends CI_Controller{
                 $data['stats_bt'] = "draff";
                 $this->bukutamu_m->insert_bukutamu($data);
                 
-                redirect(site_url('bukutamu'));
+                redirect(base_url('bukutamu'));
         }
 
 
