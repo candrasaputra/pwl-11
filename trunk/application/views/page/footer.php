@@ -8,7 +8,9 @@
 						<div class="sambungfloat"></div>
 					<div class="skl-content">
 						<div class="row">
-							<div class="garis">map</div>
+							<div >
+								<img src="assets/img/map.png" width="230" height="90"  alt="gambar">
+							</div>
 						</div>
 					</div>
 				</div>	
@@ -38,7 +40,11 @@
 						<div class="sambungfloat"></div>
 					<div class="skl-content">
 						<div class="row">
-							<div class="garis">isi</div>
+							<div class=" txt-tengah">
+								<p><b>Telp: (0274) 884201 - 207</br> 
+									Fax: (0274) 884208 Kodepos: 55283</br>
+									E-Mail: smpprestasi@gmail.com<b></p>	
+							</div>
 						</div>
 					</div>
 				</div>
@@ -51,3 +57,4 @@
 </body>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 </html>
+<?php $this->load->view('page/copyright') ?>

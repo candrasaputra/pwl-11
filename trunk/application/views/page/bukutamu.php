@@ -1,3 +1,4 @@
+	
 <?php $this->load->view('page/header') ?>
 <?php $this->load->view('page/slider') ?>
 
@@ -26,17 +27,18 @@ Ini merupakan buku tamu, silahkan isikan buku tamu disini:
 </form>
 <br/>
 
-============================= BUKU TAMU =============================
+<div>
 <?php foreach($bukutamu as $n):?>
-    <br/>
-    <?php echo $n->nm_bt?>
-    <br/>
-    <?php echo $n->tgl_bt?>
-    <br/>
-    <?php echo $n->isi_bt?>
-    <br/>
-==================================================================
+	<div><b><?php echo $n->nm_bt?></b></div>    
+    <div>
+    	<?php echo $n->tgl_bt?>
+   		 <br/>
+    	<?php echo $n->isi_bt?>
+    	<br/>
+    </div>
+    
 <?php endforeach?>
+</div>
 </div>
 
 <?php $this->load->view('page/footer') ?>

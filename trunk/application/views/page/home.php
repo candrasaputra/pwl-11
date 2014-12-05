@@ -4,4 +4,5 @@
 			<?php $this->load->view('page/content')?>
 			<!--ini footer-->
 			<?php $this->load->view('page/footer') ?>
+			
 		
