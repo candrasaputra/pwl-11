@@ -59,15 +59,4 @@ class Bukutamu_m extends CI_Model {
 		$this->db->where('id_bt', $id_bt);
 		$this->db->update('tbbukutamu', $data);
 	}
-
-	function select_all_paging($limit=array()){
-		$this->db->select('*');
-		$this->db->from('tbbukutamu');
-		$this->db->order_by('date_modified', 'desc');
-
-		if ($limit != NULL)
-			$this->db->limit($limit['perpage'], $limit['offset']);
-
-		return $this->db->get();
-	}
 }
