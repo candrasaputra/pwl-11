@@ -10,21 +10,21 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="assets/img/sekolah2.jpg" width="2000" height="750"  alt="gambar">
+      <img src="assets/img/sekolah1.jpg" width="2000" height="750"  alt="gambar">
       <div class="carousel-caption">
-        <b>Beramal Untuk Pendidikan Anak Bangsa</b>
+        <b>kebersamaan dalam meraih cita-cita</b>
       </div>
     </div>
     <div class="item">
-      <img src="assets/img/sekolah3.jpg" width="2000" height="750" alt="gambar">
+      <img src="assets/img/sekolah7.jpg" width="2000" height="750" alt="gambar">
       <div class="carousel-caption">
-        <b>Musofahah setelah Apel Pagi</b> 
+        <b>Carnival event Nasional</b> 
       </div>
     </div>
     <div class="item">
-      <img src="assets/img/sekolah4.jpg" width="2000" height="750" alt="gambar">
+      <img src="assets/img/sekolah6.jpg" width="2000" height="750" alt="gambar">
       <div class="carousel-caption">
-       <b>Lomba PBB tingkat kabupaten</b>
+       <b>Organisasi Siswa Intra Sekolah</b>
       </div>
     </div>
     .
