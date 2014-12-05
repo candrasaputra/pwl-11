@@ -21,6 +21,7 @@
         <!-- Theme style -->
         <link href="<?php echo base_url()?>assets/lte/css/AdminLTE.css" rel="stylesheet" type="text/css" />
 
+        <link href="<?php echo base_url()?>assets/lte/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -78,6 +79,13 @@
 
         <!-- AdminLTE for demo purposes -->
         <script src="<?php echo base_url()?>assets/lte/js/AdminLTE/demo.js" type="text/javascript"></script>
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- DATA TABES SCRIPT -->
+        <script src="<?php echo base_url()?>assets/lte/js/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
+        <script src="<?php echo base_url()?>assets/lte/js/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
 
     </body>
 </html>
