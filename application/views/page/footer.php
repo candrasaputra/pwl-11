@@ -45,3 +45,9 @@
 				<div class="sambungfloat"></div>
 			</div>
 			<!--bts akhir footer-->
+</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+</html>
