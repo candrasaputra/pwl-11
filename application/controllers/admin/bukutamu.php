@@ -16,21 +16,18 @@ class Bukutamu extends MY_Controller{
 
 	}
 
-	function edit($id=0){
-  		if ($this->input->post('id_bk')){
-  			$this->bukutamu_m->update_bukutamu();
-  			//$this->session->set_flashdata('message','Post updated');
-  			redirect('admin/bukutamu','refresh');
-  		}else{
-			$this->data['bukutamu'] = $this->bukutamu_m->get_a_bukutamu($id);
-			$this->data['page']  = 'admin/bukutamu/edit_bukutamu';
-			$this->data['title'] = 'Edit Buku Tamu';
-			
-			//$data['cats']  = $this->mcats->getCategoriesDropDown();
-			
-			$this->load->view('admin/index', $this->data);
-		}
+	public function edit($id_bt){
+		$data['page'] = "admin/bukutamu/bukutamu/edit/$id_bt";
+  		$data['bukutamu'] = $this->bukutamu_m->select_by_id($id_bt)->row();
+		$this->load->view('admin/bukutamu/edit_bukutamu', $data);
     }
+    
+    public function proses_edit_bukutamu(){
+		$data['stats_bt'] = $this->input->post('stats');
+		$id_bt=$this->input->post('id_bt');
+		$this->bukutamu_m->update_bukutamu($id_bt, $data);
+		redirect(site_url('admin/bukutamu'));
+	}
 
 	public function delete($id){
 		$this->bukutamu_m->delete_bukutamu($id);
