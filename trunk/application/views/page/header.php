@@ -12,7 +12,7 @@
 <body class="biru-tua">
 	<div class="skl-banner">
 		<div class="col-md-6 ">
-			<h1 class="txt-putih"> <i class="fa  fa-graduation-cap"></i>&nbsp; SMP Prestasi</h1>
+			<h1 class="txt-putih"> <i class="fa  fa-graduation-cap fa-spin"></i>&nbsp; SMP Prestasi</h1>
 			<h5 class="txt-putih">menjunjung tinggi prestasi akademik yang dilandasi dengan iman</h5>
 		</div>
 		<div class="col-md-6  txt-kanan">
@@ -21,11 +21,10 @@
 				<a href="<?php echo base_url()?>login" class="txt-putih"> <i class="fa fa-user"></i>&nbsp;Login</a>
 			</p>
 			 <form class="navbar-form navbar-right" role="search">
-		        <div class="form-group">
-		          <input type="text" class="form-control" placeholder="Search">
-		          <button type="submit" class="btn btn-default padding-9"><i class="fa fa-search"></i></button>
-		        </div>
-		      </form>
+		        <span class="input-group-btn">
+		          <input type="text" class="form-control" placeholder="Search"> 
+		          <button type="submit" class="btn btn-default padding-9 "><i class="fa fa-search"></i></button></span>
+		     </form>
 		</div>
 		<div class="sambungfloat"></div>
 	</div>
@@ -47,10 +46,10 @@
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav ">
-			        <li><a href="<?php echo base_url()?>profile" class="txt-putih" >Profile</a></li>
-			        <li><a href="<?php echo base_url()?>staff">Staff Pengajar</a></li>
-			        <li><a href="<?php echo base_url()?>siswa">Daftar Siswa</a></li>
-			        <li><a href="<?php echo base_url()?>bukutamu">Buku Tamu</a></li>
+			        <li><a href="<?php echo base_url()?>profile" class="txt-putih" ><i class="fa fa-navicon">&nbsp;</i>Profile</a></li>
+			        <li><a href="<?php echo base_url()?>staff"><i class="fa  fa-user ">&nbsp;</i>Staff Pengajar</a></li>
+			        <li><a href="<?php echo base_url()?>siswa"><i class="fa  fa-group ">&nbsp;</i>Daftar Siswa</a></li>
+			        <li><a href="<?php echo base_url()?>bukutamu"><i class="fa  fa-comments-o ">&nbsp;</i>Buku Tamu</a></li>
 			        
 			          </ul>
 			        </li>
