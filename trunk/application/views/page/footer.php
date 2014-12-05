@@ -9,7 +9,8 @@
 					<div class="skl-content">
 						<div class="row">
 							<div >
-								<img src="assets/img/map.png" width="230" height="90"  alt="gambar">
+								<img src="assets/img/map.jpg" width="240" height="80"  alt="gambar">
+								<a href="#">Find Us With Google Maps »</a>
 							</div>
 						</div>
 					</div>
