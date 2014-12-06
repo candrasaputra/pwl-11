@@ -13,8 +13,8 @@
 <body class="biru-tua">
 	<div class="skl-banner">
 		<div class="col-md-6 ">
-			<h1 class="txt-putih"> <i class="fa  fa-graduation-cap fa-spin"></i>&nbsp; SMP Prestasi</h1>
-			<h5 class="txt-putih">menjunjung tinggi prestasi akademik yang dilandasi dengan iman</h5>
+			<h1 class="txt-putih"> <i class="fa  fa-graduation-cap"></i>&nbsp; SMP Prestasi</h1>
+			<h5 class="txt-putih">"Unggul dalam Prestasi dan Berbudi Pekerti Luhur"</h5>
 		</div>
 		<div class="col-md-6  txt-kanan">
 			<p>
