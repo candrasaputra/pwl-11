@@ -109,20 +109,19 @@
                                     <li class="active"><a href="#fa-icons" data-toggle="tab"><?php echo $title ?></a></li>
                                 </ul>
                                 <div class="tab-content">
-                                    <form method="post" action="action/t_article.php">
+                                    <form method="post" action="<?php echo site_url('admin/profile/proses_edit_profile');?>">
                                         <p>Title</p>
-                                        <input type="text" name="txtjudul" style="width: 30%"/>
+                                        <input type="text" name="judul_profile" style="width: 30%" value="<?php echo $profile->judul_profile;?>" />
                                         <br/>
                                         <br/>
                                         <p>Contents</p<br/>
-                                    
-                                        <textarea id="elm1" name="txtisi" rows="15" cols="80" style="width: 80%">
-                                            
+                                        <textarea name="isi_profile" id="elm1" rows="15" cols="80" style="width: 80%">
+                                            <?php echo $profile->isi_profile;?>
                                         </textarea>
                                         <br/>
                                         <br/>
-                                        <input type="submit" value="publish" name="tbKirim"/>
-                                        <input type="reset" name="reset" value="Reset" />
+                                        <input type="hidden" name="id_profile" value="<?php echo $profile->id_profile;?>" />
+                                        <input type="submit" value="publish" name="Kirim"/>
                                     </form>
                                 </div><!-- /.tab-content -->
                             </div><!-- /.nav-tabs-custom -->
