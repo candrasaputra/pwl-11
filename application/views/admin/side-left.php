@@ -8,6 +8,18 @@
     }elseif ($title == "Tambah Artikel") {
         $priksaartikel = "active";
         $priksa3 = "active";
+    }elseif ($title == "Semua Artikel") {
+        $priksaartikel = "active";
+        $priksa4 = "active";
+    }elseif ($title == "Kategori") {
+        $priksaartikel = "active";
+        $priksa5 = "active";
+    }elseif ($title == "Tambah Agenda") {
+        $priksaagenda = "active";
+        $priksa6 = "active";
+    }elseif ($title == "Semua Agenda") {
+        $priksaagenda = "active";
+        $priksa7 = "active";
     }elseif ($title == "Buku Tamu") {
         $priksabk = "active";
     }
@@ -19,8 +31,13 @@
     if (empty($priksa1)) $priksa1 = '';
     if (empty($priksa2)) $priksa2 = '';
     if (empty($priksa3)) $priksa3 = '';
+    if (empty($priksa4)) $priksa4 = '';
+    if (empty($priksa5)) $priksa5 = '';
+    if (empty($priksa6)) $priksa6 = '';
+    if (empty($priksa7)) $priksa7 = '';
 
     if (empty($priksaartikel)) $priksaartikel = '';
+    if (empty($priksaagenda)) $priksaagenda = '';
     if (empty($priksabk)) $priksabk = '';
 
  ?>
@@ -69,19 +86,19 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li class= <?php echo $priksa3; ?>><a href="<?php echo base_url()?>admin/artikel/tambahartikel"><i class="fa fa-angle-double-right"></i> Tambah Artikel</a></li>
-                                <li><a href="pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Semua Artikel</a></li>
-                                <li><a href="pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Kategori Artikel</a></li>
+                                <li class= <?php echo $priksa4; ?>><a href="<?php echo base_url()?>admin/artikel/semuaartikel"><i class="fa fa-angle-double-right"></i> Semua Artikel</a></li>
+                                <li class= <?php echo $priksa5; ?>><a href="<?php echo base_url()?>admin/artikel/kategoriartikel"><i class="fa fa-angle-double-right"></i> Kategori Artikel</a></li>
                             </ul>
                         </li>
-                        <li class="treeview">
+                        <li class="treeview <?php echo $priksaagenda; ?>">
                             <a href="#">
                                 <i class="fa fa-list"></i>
                                 <span>Agenda</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="pages/UI/general.html"><i class="fa fa-angle-double-right"></i> Tambah Agenda</a></li>
-                                <li><a href="pages/UI/icons.html"><i class="fa fa-angle-double-right"></i> Semua Agenda</a></li>
+                                <li class= <?php echo $priksa6; ?>><a href="<?php echo base_url()?>admin/agenda/tambahagenda"><i class="fa fa-angle-double-right"></i> Tambah Agenda</a></li>
+                                <li class= <?php echo $priksa7; ?>><a href="<?php echo base_url()?>admin/agenda/semuaagenda"><i class="fa fa-angle-double-right"></i> Semua Agenda</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
@@ -90,8 +107,8 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="pages/forms/general.html"><i class="fa fa-angle-double-right"></i> Tambah info sekolah</a></li>
-                                <li><a href="pages/forms/advanced.html"><i class="fa fa-angle-double-right"></i> Semua info seklaoh</a></li>
+                                <li><a href="<?php echo base_url()?>admin/info/tambahinfo"><i class="fa fa-angle-double-right"></i> Tambah info sekolah</a></li>
+                                <li><a href="<?php echo base_url()?>admin/info/semuainfo"><i class="fa fa-angle-double-right"></i> Semua info seklaoh</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
@@ -100,9 +117,9 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="pages/tables/simple.html"><i class="fa fa-angle-double-right"></i> Tambah Staff</a></li>
-                                <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Daftar Staff</a></li>
-                                <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Jabatan</a></li>
+                                <li><a href="<?php echo base_url()?>admin/staff/tambahstaff"><i class="fa fa-angle-double-right"></i> Tambah Staff</a></li>
+                                <li><a href="<?php echo base_url()?>admin/staff/daftarstaff"><i class="fa fa-angle-double-right"></i> Daftar Staff</a></li>
+                                <li><a href="<?php echo base_url()?>admin/staff/jabatan"><i class="fa fa-angle-double-right"></i> Jabatan</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
@@ -111,10 +128,10 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="pages/tables/simple.html"><i class="fa fa-angle-double-right"></i> Tambah Siswa</a></li>
-                                <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Daftar Siswa</a></li>
-                                <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Jurusan</a></li>
-                                <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Kelas</a></li>
+                                <li><a href="<?php echo base_url()?>admin/siswa/tambahsiswa"><i class="fa fa-angle-double-right"></i> Tambah Siswa</a></li>
+                                <li><a href="<?php echo base_url()?>admin/siswa/daftarsiswa"><i class="fa fa-angle-double-right"></i> Daftar Siswa</a></li>
+                                <li><a href="<?php echo base_url()?>admin/siswa/jurusan"><i class="fa fa-angle-double-right"></i> Jurusan</a></li>
+                                <li><a href="<?php echo base_url()?>admin/siswa/kelas"><i class="fa fa-angle-double-right"></i> Kelas</a></li>
                             </ul>
                         </li>
                         <li class="<?php echo $priksabk; ?>">
@@ -129,8 +146,8 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="pages/examples/invoice.html"><i class="fa fa-angle-double-right"></i> Tambah Account</a></li>
-                                <li><a href="pages/examples/login.html"><i class="fa fa-angle-double-right"></i> Daftar Account</a></li>
+                                <li><a href="<?php echo base_url()?>admin/account/tambahaccount"><i class="fa fa-angle-double-right"></i> Tambah Account</a></li>
+                                <li><a href="<?php echo base_url()?>admin/account/daftaraccount"><i class="fa fa-angle-double-right"></i> Daftar Account</a></li>
                             </ul>
                         </li>
                     </ul>
