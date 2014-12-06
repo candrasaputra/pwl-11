@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>web</title>
+	<title>SMP Prestasi</title>
 	 <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
 	 <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
 	 <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
