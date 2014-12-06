@@ -23,7 +23,7 @@
 						<div class="sambungfloat"></div>
 					<div class="skl-content">
 						<div class="row">
-							<div class="">
+							<div>
 
 								<div class="social">
   									<a href="https://www.facebook.com/afief.mustbeperfect" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
@@ -44,10 +44,11 @@
 					<div class="skl-content">
 						<div class="row">
 							<div class=" txt-tengah">
-								<p><b>Telp: (0274) 884201 - 207</br> 
-									Fax: (0274) 884208</br> 
-									Kodepos: 55283</br>
-									E-Mail: smpprestasi@gmail.com<b></p>	
+								<h5><b> Kampus Terpadu : Jl. ocean 2, Sleman, Yogyakarta<b></h5>
+								<h6>
+									<b>Telp: (0274) 884201 - 207</br> 
+									Fax: (0274) 884208 Kodepos: 55283</br> 
+									E-Mail: smpprestasi@gmail.com</b></h6>	
 							</div>
 						</div>
 					</div>
