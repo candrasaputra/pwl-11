@@ -41,6 +41,8 @@
 $route['default_controller'] = "home";
 $route['404_override'] = '';
 $route['admin'] = "admin/dashboard";
+$route['admin/agenda'] = "admin/agenda/semuaagenda";
+$route['admin/artikel'] = "admin/artikel/semuaartikel";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
