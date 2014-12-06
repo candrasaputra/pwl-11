@@ -10,7 +10,7 @@
 						<div class="row">
 							<div >
 								<img src="assets/img/map.jpg" width="240" height="80"  alt="gambar">
-								<a href="#">Find Us With Google Maps »</a>
+								<a href="#">Find Us With Google Maps >> </a>
 								
 							</div>
 						</div>
