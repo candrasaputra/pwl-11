@@ -25,7 +25,13 @@
 						<div class="sambungfloat"></div>
 					<div class="skl-content">
 						<div class="row">
-							<div class="col-md-12 garis">Sejarah</div>
+							<div class="col-md-12 garis">
+								<?php 
+									echo $profile->judul_profile;
+									echo "<br/><br/>";
+									echo $profile->isi_profile;
+								?>
+							</div>
 						<div class="sambungfloat"></div>
 						</div>
 					</div>
