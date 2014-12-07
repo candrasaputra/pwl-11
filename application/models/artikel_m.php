@@ -10,7 +10,7 @@ class Artikel_m extends CI_Model {
     	}
 
     	$Q->free_result();    
-    	return $data; 
+    	return $data;
 	}
 
 	public function get_artikel(){
@@ -29,6 +29,16 @@ class Artikel_m extends CI_Model {
 		return $rs->result();
 	}
 
+	public function delete_artikel($id){
+		$this->db->where('id_artikel', $id);
+		$this->db->delete('tbartikel');
+	}
+
+	public function delete_kategori($id){
+		$this->db->where('kd_kat_artikel', $id);
+		$this->db->delete('tbkat_artikel');
+	}
+
 	public function get_artikel_publish(){
 
 		$this->db->order_by('tgl_bt');
@@ -36,11 +46,6 @@ class Artikel_m extends CI_Model {
 		$rs = $this->db->get('tbartikel');
 
 		return $rs->result();
-	}
-
-	public function delete_artikel($id){
-		$this->db->where('id_bt', $id);
-		$this->db->delete('tbartikel');
 	}
 
 	function insert_artikel($data){
@@ -55,10 +60,10 @@ class Artikel_m extends CI_Model {
 		return $this->db->get();
 	}
 
-	function select_by_id($id_bt){
+	function select_by_id($id_artikel){
 		$this->db->select('*');
 		$this->db->from('tbartikel');
-		$this->db->where('id_bt', $id_bt);
+		$this->db->where('id_bt', $id_artikel);
 
 		return $this->db->get();
 	}

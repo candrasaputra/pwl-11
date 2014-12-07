@@ -33,4 +33,16 @@ class Artikel extends MY_Controller{
 
 		$this->load->view('admin/index', $this->data);
 	}
+
+	public function deleteartikel($id){
+		$this->artikel_m->delete_artikel($id);
+		//$this->session->set_flashdata('message','Post deleted');
+		redirect('admin/artikel/semuaartikel','refresh');
+	}
+
+	public function deletekategori($id){
+		$this->artikel_m->delete_kategori($id);
+		//$this->session->set_flashdata('message','Post deleted');
+		redirect('admin/artikel/kategoriartikel','refresh');
+	}
 }

@@ -120,9 +120,7 @@
                                         <br/>
                                         <p>Contents</p<br/>
                                     
-                                        <textarea id="elm1" name="txtisi" rows="15" cols="80" style="width: 80%">
-                                            
-                                        </textarea>
+                                        <textarea id="elm1" name="txtisi" rows="15" cols="80" style="width: 80%"></textarea>
                                     
                                         <p>Kategori</p>
                                         <select type="text" name="txtkategori">
