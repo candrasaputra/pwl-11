@@ -14,8 +14,8 @@ class Artikel_m extends CI_Model {
 	}
 
 	public function get_artikel(){
-
-		$this->db->order_by('tgl_bt');
+		$this->db->join('tbkat_artikel', 'tbkat_artikel.kd_kat_artikel = tbartikel.kd_kat_artikel');
+		$this->db->order_by('tgl_artikel');
 		$rs = $this->db->get('tbartikel');
 
 		return $rs->result();

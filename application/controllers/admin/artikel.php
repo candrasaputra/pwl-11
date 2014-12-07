@@ -17,6 +17,8 @@ class Artikel extends MY_Controller{
 	}
 
 	public function semuaartikel(){
+		$this->data['artikel'] = $this->artikel_m->get_artikel();
+
 		$this->data['page']  = 'admin/artikel/semuaartikel';
 		$this->data['title'] = 'Semua Artikel';
 
