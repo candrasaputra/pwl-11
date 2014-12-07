@@ -12,26 +12,24 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Tanggal</th>
                                 <th>Nama</th>
-                                <th>Isi</th>
-                                <th>Stats</th>
+                                <th>Username</th>
+                                <th>Password</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php $no=1?>
-                            <?php foreach($bukutamu as $n):?>
+                            <?php foreach($akun as $n):?>
                             <tr>
                                 <td><?php echo $no; ?></td>
-                                <td><?php echo $n->tgl_bt?></td>
-                                <td><?php echo $n->nm_bt?></td>
-                                <td><?php echo $n->isi_bt?></td>
-                                <td><p class="label label-info"><?php echo $n->stats_bt?></p></td>
+                                <td><?php echo $n->nama?></td>
+                                <td><?php echo $n->username?></td>
+                                <td><?php echo $n->password?></td>
                                 <?php echo "
                                     <td>
-                                    <a class='btn btn-primary' href =bukutamu/edit/$n->id_bt><i class='fa fa-edit '></i> Edit</a>
-                                    <a class='btn btn-danger' href =bukutamu/delete/$n->id_bt><i class='fa fa-trash-o'></i> Delete</a>
+                                    <a class='btn btn-primary' href =editakun/$n->id_login><i class='fa fa-edit '> Edit</i></a>
+                                    <a class='btn btn-danger' href =deleteakun/$n->id_login><i class='fa fa-trash-o'></i> Delete</a>
                                     </td>
                                 "?>
                             </tr>   
@@ -41,10 +39,9 @@
                         <tfoot>
                             <tr>
                                 <th>#</th>
-                                <th>Tanggal</th>
                                 <th>Nama</th>
-                                <th>Isi</th>
-                                <th>Stats</th>
+                                <th>Username</th>
+                                <th>Password</th>
                                 <th>Action</th>
                             </tr>
                         </tfoot>

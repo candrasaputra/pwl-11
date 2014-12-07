@@ -142,12 +142,12 @@
                         </li>
                         <li class="treeview">
                             <a href="#">
-                                <i class="fa fa-key"></i> <span>Account</span>
+                                <i class="fa fa-key"></i> <span>Akun</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="<?php echo base_url()?>admin/account/tambahaccount"><i class="fa fa-angle-double-right"></i> Tambah Account</a></li>
-                                <li><a href="<?php echo base_url()?>admin/account/daftaraccount"><i class="fa fa-angle-double-right"></i> Daftar Account</a></li>
+                                <li><a href="<?php echo base_url()?>admin/akun/tambahakun"><i class="fa fa-angle-double-right"></i> Tambah Akun</a></li>
+                                <li><a href="<?php echo base_url()?>admin/akun/daftarakun"><i class="fa fa-angle-double-right"></i> Daftar Akun</a></li>
                             </ul>
                         </li>
                     </ul>
