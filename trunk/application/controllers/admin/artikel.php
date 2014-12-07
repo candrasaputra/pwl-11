@@ -1,6 +1,11 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class Artikel extends MY_Controller{
+	function __construct()
+	{
+		parent::__construct();
+		$this->load->model('artikel_m');
+    }
 
 	public function tambahartikel(){
 
@@ -19,6 +24,8 @@ class Artikel extends MY_Controller{
 	}
 
 	public function kategoriartikel(){
+		$this->data['kategori'] = $this->artikel_m->get_kategori();
+
 		$this->data['page']  = 'admin/artikel/kategori';
 		$this->data['title'] = 'Kategori';
 
