@@ -30,8 +30,8 @@
                                 <td><p class="label label-info"><?php echo $n->stats_bt?></p></td>
                                 <?php echo "
                                     <td>
-                                    <a class='btn btn-primary' href =bukutamu/edit/$n->id_bt>Edit</a>
-                                    <a class='btn btn-danger' href =bukutamu/delete/$n->id_bt>Delete</a>
+                                    <a class='btn btn-primary' href =bukutamu/edit/$n->id_bt>Edit  <i class='fa fa-edit '></i></a>
+                                    <a class='btn btn-danger' href =bukutamu/delete/$n->id_bt>Delete <i class='fa fa-trash-o'></i></a>
                                     </td>
                                 "?>
                             </tr>   
