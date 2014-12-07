@@ -3,10 +3,29 @@
 <?php $this->load->view('page/slider') ?>
 
 <div class="bg-putih skl-radius skl-shadow">
-Ini merupakan buku tamu, silahkan isikan buku tamu disini:
-<br/>
+	<div class="col-md-12">
+		<div class="col-md-2 merah skl-radius-ats  txt-putih ">Buku Tamu (Guestbook)</div>
+		<div class="col-md-10 skl-content "></div>
+		<div>
+			<?php foreach($bukutamu as $n):?>
+			<div><b><?php echo $n->nm_bt?></b></div>    
+   			<div>
+    			<?php echo $n->tgl_bt?>
+   		 		<br/>
+    			<?php echo $n->isi_bt?>
+    			<br/>
+    		</div>
+    
+			<?php endforeach?>
+		</div>
+	</div>
 
-<form action="<?php echo site_url('bukutamu/proses_tambah_bukutamu'); ?>" method="POST">
+
+<div class="col-md-12">
+		<div class="col-md-3 merah skl-radius-ats  txt-putih ">Silahkan, Isikan buku tamu Disini :</div>
+		<div class="col-md-9 skl-content "></div>
+<div class="">
+<form action="<?php echo site_url('bukutamu/proses_tambah_bukutamu'); ?>" method="POST"></br>
 	<label>Nama: </label><br/>
 	<input type="text" name="nama" required/>
 	<br/>
@@ -26,19 +45,10 @@ Ini merupakan buku tamu, silahkan isikan buku tamu disini:
 	<input type="submit" value="Kirim" />
 </form>
 <br/>
-
-<div>
-<?php foreach($bukutamu as $n):?>
-	<div><b><?php echo $n->nm_bt?></b></div>    
-    <div>
-    	<?php echo $n->tgl_bt?>
-   		 <br/>
-    	<?php echo $n->isi_bt?>
-    	<br/>
-    </div>
-    
-<?php endforeach?>
 </div>
+</div>
+<div class="sambungfloat"></div>
+
 </div>
 
 <?php $this->load->view('page/footer') ?>
