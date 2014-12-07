@@ -26,8 +26,8 @@
                                 <td><?php echo $n->nm_kat_artikel?></td>
                                 <?php echo "
                                     <td>
-                                    <a class='btn btn-primary' href =bukutamu/edit/$n->kd_kat_artikel>Edit</a>
-                                    <a class='btn btn-danger' href =bukutamu/delete/$n->kd_kat_artikel>Delete</a>
+                                    <a class='btn btn-primary' href =editkategori/$n->kd_kat_artikel>Edit</a>
+                                    <a class='btn btn-danger' href =deletekategori/$n->kd_kat_artikel>Delete</a>
                                     </td>
                                 "?>
                             </tr>   
