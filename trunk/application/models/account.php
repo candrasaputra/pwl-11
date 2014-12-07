@@ -96,4 +96,12 @@ class Account extends CI_Model {
         }
     }
 
+    public function get_account(){
+
+		$this->db->order_by('nama');
+		$rs = $this->db->get('tbadmin');
+
+		return $rs->result();
+	}
+
 }	

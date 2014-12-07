@@ -30,8 +30,8 @@
                                 <td><?php echo $n->status_artikel?></td>
                                 <?php echo "
                                     <td>
-                                    <a class='btn btn-primary' href =editartikel/$n->id_artikel>Edit <i class='fa fa-edit '></i></a>
-                                    <a class='btn btn-danger' href =deleteartikel/$n->id_artikel>Delete <i class='fa fa-trash-o'></i></a>
+                                    <a class='btn btn-primary' href =editartikel/$n->id_artikel> <i class='fa fa-edit '></i> Edit</a>
+                                    <a class='btn btn-danger' href =deleteartikel/$n->id_artikel> <i class='fa fa-trash-o'></i> Delete</a>
                                     </td>
                                 "?>
                             </tr>   
