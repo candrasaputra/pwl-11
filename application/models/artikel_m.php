@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Bukutamu_m extends CI_Model {
+class Artikel_m extends CI_Model {
 	public function get_a_artikel($id){
 		$data = array();
     	$this->db->where('id_bt',$id);
@@ -17,6 +17,14 @@ class Bukutamu_m extends CI_Model {
 
 		$this->db->order_by('tgl_bt');
 		$rs = $this->db->get('tbartikel');
+
+		return $rs->result();
+	}
+
+	public function get_kategori(){
+
+		$this->db->order_by('kd_kat_artikel');
+		$rs = $this->db->get('tbkat_artikel');
 
 		return $rs->result();
 	}
