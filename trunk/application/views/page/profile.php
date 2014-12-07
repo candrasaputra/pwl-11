@@ -25,7 +25,7 @@
 						<div class="sambungfloat"></div>
 					<div class="skl-content">
 						<div class="row">
-							<div class="col-md-12 garis">
+							<div class="col-md-12">
 								<?php 
 									echo $profile->judul_profile;
 									echo "<br/><br/>";
