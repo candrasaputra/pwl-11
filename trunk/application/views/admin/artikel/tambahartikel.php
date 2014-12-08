@@ -109,23 +109,28 @@
                                     <li class="active"><a href="#fa-icons" data-toggle="tab"><?php echo $title ?></a></li>
                                 </ul>
                                 <div class="tab-content">
-                                    <form method="post" action="action/t_article.php">
+                                    <form method="post" action="<?php echo site_url('admin/artikel/proses_artikel'); ?>">
                                         <p>Title</p>
-                                        <input type="text" name="txtjudul" style="width: 30%"/>
-                                        <br/>
-                                        <br/>
-                                        <p>Date</p>
-                                        <input type="text" name="txttanggal" id="datepicker" />
+                                        <input type="text" name="judul" style="width: 30%"/>
                                         <br/>
                                         <br/>
                                         <p>Contents</p<br/>
                                     
-                                        <textarea id="elm1" name="txtisi" rows="15" cols="80" style="width: 80%"></textarea>
+                                        <textarea id="elm1" name="isi" rows="15" cols="80" style="width: 80%"></textarea>
                                     
                                         <p>Kategori</p>
-                                        <select type="text" name="txtkategori">
-                                            <option></option>
-                                            <option>tesssssssssssssss</option>
+                                        <select name="kd_kat">
+                                            <?php foreach($artikel as $n):?>
+                                                 <option value="<?php echo $n->kd_kat_artikel?>"><?php echo $n->nm_kat_artikel?></option>   
+                                            <?php endforeach?>
+                                            
+                                        </select>
+                                        <br/>
+                                        <br/>
+                                        <p>Status</p>
+                                        <select name="status">
+                                            <option value="publish">publish</option>
+                                            <option value="draff">draff</option>
                                         </select>
                                         <br/>
                                         <br/>
