@@ -21,6 +21,11 @@ class Artikel_m extends CI_Model {
 		return $rs->result();
 	}
 
+	function insert_artikel($data){
+		$this->db->insert('tbartikel', $data);
+	}
+
+
 	public function get_kategori(){
 
 		$this->db->order_by('kd_kat_artikel');
@@ -46,10 +51,6 @@ class Artikel_m extends CI_Model {
 		$rs = $this->db->get('tbartikel');
 
 		return $rs->result();
-	}
-
-	function insert_artikel($data){
-		$this->db->insert('tbartikel', $data);
 	}
 
 	function select_all(){

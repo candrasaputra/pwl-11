@@ -9,12 +9,27 @@ class Artikel extends MY_Controller{
 
 	public function tambahartikel(){
 
+		$this->data['artikel'] = $this->artikel_m->get_kategori();
+
 		$this->data['page']  = 'admin/artikel/tambahartikel';
 		$this->data['title'] = 'Tambah Artikel';
 
 		$this->load->view('admin/index', $this->data);
 
 	}
+
+	public function proses_artikel(){
+        date_default_timezone_set("Asia/Jakarta");
+                
+        $data['judul_artikel'] = $this->input->post('judul');
+        $data['isi_artikel'] = $this->input->post('isi');
+        $data['tgl_artikel'] = date('y-m-d');
+        $data['kd_kat_artikel'] = $this->input->post('kd_kat');
+        $data['status_artikel'] = $this->input->post('status');
+        $this->artikel_m->insert_artikel($data);
+                
+        redirect(base_url('admin/artikel/semuaartikel'));
+    }
 
 	public function semuaartikel(){
 		$this->data['artikel'] = $this->artikel_m->get_artikel();
