@@ -1,4 +1,4 @@
-	
+
 <?php $this->load->view('page/header') ?>
 <?php $this->load->view('page/slider') ?>
 
@@ -23,7 +23,10 @@
 			<?php endforeach?>
 		</div>
 	</div>
-
+<?php 
+date_default_timezone_set("Asia/Jakarta");
+echo date("y-m-d H:i:s");
+ ?>	
 
 <div class="col-md-12"></br>
 		<div class="col-md-3 merah skl-radius-ats  txt-putih ">Silahkan, Isikan buku tamu Disini :</div>

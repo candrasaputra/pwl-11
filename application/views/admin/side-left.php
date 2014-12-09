@@ -20,6 +20,12 @@
     }elseif ($title == "Semua Agenda") {
         $priksaagenda = "active";
         $priksa7 = "active";
+    }elseif ($title == "Tambah Info") {
+        $priksainfo = "active";
+        $priksa8 = "active";
+    }elseif ($title == "Semua Info") {
+        $priksainfo = "active";
+        $priksa9 = "active";
     }elseif ($title == "Buku Tamu") {
         $priksabk = "active";
     }
@@ -35,9 +41,12 @@
     if (empty($priksa5)) $priksa5 = '';
     if (empty($priksa6)) $priksa6 = '';
     if (empty($priksa7)) $priksa7 = '';
+    if (empty($priksa8)) $priksa8 = '';
+    if (empty($priksa9)) $priksa9 = '';
 
     if (empty($priksaartikel)) $priksaartikel = '';
     if (empty($priksaagenda)) $priksaagenda = '';
+    if (empty($priksainfo)) $priksainfo = '';
     if (empty($priksabk)) $priksabk = '';
 
  ?>
@@ -101,14 +110,14 @@
                                 <li class= <?php echo $priksa7; ?>><a href="<?php echo base_url()?>admin/agenda/semuaagenda"><i class="fa fa-angle-double-right"></i> Semua Agenda</a></li>
                             </ul>
                         </li>
-                        <li class="treeview">
+                        <li class="treeview <?php echo $priksainfo; ?>">
                             <a href="#">
                                 <i class="fa fa-info"></i> <span>Info Sekolah</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="<?php echo base_url()?>admin/info/tambahinfo"><i class="fa fa-angle-double-right"></i> Tambah info sekolah</a></li>
-                                <li><a href="<?php echo base_url()?>admin/info/semuainfo"><i class="fa fa-angle-double-right"></i> Semua info seklaoh</a></li>
+                                <li class= <?php echo $priksa8; ?>><a href="<?php echo base_url()?>admin/info/tambahinfo"><i class="fa fa-angle-double-right"></i> Tambah info sekolah</a></li>
+                                <li class= <?php echo $priksa9; ?>><a href="<?php echo base_url()?>admin/info/semuainfo"><i class="fa fa-angle-double-right"></i> Semua info seklaoh</a></li>
                             </ul>
                         </li>
                         <li class="treeview">

@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Count extends CI_Model {
+class Count_m extends CI_Model {
 	public function count_artikel(){
 		$rs = $this->db->count_all('tbartikel');
 		return $rs;
@@ -20,9 +20,32 @@ class Count extends CI_Model {
 		return $rs;
 	}
 
+
+
 	public function count_siswa(){
-		$this->db->like('agama_siswa', 'ISLAM');
+		$this->db->where('status_siswa', 'aktif');
 		$this->db->from('tbsiswa');
+		$rs = $this->db->count_all_results();
+		return $rs;
+	}
+
+	public function count_alumni(){
+		$this->db->where('status_siswa', 'alumni');
+		$this->db->from('tbsiswa');
+		$rs = $this->db->count_all_results();
+		return $rs;
+	}
+
+	public function count_staff(){
+		
+		$this->db->from('tbstaff');
+		$rs = $this->db->count_all_results();
+		return $rs;
+	}
+
+	public function count_guru(){
+		
+		$this->db->from('tbstaff');
 		$rs = $this->db->count_all_results();
 		return $rs;
 	}
