@@ -2,7 +2,7 @@
 class Artikel_m extends CI_Model {
 	public function get_a_artikel($id){
 		$data = array();
-    	$this->db->where('id_bt',$id);
+    	$this->db->where('id_artikel',$id);
     	$this->db->limit(1);
     	$Q = $this->db->get('tbartikel');
     	if ($Q->num_rows() > 0){
@@ -46,8 +46,8 @@ class Artikel_m extends CI_Model {
 
 	public function get_artikel_publish(){
 
-		$this->db->order_by('tgl_bt');
-		$this->db->where('stats_bt', "publish");
+		$this->db->order_by('tgl_artikel');
+		$this->db->where('status_artikel', "publish");
 		$rs = $this->db->get('tbartikel');
 
 		return $rs->result();
@@ -64,13 +64,13 @@ class Artikel_m extends CI_Model {
 	function select_by_id($id_artikel){
 		$this->db->select('*');
 		$this->db->from('tbartikel');
-		$this->db->where('id_bt', $id_artikel);
+		$this->db->where('id_artikel', $id_artikel);
 
 		return $this->db->get();
 	}
 
-	function update_artikel($id_bt, $data){
-		$this->db->where('id_bt', $id_bt);
+	function update_artikel($id_artikel, $data){
+		$this->db->where('id_artikel', $id_artikel);
 		$this->db->update('tbartikel', $data);
 	}
 }
