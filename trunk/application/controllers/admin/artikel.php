@@ -23,7 +23,7 @@ class Artikel extends MY_Controller{
                 
         $data['judul_artikel'] = $this->input->post('judul');
         $data['isi_artikel'] = $this->input->post('isi');
-        $data['tgl_artikel'] = date('y-m-d');
+        $data['tgl_artikel'] = date("y-m-d H:i:s");
         $data['kd_kat_artikel'] = $this->input->post('kd_kat');
         $data['status_artikel'] = $this->input->post('status');
         $this->artikel_m->insert_artikel($data);

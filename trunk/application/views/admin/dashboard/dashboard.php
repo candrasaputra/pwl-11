@@ -7,7 +7,7 @@
                             <div class="small-box bg-aqua">
                                 <div class="inner">
                                     <h3>
-                                        <?php echo $count_siswa; ?>
+                                        <?php echo $count_artikel; ?>
                                     </h3>
                                     <p>
                                         Artikel
@@ -86,10 +86,10 @@
                             <div class="small-box bg-aqua">
                                 <div class="inner">
                                     <h3>
-                                        120
+                                        <?php echo $count_siswa; ?>
                                     </h3>
                                     <p>
-                                        Siswa Aktif
+                                        siswa
                                     </p>
                                 </div>
                                 <div class="icon">
@@ -105,7 +105,7 @@
                             <div class="small-box bg-green">
                                 <div class="inner">
                                     <h3>
-                                        320
+                                        <?php echo $count_alumni; ?>
                                     </h3>
                                     <p>
                                         Alumni
@@ -124,7 +124,7 @@
                             <div class="small-box bg-yellow">
                                 <div class="inner">
                                     <h3>
-                                        20
+                                        <?php echo $count_staff; ?>
                                     </h3>
                                     <p>
                                         Staf
@@ -143,7 +143,7 @@
                             <div class="small-box bg-red">
                                 <div class="inner">
                                     <h3>
-                                        30
+                                        <?php echo $count_guru; ?>
                                     </h3>
                                     <p>
                                         Guru

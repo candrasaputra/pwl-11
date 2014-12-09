@@ -23,7 +23,7 @@ class Bukutamu extends CI_Controller{
         $data['isi_bt'] = $this->input->post('isi');
         $data['email_bt'] = $this->input->post('email');
         $data['web_bt'] = $this->input->post('web');
-        $data['tgl_bt'] = date('y-m-d');
+        $data['tgl_bt'] = date("y-m-d H:i:s");
         $data['stats_bt'] = "draff";
         $this->bukutamu_m->insert_bukutamu($data);
                 
