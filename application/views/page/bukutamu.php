@@ -12,7 +12,7 @@
 			<div class="">
 				<b><?php echo $n->nm_bt?></b>
 			</div>
-			    
+			   
    			<div class="">
     			<?php echo $n->tgl_bt?>
    		 		<br/>
