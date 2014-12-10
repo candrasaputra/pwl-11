@@ -78,6 +78,9 @@ a:hover, a:focus{
 }
 .table-hover {
 	table-layout: 1px;
-	border: 1px;
-	
+	border: 1px;	
+}
+.frm-gray {
+	padding: 12px;
+	background-color: gray;
 }
