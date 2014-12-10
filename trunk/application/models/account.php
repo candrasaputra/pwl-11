@@ -29,6 +29,7 @@ class Account extends CI_Model {
 		if ($this->db->affected_rows() > 0) {
 
 			$this->usr_data['c_fullname'] = $rows['nama'];
+			$this->usr_data['c_img'] = $rows['img'];
 			$this->usr_data['c_lastlog']  = $rows['lastlog'];
 			$this->usr_data['c_id']  	  = $rows['id_login'];
 
@@ -50,6 +51,7 @@ class Account extends CI_Model {
         $sess['c_id']  = '';
         $sess['c_lastlog'] = '';
         $sess['c_fullname'] = '';
+        $sess['c_img'] = '';
 
         $this->session->unset_userdata($sess);
         $this->session->sess_destroy();
@@ -72,6 +74,7 @@ class Account extends CI_Model {
         $sess['c_usr'] = $this->session->userdata('c_usr');
         $sess['c_pwd'] = $this->session->userdata('c_pwd');
         $sess['c_fullname'] = $this->session->userdata('c_fullname');
+        $sess['c_img'] = $this->session->userdata('c_img');
         $sess['c_lastlog']  = $this->session->userdata('c_lastlog');
         $sess['c_id']  = $this->session->userdata('c_id');
 
