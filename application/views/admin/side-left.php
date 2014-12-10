@@ -57,7 +57,7 @@
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="<?php echo base_url()?>assets/lte/img/avatar3.png" class="img-circle" alt="User Image" />
+                            <img src="<?php echo base_url()?>assets/img/admin/<?php echo $cookie['c_img'] ?>" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
                             <p>Hello, <?php echo $cookie['c_fullname']?></p>
