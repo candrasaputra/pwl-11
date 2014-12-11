@@ -47,7 +47,7 @@ class Agenda_m extends CI_Model {
 	}
 
 	function update_agenda($id_agenda, $data){
-		$this->db->where('id_bt', $id_agenda);
+		$this->db->where('id_staff', $id_agenda);
 		$this->db->update('tbagenda', $data);
 	}
 }
