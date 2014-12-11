@@ -26,6 +26,15 @@
     }elseif ($title == "Semua Info") {
         $priksainfo = "active";
         $priksa9 = "active";
+    }elseif ($title == "Tambah Staff") {
+        $priksastaff = "active";
+        $priksa10 = "active";
+    }elseif ($title == "Daftar Staff") {
+        $priksastaff = "active";
+        $priksa11 = "active";
+    }elseif ($title == "Tugas") {
+        $priksastaff = "active";
+        $priksa12 = "active";
     }elseif ($title == "Buku Tamu") {
         $priksabk = "active";
     }
@@ -43,10 +52,14 @@
     if (empty($priksa7)) $priksa7 = '';
     if (empty($priksa8)) $priksa8 = '';
     if (empty($priksa9)) $priksa9 = '';
+    if (empty($priksa10)) $priksa10 = '';
+    if (empty($priksa11)) $priksa11 = '';
+    if (empty($priksa12)) $priksa12 = '';
 
     if (empty($priksaartikel)) $priksaartikel = '';
     if (empty($priksaagenda)) $priksaagenda = '';
     if (empty($priksainfo)) $priksainfo = '';
+    if (empty($priksastaff)) $priksastaff = '';
     if (empty($priksabk)) $priksabk = '';
 
  ?>
@@ -120,15 +133,15 @@
                                 <li class= <?php echo $priksa9; ?>><a href="<?php echo base_url()?>admin/info/semuainfo"><i class="fa fa-angle-double-right"></i> Semua info seklaoh</a></li>
                             </ul>
                         </li>
-                        <li class="treeview">
+                        <li class="treeview <?php echo $priksastaff; ?>">
                             <a href="#">
                                 <i class="fa fa-table"></i> <span>Staff</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="<?php echo base_url()?>admin/staff/tambahstaff"><i class="fa fa-angle-double-right"></i> Tambah Staff</a></li>
-                                <li><a href="<?php echo base_url()?>admin/staff/daftarstaff"><i class="fa fa-angle-double-right"></i> Daftar Staff</a></li>
-                                <li><a href="<?php echo base_url()?>admin/staff/jabatan"><i class="fa fa-angle-double-right"></i> Jabatan</a></li>
+                                <li class= <?php echo $priksa10; ?>><a href="<?php echo base_url()?>admin/staff/tambahstaff"><i class="fa fa-angle-double-right"></i> Tambah Staff</a></li>
+                                <li class= <?php echo $priksa11; ?>><a href="<?php echo base_url()?>admin/staff/daftarstaff"><i class="fa fa-angle-double-right"></i> Daftar Staff</a></li>
+                                <li class= <?php echo $priksa12; ?>><a href="<?php echo base_url()?>admin/staff/tugas"><i class="fa fa-angle-double-right"></i> Tugas</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
