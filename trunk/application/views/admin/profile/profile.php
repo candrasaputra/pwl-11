@@ -132,7 +132,6 @@
         </div><!-- ./wrapper -->
 
         <script src="<?php echo base_url()?>assets/lte/tambahan/jquery.min.js"></script>
-        <script src="<?php echo base_url()?>assets/lte/tambahan/bootstrap.min.js" type="text/javascript"></script>
         <!-- AdminLTE App -->
         <script src="<?php echo base_url()?>assets/lte/js/AdminLTE/app.js" type="text/javascript"></script>
         <!-- AdminLTE for demo purposes -->
