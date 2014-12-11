@@ -12,6 +12,7 @@
                         <thead>
                             <tr>
                                 <th>#</th>
+                                <th>Img</th>
                                 <th>Nip</th>
                                 <th>Nama</th>
                                 <th>Email</th>
@@ -25,6 +26,7 @@
                             <?php foreach($staff as $n):?>
                             <tr>
                                 <td><?php echo $no; ?></td>
+                                <td><img src="<?php echo base_url()?>assets/img/staff/<?php echo $n->img_staff?>" /></td>
                                 <td><?php echo $n->nip_staff?></td>
                                 <td><?php echo $n->nm_staff?></td>
                                 <td><?php echo $n->email_staff?></td>
@@ -43,6 +45,7 @@
                         <tfoot>
                             <tr>
                                 <th>#</th>
+                                <th>Img</th>
                                 <th>Nip</th>
                                 <th>Nama</th>
                                 <th>Email</th>

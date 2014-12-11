@@ -211,7 +211,7 @@
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
-                                    <img src="<?php echo base_url()?>assets/lte/img/avatar3.png" class="img-circle" alt="User Image" />
+                                    <img src="<?php echo base_url()?>assets/img/admin/<?php echo $cookie['c_img'] ?>" class="img-circle" alt="User Image" />
                                     <p>
                                         <?php echo $cookie['c_fullname']?>
                                         <small>Last Login / IP</small>
