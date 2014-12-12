@@ -7,7 +7,9 @@
 	 <link rel="shortcut icon" href="assets/img"/>
 	 <link href="assets/css/sekolah.css" rel="stylesheet" type="text/css" />
 	 <link href="assets/css/sosmed.css" rel="stylesheet" type="text/css" />
+	 <link href="assets/css/galeristaff.css" rel="stylesheet" type="text/css" />
 	 <link rel="shortcut icon" type="image/ico" href="assets/img/favicon.ico">
+
 
 </head>
 <body class="biru-tua">
