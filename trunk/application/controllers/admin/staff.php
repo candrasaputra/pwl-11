@@ -9,9 +9,9 @@ class Staff extends MY_Controller{
 
 	public function tambahstaff(){
 
-		$this->data['artikel'] = $this->artikel_m->get_kategori();
+		
 
-		$this->data['page']  = 'admin/artikel/tambahartikel';
+		$this->data['page']  = 'admin/staff/tambahstaff';
 		$this->data['title'] = 'Tambah Staff';
 
 		$this->load->view('admin/index', $this->data);
