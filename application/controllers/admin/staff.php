@@ -19,16 +19,21 @@ class Staff extends MY_Controller{
 	}
 
 	public function proses_staff(){
-        date_default_timezone_set("Asia/Jakarta");
                 
-        $data['judul_artikel'] = $this->input->post('judul');
-        $data['isi_artikel'] = $this->input->post('isi');
-        $data['tgl_artikel'] = date("y-m-d H:i:s");
-        $data['kd_kat_artikel'] = $this->input->post('kd_kat');
-        $data['status_artikel'] = $this->input->post('status');
-        $this->artikel_m->insert_artikel($data);
+        $data['nip_staff'] = $this->input->post('nip');
+        $data['nm_staff'] = $this->input->post('nama');
+        $data['jk_staff'] = $this->input->post('jk');
+        $data['alamat_staff'] = $this->input->post('alamat');
+        $data['telp_staff'] = $this->input->post('telp');
+        $data['hp_staff'] = $this->input->post('hp');
+        $data['email_staff'] = $this->input->post('email');
+        $data['tgl_lahir_staff'] = $this->input->post('tgllahir');
+        $data['tmp_lahir_staff'] = $this->input->post('tempatlahir');
+        $data['tugas_staff'] = $this->input->post('tugas');
+        $data['img_staff'] = $this->input->post('foto');
+        $this->staff_m->insert_staff($data);
                 
-        redirect(base_url('admin/artikel/semuaartikel'));
+        redirect(base_url('admin/staff/daftarstaff'));
     }
 
 	public function daftarstaff(){
