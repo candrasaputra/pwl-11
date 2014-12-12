@@ -141,7 +141,6 @@
                             <ul class="treeview-menu">
                                 <li class= <?php echo $priksa10; ?>><a href="<?php echo base_url()?>admin/staff/tambahstaff"><i class="fa fa-angle-double-right"></i> Tambah Staff</a></li>
                                 <li class= <?php echo $priksa11; ?>><a href="<?php echo base_url()?>admin/staff/daftarstaff"><i class="fa fa-angle-double-right"></i> Daftar Staff</a></li>
-                                <li class= <?php echo $priksa12; ?>><a href="<?php echo base_url()?>admin/staff/tugas"><i class="fa fa-angle-double-right"></i> Tugas</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
