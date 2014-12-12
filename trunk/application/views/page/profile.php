@@ -1,6 +1,6 @@
 			<?php $this->load->view('page/header') ?>
 			<!--slider-->
-			<?php $this->load->view('page/slider') ?>
+			
 			<!--profile-->
 			<div class="bg-putih skl-radius skl-shadow">
 				<div class="col-md-4">

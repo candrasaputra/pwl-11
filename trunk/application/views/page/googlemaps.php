@@ -74,7 +74,7 @@
     </script>
    
     <body onload="load()">
-    <div class="bg-putih skl-radius skl-shadow bts-atas" id="map" style="width: 1200px; height: 400px"></div>
+    <div class="bg-putih skl-radius skl-shadow bts-atas" id="map" style="width: 100%; height: 60%"></div>
     </body>
 
 
