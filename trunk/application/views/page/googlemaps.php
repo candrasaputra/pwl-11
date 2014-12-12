@@ -1,5 +1,6 @@
 
   	<?php $this->load->view('page/header') ?>
+    
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript">
     //<![CDATA[
@@ -70,12 +71,13 @@
     function doNothing() {}
 
     //]]>
+    </script>
+   
+    <body onload="load()">
+    <div class="bg-putih skl-radius skl-shadow bts-atas" id="map" style="width: 1200px; height: 400px"></div>
+    </body>
 
-  </script>
 
- 
-
-  <body onload="load()">
-    <div id="map" style="width: 1200px; height: 400px"></div>
+   
     <?php $this->load->view('page/copyright') ?>
   
