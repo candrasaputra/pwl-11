@@ -26,7 +26,7 @@
                             <?php foreach($staff as $n):?>
                             <tr>
                                 <td><?php echo $no; ?></td>
-                                <td><img src="<?php echo base_url()?>assets/img/staff/<?php echo $n->img_staff?>" /></td>
+                                <td><img width="160" height="160" src="<?php echo base_url()?>assets/img/staff/<?php echo $n->img_staff?>" /></td>
                                 <td><?php echo $n->nip_staff?></td>
                                 <td><?php echo $n->nm_staff?></td>
                                 <td><?php echo $n->email_staff?></td>
