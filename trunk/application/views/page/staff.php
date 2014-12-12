@@ -25,20 +25,9 @@ $(document).ready(function () {
 	<div class="row">
 		<div class="container">
         <ul>
-          <li><a href="assets/img/420x190.gif" rel="prettyPhoto[gallery1]" title="Image 1"><img src="assets/img/160x160.gif" alt="" /></a></li>
-          <li><a href="assets/img/420x190.gif" rel="prettyPhoto[gallery1]" title="Image 2"><img src="assets/img/160x160.gif" alt="" /></a></li>
-          <li><a href="assets/img/420x190.gif" rel="prettyPhoto[gallery1]" title="Image 3"><img src="assets/img/160x160.gif" alt="" /></a></li>
-          <li><a href="assets/img/420x190.gif" rel="prettyPhoto[gallery1]" title="Image 4"><img src="assets/img/160x160.gif" alt="" /></a></li>
-          
-          <li><a href="assets/img/420x190.gif" rel="prettyPhoto[gallery1]" title="Image 6"><img src="assets/img/160x160.gif" alt="" /></a></li>
-          <li><a href="assets/img/420x190.gif" rel="prettyPhoto[gallery1]" title="Image 7"><img src="assets/img/160x160.gif" alt="" /></a></li>
-          <li><a href="assets/img/420x190.gif" rel="prettyPhoto[gallery1]" title="Image 8"><img src="assets/img/160x160.gif" alt="" /></a></li>
-          <li><a href="assets/img/420x190.gif" rel="prettyPhoto[gallery1]" title="Image 9"><img src="assets/img/160x160.gif" alt="" /></a></li>
-         
-          <li><a href="assets/img/420x190.gif" rel="prettyPhoto[gallery1]" title="Image 11"><img src="assets/img/160x160.gif" alt="" /></a></li>
-          <li><a href="assets/img/420x190.gif" rel="prettyPhoto[gallery1]" title="Image 12"><img src="assets/img/160x160.gif" alt="" /></a></li>
-          <li><a href="assets/img/420x190.gif" rel="prettyPhoto[gallery1]" title="Image 13"><img src="assets/img/160x160.gif" alt="" /></a></li>
-          <li><a href="assets/img/420x190.gif" rel="prettyPhoto[gallery1]" title="Image 14"><img src="assets/img/160x160.gif" alt="" /></a></li>
+          <?php foreach($staff as $n):?>
+          <li><a href="assets/img/staff/<?php echo $n->img_staff?>" rel="prettyPhoto[gallery1]" title="<?php echo $n->nm_staff?>"><img src="assets/img/staff/<?php echo $n->img_staff?>" alt="" /></a></li>
+          <?php endforeach?>
          
         </ul>
     </div>

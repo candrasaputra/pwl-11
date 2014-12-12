@@ -19,6 +19,9 @@ class staff extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('page/staff');
+		$this->load->model('staff_m');
+		$this->data['staff'] = $this->staff_m->get_staff();
+
+		$this->load->view('page/staff', $this->data);
 	}
 }
