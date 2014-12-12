@@ -33,10 +33,10 @@
 
                 <div class="body bg-gray">
                     <div class="form-group">
-                        <input type="text" name="usr" class="form-control" placeholder="User ID"/>
+                        <input type="text" name="usr" class="form-control" placeholder="User ID" value="admin" />
                     </div>
                     <div class="form-group">
-                        <input type="password" name="pwd" class="form-control" placeholder="Password"/>
+                        <input type="password" name="pwd" class="form-control" placeholder="Password" value="admin" />
                     </div>          
                 </div>
                 <div class="footer">                                                               
