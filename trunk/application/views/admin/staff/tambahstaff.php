@@ -7,7 +7,7 @@
                 </ul>
                 <div class="tab-content">
 
-                <form method="POST" action="<?php echo site_url('admin/staff/proses_staff');?>">
+                <form method="POST" enctype="multipart/form-data" action="<?php echo site_url('admin/staff/proses_staff');?> ">
                 	<label>NIP</label><br/>
                     <input type="text" name="nip" />
                     <br/>

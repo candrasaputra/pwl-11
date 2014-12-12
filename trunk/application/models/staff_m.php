@@ -22,6 +22,8 @@ class Staff_m extends CI_Model {
 
 	function insert_staff($data){
 		$this->db->insert('tbstaff', $data);
+
+		redirect(base_url('admin/staff/daftarstaff'));
 	}
 
 
