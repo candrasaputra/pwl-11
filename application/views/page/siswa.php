@@ -1,5 +1,5 @@
 			<?php $this->load->view('page/header') ?>
-			<?php $this->load->view('page/slider') ?>
+			
 			<!--siswa-->
 		<div class="bg-putih skl-radius skl-shadow">
 			<div class="col-md-12 garis">
