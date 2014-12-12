@@ -37,14 +37,14 @@ class Count_m extends CI_Model {
 	}
 
 	public function count_staff(){
-		
+		$this->db->where('tugas_staff', 'staff');
 		$this->db->from('tbstaff');
 		$rs = $this->db->count_all_results();
 		return $rs;
 	}
 
 	public function count_guru(){
-		
+		$this->db->where('tugas_staff', 'guru');
 		$this->db->from('tbstaff');
 		$rs = $this->db->count_all_results();
 		return $rs;
