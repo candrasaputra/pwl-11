@@ -14,7 +14,8 @@ class Dashboard_m extends CI_Model {
 	}
 
 	public function get_chat(){
-		$this->db->order_by('tgl_chat');
+		$this->db->join('tbadmin', 'tbchat.id_login = tbadmin.id_login');
+		$this->db->order_by('tgl_chat','desc');
 		$rs = $this->db->get('tbchat');
 
 		return $rs->result();
