@@ -17,7 +17,7 @@
                                 <div class="icon">
                                     <i class="glyphicon glyphicon-list"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">
+                                <a href="<?php echo base_url()?>admin/artikel/semuaartikel" class="small-box-footer">
                                     More info <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
@@ -36,7 +36,7 @@
                                 <div class="icon">
                                     <i class="glyphicon glyphicon-list-alt"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">
+                                <a href="<?php echo base_url()?>admin/agenda/semuaagenda" class="small-box-footer">
                                     More info <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
@@ -55,7 +55,7 @@
                                 <div class="icon">
                                     <i class="glyphicon glyphicon-info-sign"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">
+                                <a href="<?php echo base_url()?>admin/info/semuainfo" class="small-box-footer">
                                     More info <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
@@ -74,7 +74,7 @@
                                 <div class="icon">
                                     <i class="glyphicon glyphicon-comment"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">
+                                <a href="<?php echo base_url()?>admin/bukutamu" class="small-box-footer">
                                     More info <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
@@ -96,7 +96,7 @@
                                 <div class="icon">
                                     <i class="glyphicon glyphicon-user"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">
+                                <a href="<?php echo base_url()?>admin/siswa/daftarsiswa" class="small-box-footer">
                                     More info <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
@@ -115,7 +115,7 @@
                                 <div class="icon">
                                     <i class="glyphicon glyphicon-user"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">
+                                <a href="<?php echo base_url()?>admin/siswa/daftarsiswa" class="small-box-footer">
                                     More info <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
@@ -134,7 +134,7 @@
                                 <div class="icon">
                                     <i class="glyphicon glyphicon-user"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">
+                                <a href="<?php echo base_url()?>admin/staff/daftarstaff" class="small-box-footer">
                                     More info <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
@@ -153,7 +153,7 @@
                                 <div class="icon">
                                     <i class="glyphicon glyphicon-user"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">
+                                <a href="<?php echo base_url()?>admin/staff/daftarstaff" class="small-box-footer">
                                     More info <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
