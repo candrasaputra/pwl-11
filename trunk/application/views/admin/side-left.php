@@ -37,6 +37,12 @@
         $priksa12 = "active";
     }elseif ($title == "Buku Tamu") {
         $priksabk = "active";
+    }elseif ($title == "Tambah Akun") {
+        $priksaakun = "active";
+        $priksa17 = "active";
+    }elseif ($title == "Daftar Akun") {
+        $priksaakun = "active";
+        $priksa18 = "active";
     }
     else{
         $priksa = "active";
@@ -56,11 +62,15 @@
     if (empty($priksa11)) $priksa11 = '';
     if (empty($priksa12)) $priksa12 = '';
 
+    if (empty($priksa17)) $priksa17 = '';
+    if (empty($priksa18)) $priksa18 = '';
+
     if (empty($priksaartikel)) $priksaartikel = '';
     if (empty($priksaagenda)) $priksaagenda = '';
     if (empty($priksainfo)) $priksainfo = '';
     if (empty($priksastaff)) $priksastaff = '';
     if (empty($priksabk)) $priksabk = '';
+    if (empty($priksaakun)) $priksaakun = '';
 
  ?>
 
@@ -161,14 +171,14 @@
                                 <small class="badge pull-right bg-red"><?php echo $count_bukutamu; ?></small>
                             </a>
                         </li>
-                        <li class="treeview">
+                        <li class="treeview <?php echo $priksaakun; ?>">
                             <a href="#">
                                 <i class="fa fa-key"></i> <span>Akun</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="<?php echo base_url()?>admin/akun/tambahakun"><i class="fa fa-angle-double-right"></i> Tambah Akun</a></li>
-                                <li><a href="<?php echo base_url()?>admin/akun/daftarakun"><i class="fa fa-angle-double-right"></i> Daftar Akun</a></li>
+                                <li class= <?php echo $priksa17; ?>><a href="<?php echo base_url()?>admin/akun/tambahakun"><i class="fa fa-angle-double-right"></i> Tambah Akun</a></li>
+                                <li class= <?php echo $priksa18; ?>><a href="<?php echo base_url()?>admin/akun/daftarakun"><i class="fa fa-angle-double-right"></i> Daftar Akun</a></li>
                             </ul>
                         </li>
                     </ul>

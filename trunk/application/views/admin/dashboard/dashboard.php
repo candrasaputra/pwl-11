@@ -194,6 +194,21 @@
                                     </div>
                                 </div>
                                 <div class="box-body chat" id="chat-box">
+
+                                    <!-- chat item -->
+                                    <?php foreach($chat as $n):?>
+                                    <div class="item">
+                                        <img src="<?php echo base_url()?>assets/img/admin/<?php echo $n->img?>" alt="user image" class="online"/>
+                                        <p class="message">
+                                            <a href="#" class="name">
+                                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> <?php echo $n->tgl_chat?></small>
+                                                <?php echo $n->nama?>
+                                            </a>
+                                            <?php echo $n->pesan_chat?>
+                                        </p>
+                                    </div><!-- /.item -->
+                                    <?php endforeach?>
+
                                     <!-- chat item -->
                                     <div class="item">
                                         <img src="<?php echo base_url()?>assets/lte/img/avatar.png" alt="user image" class="online"/>
@@ -229,21 +244,6 @@
                                             best themes on the market
                                         </p>
                                     </div><!-- /.item -->
-
-                                    <?php foreach($chat as $n):?>
-                                    <!-- chat item -->
-                                    <div class="item">
-                                        <img src="<?php echo base_url()?>assets/img/admin/<?php echo $n->img?>" alt="user image" class="offline"/>
-                                        <p class="message">
-                                            <a href="#" class="name">
-                                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> <?php echo $n->tgl_chat?></small>
-                                                <?php echo $n->nama?>
-                                            </a>
-                                            <?php echo $n->pesan_chat?>
-                                        </p>
-                                    </div><!-- /.item -->
-                                    <?php endforeach?>
-
                                 </div><!-- /.chat -->
                                 <div class="box-footer">
                                     <div class="input-group">
