@@ -9,8 +9,6 @@ class Staff extends MY_Controller{
 
 	public function tambahstaff(){
 
-		
-
 		$this->data['page']  = 'admin/staff/tambahstaff';
 		$this->data['title'] = 'Tambah Staff';
 

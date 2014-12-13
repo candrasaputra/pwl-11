@@ -10,7 +10,15 @@ class Akun extends MY_Controller{
 	public function index(){		
 		$this->data['akun'] = $this->account->get_account();
 		$this->data['page']  = 'admin/akun/akun';
-		$this->data['title'] = 'Akun';
+		$this->data['title'] = 'Daftar Akun';
+
+		$this->load->view('admin/index', $this->data);
+
+	}
+
+	public function tambahakun(){
+		$this->data['page']  = 'admin/akun/tambahakun';
+		$this->data['title'] = 'Tambah Akun';
 
 		$this->load->view('admin/index', $this->data);
 
@@ -19,7 +27,7 @@ class Akun extends MY_Controller{
 	public function daftarakun(){		
 		$this->data['akun'] = $this->account->get_account();
 		$this->data['page']  = 'admin/akun/akun';
-		$this->data['title'] = 'Akun';
+		$this->data['title'] = 'Daftar Akun';
 
 		$this->load->view('admin/index', $this->data);
 
