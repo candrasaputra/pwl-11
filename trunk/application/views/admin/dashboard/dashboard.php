@@ -1,3 +1,4 @@
+                
                 <section class="content">
 
                     <!-- Small boxes (Stat box) -->
@@ -162,7 +163,7 @@
                     <!-- Main row -->
                     <div class="row">
                         <!-- Left col -->
-                        <section class="col-lg-7 connectedSortable">                            
+                        <section class="col-lg-7">                            
 
 
                             <!-- Custom tabs (Charts with tabs)-->
@@ -228,19 +229,21 @@
                                             best themes on the market
                                         </p>
                                     </div><!-- /.item -->
+
+                                    <?php foreach($chat as $n):?>
                                     <!-- chat item -->
                                     <div class="item">
-                                        <img src="<?php echo base_url()?>assets/lte/img/avatar3.png" alt="user image" class="offline"/>
+                                        <img src="<?php echo base_url()?>assets/img/admin/<?php echo $n->img_chat?>" alt="user image" class="offline"/>
                                         <p class="message">
                                             <a href="#" class="name">
-                                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
-                                                Susan Doe
+                                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> <?php echo $n->tgl_chat?></small>
+                                                <?php echo $n->nm_chat?>
                                             </a>
-                                            I would like to meet you to discuss the latest news about
-                                            the arrival of the new theme. They say it is going to be one the
-                                            best themes on the market
+                                            <?php echo $n->pesan_chat?>
                                         </p>
                                     </div><!-- /.item -->
+                                    <?php endforeach?>
+
                                 </div><!-- /.chat -->
                                 <div class="box-footer">
                                     <div class="input-group">
