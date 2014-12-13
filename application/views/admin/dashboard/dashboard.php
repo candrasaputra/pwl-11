@@ -233,11 +233,11 @@
                                     <?php foreach($chat as $n):?>
                                     <!-- chat item -->
                                     <div class="item">
-                                        <img src="<?php echo base_url()?>assets/img/admin/<?php echo $n->img_chat?>" alt="user image" class="offline"/>
+                                        <img src="<?php echo base_url()?>assets/img/admin/<?php echo $n->img?>" alt="user image" class="offline"/>
                                         <p class="message">
                                             <a href="#" class="name">
                                                 <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> <?php echo $n->tgl_chat?></small>
-                                                <?php echo $n->nm_chat?>
+                                                <?php echo $n->nama?>
                                             </a>
                                             <?php echo $n->pesan_chat?>
                                         </p>
