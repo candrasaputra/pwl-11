@@ -12,6 +12,7 @@
                         <thead>
                             <tr>
                                 <th>#</th>
+                                <th>Foto</th>
                                 <th>Nama</th>
                                 <th>Username</th>
                                 <th>Password</th>
@@ -23,6 +24,7 @@
                             <?php foreach($akun as $n):?>
                             <tr>
                                 <td><?php echo $no; ?></td>
+                                <td><img width="160" height="160" src="<?php echo base_url()?>assets/img/admin/<?php echo $n->img?>" /></td>
                                 <td><?php echo $n->nama?></td>
                                 <td><?php echo $n->username?></td>
                                 <td><?php echo $n->password?></td>
@@ -39,6 +41,7 @@
                         <tfoot>
                             <tr>
                                 <th>#</th>
+                                <th>Foto</th>
                                 <th>Nama</th>
                                 <th>Username</th>
                                 <th>Password</th>
