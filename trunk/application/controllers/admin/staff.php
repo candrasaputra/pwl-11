@@ -61,24 +61,9 @@ class Staff extends MY_Controller{
 		$this->load->view('admin/index', $this->data);
 	}
 
-	public function tugas(){
-		$this->data['kategori'] = $this->artikel_m->get_kategori();
-
-		$this->data['page']  = 'admin/artikel/kategori';
-		$this->data['title'] = 'Tugas';
-
-		$this->load->view('admin/index', $this->data);
-	}
-
 	public function delete_staff($id){
-		$this->artikel_m->delete_artikel($id);
+		$this->staff_m->delete_staff($id);
 		//$this->session->set_flashdata('message','Post deleted');
-		redirect('admin/artikel/semuaartikel','refresh');
-	}
-
-	public function deletetugas($id){
-		$this->artikel_m->delete_kategori($id);
-		//$this->session->set_flashdata('message','Post deleted');
-		redirect('admin/artikel/kategoriartikel','refresh');
+		redirect('admin/staff/daftarstaff','refresh');
 	}
 }

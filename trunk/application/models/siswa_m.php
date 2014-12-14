@@ -16,4 +16,14 @@ class Siswa_m extends CI_Model {
 
 		return $rs->result();
 	}
+
+	public function delete_siswa($nik){
+		$this->db->where('nik_siswa', $nik);
+		$this->db->delete('tbsiswa');
+	}
+
+	public function delete_kelas($id){
+		$this->db->where('kd_kelas', $id);
+		$this->db->delete('tbkelas');
+	}
 }

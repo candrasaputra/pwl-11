@@ -33,4 +33,16 @@ class Siswa extends MY_Controller{
 
 		$this->load->view('admin/index', $this->data);
 	}
+
+	public function deletesiswa($nik){
+		$this->siswa_m->delete_siswa($nik);
+		//$this->session->set_flashdata('message','Post deleted');
+		redirect('admin/siswa/daftarsiswa','refresh');
+	}
+
+	public function deletekelas($id){
+		$this->siswa_m->delete_kelas($id);
+		//$this->session->set_flashdata('message','Post deleted');
+		redirect('admin/siswa/kelas','refresh');
+	}
 }

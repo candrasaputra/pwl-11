@@ -38,8 +38,8 @@
                                 <td><?php echo $n->status_siswa?></td>
                                 <?php echo "
                                     <td>
-                                    <a class='btn btn-primary' href =editkategori/$n->nik_siswa><i class='fa fa-edit '> Edit</i></a>
-                                    <a class='btn btn-danger' href =deletekategori/$n->nik_siswa><i class='fa fa-trash-o'></i> Delete</a>
+                                    <a class='btn btn-primary' href =editsiswa/$n->nik_siswa><i class='fa fa-edit '> Edit</i></a>
+                                    <a class='btn btn-danger' href =deletesiswa/$n->nik_siswa><i class='fa fa-trash-o'></i> Delete</a>
                                     </td>
                                 "?>
                             </tr>   
