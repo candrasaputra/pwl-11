@@ -35,6 +35,18 @@
     }elseif ($title == "Tugas") {
         $priksastaff = "active";
         $priksa12 = "active";
+    }elseif ($title == "Tambah Siswa") {
+        $priksasiswa = "active";
+        $priksa13 = "active";
+    }elseif ($title == "Daftar Siswa") {
+        $priksasiswa = "active";
+        $priksa14 = "active";
+    }elseif ($title == "Jurusan") {
+        $priksasiswa = "active";
+        $priksa15 = "active";
+    }elseif ($title == "Kelas") {
+        $priksasiswa = "active";
+        $priksa16 = "active";
     }elseif ($title == "Buku Tamu") {
         $priksabk = "active";
     }elseif ($title == "Tambah Akun") {
@@ -61,7 +73,10 @@
     if (empty($priksa10)) $priksa10 = '';
     if (empty($priksa11)) $priksa11 = '';
     if (empty($priksa12)) $priksa12 = '';
-
+    if (empty($priksa13)) $priksa13 = '';
+    if (empty($priksa14)) $priksa14 = '';
+    if (empty($priksa15)) $priksa15 = '';
+    if (empty($priksa16)) $priksa16 = '';
     if (empty($priksa17)) $priksa17 = '';
     if (empty($priksa18)) $priksa18 = '';
 
@@ -69,6 +84,7 @@
     if (empty($priksaagenda)) $priksaagenda = '';
     if (empty($priksainfo)) $priksainfo = '';
     if (empty($priksastaff)) $priksastaff = '';
+    if (empty($priksasiswa)) $priksasiswa = '';
     if (empty($priksabk)) $priksabk = '';
     if (empty($priksaakun)) $priksaakun = '';
 
@@ -153,16 +169,16 @@
                                 <li class= <?php echo $priksa11; ?>><a href="<?php echo base_url()?>admin/staff/daftarstaff"><i class="fa fa-angle-double-right"></i> Daftar Staff</a></li>
                             </ul>
                         </li>
-                        <li class="treeview">
+                        <li class="treeview <?php echo $priksasiswa; ?>">
                             <a href="#">
                                 <i class="fa fa-graduation-cap"></i> <span>Siswa</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="<?php echo base_url()?>admin/siswa/tambahsiswa"><i class="fa fa-angle-double-right"></i> Tambah Siswa</a></li>
-                                <li><a href="<?php echo base_url()?>admin/siswa/daftarsiswa"><i class="fa fa-angle-double-right"></i> Daftar Siswa</a></li>
-                                <li><a href="<?php echo base_url()?>admin/siswa/jurusan"><i class="fa fa-angle-double-right"></i> Jurusan</a></li>
-                                <li><a href="<?php echo base_url()?>admin/siswa/kelas"><i class="fa fa-angle-double-right"></i> Kelas</a></li>
+                                <li class= <?php echo $priksa13; ?>><a href="<?php echo base_url()?>admin/siswa/tambahsiswa"><i class="fa fa-angle-double-right"></i> Tambah Siswa</a></li>
+                                <li class= <?php echo $priksa14; ?>><a href="<?php echo base_url()?>admin/siswa/daftarsiswa"><i class="fa fa-angle-double-right"></i> Daftar Siswa</a></li>
+                                <li class= <?php echo $priksa15; ?>><a href="<?php echo base_url()?>admin/siswa/jurusan"><i class="fa fa-angle-double-right"></i> Jurusan</a></li>
+                                <li class= <?php echo $priksa16; ?>><a href="<?php echo base_url()?>admin/siswa/kelas"><i class="fa fa-angle-double-right"></i> Kelas</a></li>
                             </ul>
                         </li>
                         <li class="<?php echo $priksabk; ?>">
