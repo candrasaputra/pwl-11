@@ -26,8 +26,8 @@
                                 <td><?php echo $n->nm_kelas?></td>
                                 <?php echo "
                                     <td>
-                                    <a class='btn btn-primary' href =editkategori/$n->kd_kelas><i class='fa fa-edit '> Edit</i></a>
-                                    <a class='btn btn-danger' href =deletekategori/$n->kd_kelas><i class='fa fa-trash-o'></i> Delete</a>
+                                    <a class='btn btn-primary' href =editkelas/$n->kd_kelas><i class='fa fa-edit '> Edit</i></a>
+                                    <a class='btn btn-danger' href =deletekelas/$n->kd_kelas><i class='fa fa-trash-o'></i> Delete</a>
                                     </td>
                                 "?>
                             </tr>   
