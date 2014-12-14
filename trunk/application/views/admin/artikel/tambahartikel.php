@@ -4,58 +4,14 @@
         <meta charset="UTF-8">
         <title>AdminLTE | Dashboard</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+
         <!-- Ionicons -->
         <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="<?php echo base_url()?>assets/lte/css/AdminLTE.css" rel="stylesheet" type="text/css" />
         <!-- demo style -->
-        <style type="text/css">
-            /* FROM HTTP://WWW.GETBOOTSTRAP.COM
-             * Glyphicons
-             *
-             * Special styles for displaying the icons and their classes in the docs.
-             */
-
-            .bs-glyphicons {
-                padding-left: 0;
-                padding-bottom: 1px;
-                margin-bottom: 20px;
-                list-style: none;
-                overflow: hidden;
-            }
-            .bs-glyphicons li {
-                float: left;
-                width: 25%;
-                height: 115px;
-                padding: 10px;
-                margin: 0 -1px -1px 0;
-                font-size: 12px;
-                line-height: 1.4;
-                text-align: center;
-                border: 1px solid #ddd;
-            }
-            .bs-glyphicons .glyphicon {
-                margin-top: 5px;
-                margin-bottom: 10px;
-                font-size: 24px;
-            }
-            .bs-glyphicons .glyphicon-class {
-                display: block;
-                text-align: center;
-                word-wrap: break-word; /* Help out IE10+ with class names */
-            }
-            .bs-glyphicons li:hover {
-                background-color: rgba(86,61,124,.1);
-            }
-
-            @media (min-width: 768px) {
-                .bs-glyphicons li {
-                    width: 12.5%;
-                }
-            }
-        </style>
+        
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -145,11 +101,6 @@
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
 
-        <script src="<?php echo base_url()?>assets/lte/tambahan/jquery.min.js"></script>
-       
-        <!-- AdminLTE App -->
-        <script src="<?php echo base_url()?>assets/lte/js/AdminLTE/app.js" type="text/javascript"></script>
-        <!-- AdminLTE for demo purposes -->
-        <script src="<?php echo base_url()?>assets/lte/js/AdminLTE/demo.js" type="text/javascript"></script>
+        
     </body>
 </html>
