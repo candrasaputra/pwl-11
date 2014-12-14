@@ -24,14 +24,6 @@ class Siswa extends MY_Controller{
 		$this->load->view('admin/index', $this->data);
 	}
 
-	public function jurusan(){
-
-		$this->data['page']  = 'admin/siswa/jurusan';
-		$this->data['title'] = 'Jurusan';
-
-		$this->load->view('admin/index', $this->data);
-	}
-
 	public function kelas(){
 
 		$this->data['page']  = 'admin/siswa/kelas';
