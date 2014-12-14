@@ -211,7 +211,7 @@
 
                                     <!-- chat item -->
                                     <div class="item">
-                                        <img src="<?php echo base_url()?>assets/lte/img/avatar.png" alt="user image" class="online"/>
+                                        <img src="<?php echo base_url()?>assets/lte/img/avatar.png" alt="user image" class="offline"/>
                                         <p class="message">
                                             <a href="#" class="name">
                                                 <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
@@ -231,19 +231,7 @@
                                             </div>
                                         </div><!-- /.attachment -->
                                     </div><!-- /.item -->
-                                    <!-- chat item -->
-                                    <div class="item">
-                                        <img src="<?php echo base_url()?>assets/lte/img/avatar2.png" alt="user image" class="offline"/>
-                                        <p class="message">
-                                            <a href="#" class="name">
-                                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
-                                                Jane Doe
-                                            </a>
-                                            I would like to meet you to discuss the latest news about
-                                            the arrival of the new theme. They say it is going to be one the
-                                            best themes on the market
-                                        </p>
-                                    </div><!-- /.item -->
+                                    
                                 </div><!-- /.chat -->
                                 <div class="box-footer">
                                     <div class="input-group">

@@ -107,4 +107,10 @@ class Account extends CI_Model {
 		return $rs->result();
 	}
 
+	function insert_akun($data){
+		$this->db->insert('tbadmin', $data);
+
+		redirect(base_url('admin/akun/daftarakun'));
+	}
+
 }	
