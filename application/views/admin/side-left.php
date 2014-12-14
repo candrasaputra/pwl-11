@@ -41,9 +41,6 @@
     }elseif ($title == "Daftar Siswa") {
         $priksasiswa = "active";
         $priksa14 = "active";
-    }elseif ($title == "Jurusan") {
-        $priksasiswa = "active";
-        $priksa15 = "active";
     }elseif ($title == "Kelas") {
         $priksasiswa = "active";
         $priksa16 = "active";
@@ -75,7 +72,6 @@
     if (empty($priksa12)) $priksa12 = '';
     if (empty($priksa13)) $priksa13 = '';
     if (empty($priksa14)) $priksa14 = '';
-    if (empty($priksa15)) $priksa15 = '';
     if (empty($priksa16)) $priksa16 = '';
     if (empty($priksa17)) $priksa17 = '';
     if (empty($priksa18)) $priksa18 = '';
@@ -177,7 +173,6 @@
                             <ul class="treeview-menu">
                                 <li class= <?php echo $priksa13; ?>><a href="<?php echo base_url()?>admin/siswa/tambahsiswa"><i class="fa fa-angle-double-right"></i> Tambah Siswa</a></li>
                                 <li class= <?php echo $priksa14; ?>><a href="<?php echo base_url()?>admin/siswa/daftarsiswa"><i class="fa fa-angle-double-right"></i> Daftar Siswa</a></li>
-                                <li class= <?php echo $priksa15; ?>><a href="<?php echo base_url()?>admin/siswa/jurusan"><i class="fa fa-angle-double-right"></i> Jurusan</a></li>
                                 <li class= <?php echo $priksa16; ?>><a href="<?php echo base_url()?>admin/siswa/kelas"><i class="fa fa-angle-double-right"></i> Kelas</a></li>
                             </ul>
                         </li>
