@@ -17,6 +17,7 @@ class Siswa extends MY_Controller{
 	}
 
 	public function daftarsiswa(){
+		$this->data['siswa'] = $this->siswa_m->get_siswa();
 
 		$this->data['page']  = 'admin/siswa/daftarsiswa';
 		$this->data['title'] = 'Daftar Siswa';
@@ -25,6 +26,7 @@ class Siswa extends MY_Controller{
 	}
 
 	public function kelas(){
+		$this->data['kelas'] = $this->siswa_m->get_kelas();
 
 		$this->data['page']  = 'admin/siswa/kelas';
 		$this->data['title'] = 'Kelas';
