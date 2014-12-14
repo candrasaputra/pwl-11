@@ -23,5 +23,18 @@ class Dashboard extends MY_Controller{
 		$this->dashboard_m->insert_chat($data);
 	}
 
-	
+	public function profile(){
+		$id = $this->data['cookie']['c_id'];
+		
+		$this->data['profile'] = $this->dashboard_m->get_profileadmin($id)->row();
+
+		$this->data['page']  = 'admin/dashboard/profileadmin';
+		$this->data['title'] = 'Dashboard';
+
+		$this->load->view('admin/index', $this->data);
+	}
+
+	public function tes(){
+		echo $cookie['c_fullname'];
+	}
 }

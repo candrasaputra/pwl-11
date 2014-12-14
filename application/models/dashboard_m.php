@@ -26,4 +26,13 @@ class Dashboard_m extends CI_Model {
 
 		redirect(base_url('admin/dashboard#chat'));
 	}
+
+	public function get_profileadmin($id){
+
+		$this->db->select('*');
+		$this->db->from('tbadmin');
+		$this->db->where('id_login', $id);
+
+		return $this->db->get();
+	}
 }
