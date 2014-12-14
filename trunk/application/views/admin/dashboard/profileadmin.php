@@ -3,7 +3,7 @@
         <div class='col-xs-12'>
             <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#fa-icons" data-toggle="tab"><?php echo $title ?></a></li>
+                    <li class="active"><a href="#fa-icons" data-toggle="tab">Edit Profil <?php echo $cookie['c_fullname']?></a></li>
                 </ul>
                 <div class="tab-content">
 
