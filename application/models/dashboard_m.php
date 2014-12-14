@@ -20,4 +20,10 @@ class Dashboard_m extends CI_Model {
 
 		return $rs->result();
 	}
+
+	function insert_chat($data){
+		$this->db->insert('tbchat', $data);
+
+		redirect(base_url('admin/dashboard#chat'));
+	}
 }

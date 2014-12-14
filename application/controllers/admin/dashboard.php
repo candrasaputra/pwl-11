@@ -16,5 +16,12 @@ class Dashboard extends MY_Controller{
 
 	}
 
+	public function proses_chat(){
+		$data['pesan_chat'] = $this->input->post('isi');
+        $data['id_login'] = $this->input->post('id');
+
+		$this->dashboard_m->insert_chat($data);
+	}
+
 	
 }

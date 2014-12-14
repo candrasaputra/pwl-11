@@ -180,7 +180,7 @@
                                     <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;"></div>
                                 </div>
                             </div><!-- /.nav-tabs-custom -->
-
+                            <a name="chat"></a>
                             <!-- Chat box -->
                             <div class="box box-success">
                                 <div class="box-header">
@@ -194,7 +194,6 @@
                                     </div>
                                 </div>
                                 <div class="box-body chat" id="chat-box">
-
                                     <!-- chat item -->
                                     <?php foreach($chat as $n):?>
                                     <div class="item">
@@ -233,14 +232,17 @@
                                     </div><!-- /.item -->
                                     
                                 </div><!-- /.chat -->
-                                <div class="box-footer">
-                                    <div class="input-group">
-                                        <input class="form-control" placeholder="Type message..."/>
-                                        <div class="input-group-btn">
-                                            <button class="btn btn-success"><i class="fa fa-plus"></i></button>
+                                <form method="POST" action="<?php echo site_url('admin/dashboard/proses_chat');?>">
+                                    <div class="box-footer">
+                                        <div class="input-group">
+                                            <input type="hidden" name="id" value="<?php echo $cookie['c_id']?>" />
+                                            <input name="isi" class="form-control" placeholder="Type message..." MAXLENGTH="255"/>
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-success"><i class="fa fa-plus"></i></button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div><!-- /.box (chat box) -->                                                        
 
                             <!-- TO DO List -->
