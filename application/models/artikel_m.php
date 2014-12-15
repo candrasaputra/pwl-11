@@ -31,6 +31,19 @@ class Artikel_m extends CI_Model {
 		$this->db->delete('tbartikel');
 	}
 
+	function update_artikel($id, $data){
+		$this->db->where('id_artikel', $id);
+		$this->db->update('tbartikel', $data);
+	}
+
+	function select_by_id_artikel($id){
+		$this->db->select('*');
+		$this->db->from('tbartikel');
+		$this->db->where('id_artikel', $id);
+
+		return $this->db->get();
+	}
+
 	public function get_kategori(){
 
 		$this->db->order_by('kd_kat_artikel');
@@ -76,18 +89,5 @@ class Artikel_m extends CI_Model {
 		$this->db->order_by('date_modified', 'desc');
 
 		return $this->db->get();
-	}
-
-	function select_by_id($id_artikel){
-		$this->db->select('*');
-		$this->db->from('tbartikel');
-		$this->db->where('id_artikel', $id_artikel);
-
-		return $this->db->get();
-	}
-
-	function update_artikel($id_artikel, $data){
-		$this->db->where('id_artikel', $id_artikel);
-		$this->db->update('tbartikel', $data);
 	}
 }

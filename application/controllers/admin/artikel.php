@@ -31,6 +31,30 @@ class Artikel extends MY_Controller{
         redirect(base_url('admin/artikel/semuaartikel'));
     }
 
+    public function editartikel($id){
+		$this->data['artikel'] = $this->artikel_m->select_by_id_artikel($id)->row();
+		$this->data['kategori'] = $this->artikel_m->get_kategori();
+
+		$this->data['page']  = 'admin/artikel/edit_artikel';
+		$this->data['title'] = 'Semua Artikel';
+
+		$this->load->view('admin/index', $this->data);
+	}
+
+    public function proses_edit_artikel(){
+        date_default_timezone_set("Asia/Jakarta");
+                
+        $data['judul_artikel'] = $this->input->post('judul');
+        $data['isi_artikel'] = $this->input->post('isi');
+        $data['tgl_artikel'] = date("y-m-d H:i:s");
+        $data['kd_kat_artikel'] = $this->input->post('kd_kat');
+        $data['status_artikel'] = $this->input->post('status');
+        $id = $this->input->post('kode');
+        $this->artikel_m->update_artikel($id, $data);
+                
+        redirect(base_url('admin/artikel/semuaartikel'));
+    }
+
 	public function semuaartikel(){
 		$this->data['artikel'] = $this->artikel_m->get_artikel();
 
