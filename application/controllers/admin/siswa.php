@@ -45,4 +45,12 @@ class Siswa extends MY_Controller{
 		//$this->session->set_flashdata('message','Post deleted');
 		redirect('admin/siswa/kelas','refresh');
 	}
+
+	public function proses_kelas(){
+        $data['kd_kelas'] = $this->input->post('kode');
+        $data['nm_kelas'] = $this->input->post('nama');
+        $this->siswa_m->insert_kelas($data);
+                
+        redirect(base_url('admin/siswa/kelas'));
+    }
 }
