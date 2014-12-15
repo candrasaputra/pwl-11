@@ -1,5 +1,3 @@
-<?php $this->load->view('page/header') ?>
-
 
 <script type="text/javascript" src="assets/js/jquery-1.4.1.min.js"></script>
 <script type="text/javascript">
@@ -13,7 +11,7 @@ $(document).ready(function () {
 
 <link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" />
 <script type="text/javascript" src="assets/js/jquery-prettyPhoto.js"></script>
-
+<?php $this->load->view('page/header') ?>
 <div class="skl-content bg-putih skl-radius-ats">
 	<div class="col-md-12">
 			<div class="col-md-3 merah skl-radius-ats  txt-putih ">Staff Pengajar SMP Prestasi</div>
