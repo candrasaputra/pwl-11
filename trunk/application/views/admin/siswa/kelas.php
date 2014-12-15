@@ -2,6 +2,44 @@
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+              Tambah
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Tambah Kategori</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form method="POST" action="<?php echo site_url('admin/siswa/proses_kelas'); ?>">
+                    <table hight="80px">
+                        <tr>
+                            <td width="45%">Kode </td>
+                            <td><input type="texbox" name="kode" class="form-control" required/></td>
+                        </tr>
+                        <tr>
+                            <td>Nama Kelas </td>
+                            <td><input type="texbox" name="nama" class="form-control" required/></td>
+                        </tr>
+                        
+                    </table>
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type="submit" class="btn btn-primary" name="tbhPenyakit" value="Tambah">
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <br/>
+            <br/>
 
             <div class="box">
                 <div class="box-header">

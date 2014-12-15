@@ -26,6 +26,11 @@ class Artikel_m extends CI_Model {
 	}
 
 
+	public function delete_artikel($id){
+		$this->db->where('id_artikel', $id);
+		$this->db->delete('tbartikel');
+	}
+
 	public function get_kategori(){
 
 		$this->db->order_by('kd_kat_artikel');
@@ -34,9 +39,8 @@ class Artikel_m extends CI_Model {
 		return $rs->result();
 	}
 
-	public function delete_artikel($id){
-		$this->db->where('id_artikel', $id);
-		$this->db->delete('tbartikel');
+	function insert_kategori($data){
+		$this->db->insert('tbkat_artikel', $data);
 	}
 
 	public function delete_kategori($id){

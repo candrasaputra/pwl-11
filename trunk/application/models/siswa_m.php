@@ -26,4 +26,8 @@ class Siswa_m extends CI_Model {
 		$this->db->where('kd_kelas', $id);
 		$this->db->delete('tbkelas');
 	}
+
+	function insert_kelas($data){
+		$this->db->insert('tbkelas', $data);
+	}
 }

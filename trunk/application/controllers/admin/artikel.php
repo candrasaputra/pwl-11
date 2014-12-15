@@ -60,4 +60,12 @@ class Artikel extends MY_Controller{
 		//$this->session->set_flashdata('message','Post deleted');
 		redirect('admin/artikel/kategoriartikel','refresh');
 	}
+
+	public function proses_kategori(){
+        $data['kd_kat_artikel'] = $this->input->post('kode');
+        $data['nm_kat_artikel'] = $this->input->post('nama');
+        $this->artikel_m->insert_kategori($data);
+                
+        redirect(base_url('admin/artikel/kategoriartikel'));
+    }
 }
