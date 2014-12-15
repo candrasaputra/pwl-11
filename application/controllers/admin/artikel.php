@@ -40,6 +40,12 @@ class Artikel extends MY_Controller{
 		$this->load->view('admin/index', $this->data);
 	}
 
+	public function deleteartikel($id){
+		$this->artikel_m->delete_artikel($id);
+		//$this->session->set_flashdata('message','Post deleted');
+		redirect('admin/artikel/semuaartikel','refresh');
+	}
+
 	public function kategoriartikel(){
 		$this->data['kategori'] = $this->artikel_m->get_kategori();
 
@@ -49,11 +55,23 @@ class Artikel extends MY_Controller{
 		$this->load->view('admin/index', $this->data);
 	}
 
-	public function deleteartikel($id){
-		$this->artikel_m->delete_artikel($id);
-		//$this->session->set_flashdata('message','Post deleted');
-		redirect('admin/artikel/semuaartikel','refresh');
+	public function editkategori($id){
+		$this->data['kategori'] = $this->artikel_m->select_by_id_kategori($id)->row();
+
+		$this->data['page']  = 'admin/artikel/edit_kategori';
+		$this->data['title'] = 'Kategori';
+
+		$this->load->view('admin/index', $this->data);
 	}
+	
+	public function proses_edit_kategori(){
+        $data['kd_kat_artikel'] = $this->input->post('kode');
+        $data['nm_kat_artikel'] = $this->input->post('nama');
+        $id = $this->input->post('kode');
+        $this->artikel_m->update_kategori($id, $data);
+                
+        redirect(base_url('admin/artikel/kategoriartikel'));
+    }
 
 	public function deletekategori($id){
 		$this->artikel_m->delete_kategori($id);

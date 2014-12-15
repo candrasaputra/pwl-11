@@ -43,6 +43,11 @@ class Artikel_m extends CI_Model {
 		$this->db->insert('tbkat_artikel', $data);
 	}
 
+	function update_kategori($id, $data){
+		$this->db->where('kd_kat_artikel', $id);
+		$this->db->update('tbkat_artikel', $data);
+	}
+
 	public function delete_kategori($id){
 		$this->db->where('kd_kat_artikel', $id);
 		$this->db->delete('tbkat_artikel');
@@ -55,6 +60,14 @@ class Artikel_m extends CI_Model {
 		$rs = $this->db->get('tbartikel');
 
 		return $rs->result();
+	}
+
+	function select_by_id_kategori($id){
+		$this->db->select('*');
+		$this->db->from('tbkat_artikel');
+		$this->db->where('kd_kat_artikel', $id);
+
+		return $this->db->get();
 	}
 
 	function select_all(){
