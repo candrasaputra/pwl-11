@@ -14,7 +14,7 @@ $(document).ready(function () {
 <link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" />
 <script type="text/javascript" src="assets/js/jquery-prettyPhoto.js"></script>
 
-<div class="skl-content bg-putih">
+<div class="skl-content bg-putih skl-radius-ats">
 	<div class="col-md-12">
 			<div class="col-md-3 merah skl-radius-ats  txt-putih ">Staff Pengajar SMP Prestasi</div>
 			<div class="col-md-9 skl-content "></div>
@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 <div class="sambungfloat"></div>					
 <div id="gallery" class="col-md-12 clear">
-	<div class="row">
+	<div class="row ">
 		<div class=" container skl-content ">
         <ul>
           <?php foreach($staff as $n):?>
