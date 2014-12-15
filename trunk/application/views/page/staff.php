@@ -16,14 +16,14 @@ $(document).ready(function () {
 
 <div class="skl-content bg-putih">
 	<div class="col-md-12">
-			<div class="col-md-4 merah skl-radius-ats  txt-putih ">iki dapure rupane Guruku</div>
-			<div class="col-md-8 skl-content "></div>
+			<div class="col-md-3 merah skl-radius-ats  txt-putih ">Staff Pengajar SMP Prestasi</div>
+			<div class="col-md-9 skl-content "></div>
 	</div>	
 
 <div class="sambungfloat"></div>					
 <div id="gallery" class="col-md-12 clear">
 	<div class="row">
-		<div class="container">
+		<div class=" container skl-content ">
         <ul>
           <?php foreach($staff as $n):?>
           <li><a href="assets/img/staff/<?php echo $n->img_staff?>" rel="prettyPhoto[gallery1]" title="<?php echo $n->nm_staff?>"><img src="assets/img/staff/<?php echo $n->img_staff?>" alt="" /></a></li>
