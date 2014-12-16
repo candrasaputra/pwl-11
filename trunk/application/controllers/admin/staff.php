@@ -111,7 +111,7 @@ class Staff extends MY_Controller{
 
         $id = $this->input->post('kode');
         $this->staff_m->update_staff($id, $data);
-                
+        
         redirect(base_url('admin/staff/daftarstaff'));
     }
 }
