@@ -40,4 +40,25 @@ class Agenda extends MY_Controller{
 		//$this->session->set_flashdata('message','Post deleted');
 		redirect('admin/agenda/semuaagenda','refresh');
 	}
+
+	public function editagenda($id){
+		$this->data['agenda'] = $this->agenda_m->select_by_id($id)->row();
+
+		$this->data['page']  = 'admin/agenda/edit_agenda';
+		$this->data['title'] = 'Semua Agenda';
+
+		$this->load->view('admin/index', $this->data);
+	}
+
+	public function proses_edit_agenda(){
+                
+        $data['judul_agenda'] = $this->input->post('judul');
+        $data['isi_agenda'] = $this->input->post('isi');
+        $data['tgl_agenda'] = $this->input->post('tgl');
+
+        $id = $this->input->post('kode');
+        $this->agenda_m->update_agenda($id, $data);
+                
+        redirect(base_url('admin/agenda/semuaagenda'));
+    }
 }

@@ -24,6 +24,10 @@ class Agenda_m extends CI_Model {
 		$this->db->insert('tbagenda', $data);
 	}
 
+	function update_agenda($id, $data){
+		$this->db->where('id_agenda', $id);
+		$this->db->update('tbagenda', $data);
+	}
 
 	public function delete_agenda($id){
 		$this->db->where('id_agenda', $id);
@@ -38,16 +42,11 @@ class Agenda_m extends CI_Model {
 		return $this->db->get();
 	}
 
-	function select_by_id($id_agenda){
+	function select_by_id($id){
 		$this->db->select('*');
 		$this->db->from('tbagenda');
-		$this->db->where('id_agenda', $id_agenda);
+		$this->db->where('id_agenda', $id);
 
 		return $this->db->get();
-	}
-
-	function update_agenda($id_agenda, $data){
-		$this->db->where('id_staff', $id_agenda);
-		$this->db->update('tbagenda', $data);
 	}
 }
