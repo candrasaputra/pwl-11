@@ -6,7 +6,7 @@
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
         <meta charset="utf-8">
-        <title>jQuery UI Datepicker - Default functionality</title>
+
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
@@ -18,6 +18,8 @@
             });
         </script>
 
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/lte/tambahan/datetime/jquery.datetimepicker.css"/ >
         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <!-- Ionicons -->
@@ -152,4 +154,10 @@
         </div><!-- ./wrapper -->
 
     </body>
+    <!-- this should go after your </body> -->
+<!--
+<script src="<?php echo base_url()?>assets/lte/tambahan/datetime/jquery.js"></script>
+<script src="<?php echo base_url()?>assets/lte/tambahan/datetime/jquery.datetimepicker.js"></script>
+-->
+<script></script>
 </html>
