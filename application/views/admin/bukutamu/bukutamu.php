@@ -27,10 +27,19 @@
                                 <td><?php echo $n->tgl_bt?></td>
                                 <td><?php echo $n->nm_bt?></td>
                                 <td><?php echo $n->isi_bt?></td>
-                                <td><p class="label label-info"><?php echo $n->stats_bt?></p></td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                          <i class="<?php if($n->stats_bt == 'publish'){echo("fa fa-eye");}else{echo("fa fa-eye-slash");}?>"></i> <?php echo $n->stats_bt?>
+                                        <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url()?>admin/bukutamu/publish/<?php echo $n->id_bt?>">Publish</a></li>
+                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url()?>admin/bukutamu/draff/<?php echo $n->id_bt?>">Draff</a></li>
+                                        </ul>
+                                    </div>
                                 <?php echo "
                                     <td>
-                                    <a class='btn btn-primary' href =bukutamu/edit/$n->id_bt><i class='fa fa-edit '></i> Edit</a>
                                     <a class='btn btn-danger' href =bukutamu/delete/$n->id_bt><i class='fa fa-trash-o'></i> Delete</a>
                                     </td>
                                 "?>

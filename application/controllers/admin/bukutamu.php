@@ -16,22 +16,27 @@ class Bukutamu extends MY_Controller{
 
 	}
 
-	public function edit($id_bt){
-		$data['page'] = "admin/bukutamu/bukutamu/edit/$id_bt";
-  		$data['bukutamu'] = $this->bukutamu_m->select_by_id($id_bt)->row();
-		$this->load->view('admin/bukutamu/edit_bukutamu', $data);
-    }
-    
-    public function proses_edit_bukutamu(){
-		$data['stats_bt'] = $this->input->post('stats');
-		$id_bt=$this->input->post('id_bt');
-		$this->bukutamu_m->update_bukutamu($id_bt, $data);
-		redirect(site_url('admin/bukutamu'));
-	}
-
 	public function delete($id){
 		$this->bukutamu_m->delete_bukutamu($id);
 		//$this->session->set_flashdata('message','Post deleted');
+		redirect('admin/bukutamu','refresh');
+	}
+
+	public function publish($id){
+		$data['stats_bt'] = "publish";
+		$id_bt=$id;
+
+		$this->bukutamu_m->update_bukutamu($id_bt, $data);
+
+		redirect('admin/bukutamu','refresh');
+	}
+
+	public function draff($id){
+		$data['stats_bt'] = "draff";
+		$id_bt=$id;
+
+		$this->bukutamu_m->update_bukutamu($id_bt, $data);
+
 		redirect('admin/bukutamu','refresh');
 	}
 }
