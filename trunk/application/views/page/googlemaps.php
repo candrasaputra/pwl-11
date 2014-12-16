@@ -16,7 +16,7 @@
 
     function load() {
       var map = new google.maps.Map(document.getElementById("map"), {
-        center: new google.maps.LatLng(47.6145, -122.3418),
+        center: new google.maps.LatLng(-7.78283, 110.36698),
         zoom: 13,
         mapTypeId: 'roadmap'
       });

@@ -7,18 +7,18 @@
 		<div class="col-md-2 merah skl-radius-ats  txt-putih ">Buku Tamu (Guestbook)</div>
 		<div class="col-md-10 skl-content "></div>
 		
-		<div class="padding-9">
+		<div class="padding-9 col-md-12">
 			<?php foreach($bukutamu as $n):?>
-			<div class="">
-				<b><?php echo $n->nm_bt?></b>
+			<div class="col-md-2 padding-9 garis-bwh-m">
+				<?php echo $n->tgl_bt?>
 			</div>
 			   
-   			<div class="">
-    			<?php echo $n->tgl_bt?>
-   		 		<br/>
+   			<div class="col-md-2 padding-9 garis-bwh-h">   			
+   		 		<b><?php echo $n->nm_bt?></b>
+   		 	</div>
+   		 	<div class="col-md-8 padding-9 garis-bwh-k">
     			<?php echo $n->isi_bt?>
-    			<br/>
-    		</div>
+       		</div>
     
 			<?php endforeach?>
 		</div>
