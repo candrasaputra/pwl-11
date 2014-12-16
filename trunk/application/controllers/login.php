@@ -37,6 +37,8 @@ class Login extends CI_Controller {
 	public function logout(){
 		$this->load->model('account');
 		
+		
+
 		$this->account->do_logout();
 		header('location: '.site_url().'/login');
 	}
