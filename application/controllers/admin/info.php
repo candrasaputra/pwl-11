@@ -41,4 +41,25 @@ class Info extends MY_Controller{
 		//$this->session->set_flashdata('message','Post deleted');
 		redirect('admin/info/semuainfo','refresh');
 	}
+
+	public function editinfo($id){
+		$this->data['info'] = $this->info_m->select_by_id($id)->row();
+
+		$this->data['page']  = 'admin/info/edit_info';
+		$this->data['title'] = 'Semua Info';
+
+		$this->load->view('admin/index', $this->data);
+	}
+
+	public function proses_edit_info(){
+                
+        $data['judul_info'] = $this->input->post('judul');
+        $data['isi_info'] = $this->input->post('isi');
+        $data['tgl_info'] = $this->input->post('tgl');
+
+        $id = $this->input->post('kode');
+        $this->info_m->update_info($id, $data);
+                
+        redirect(base_url('admin/info/semuainfo'));
+    }
 }
