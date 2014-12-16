@@ -7,6 +7,7 @@ a:hover, a:focus{
 }
 .garis{
 	border:1px solid;
+	color: gray;
 }
 .navbar-default .navbar-nav > li > a {
 	color: white;
@@ -83,4 +84,21 @@ a:hover, a:focus{
 .frm-gray {
 	padding: 12px;
 	background-color: gray;
+}
+.garis-bwh-k {
+	border-bottom: 1.2px solid;
+	border-color: #F4A460;	
+}
+.garis-bwh-m {
+	border-bottom: 1.2px solid;
+	border-color: #d9534f;	
+}
+.garis-bwh-h {
+	border-bottom: 1.2px solid;
+	border-color: #FF6347;	
+}
+
+.tbl-uf:hover{
+	color: #d9534f;
+	cursor: pointer;
 }
