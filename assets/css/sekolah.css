@@ -6,8 +6,11 @@ a:hover, a:focus{
 	color: yellow;
 }
 .garis{
-	border:1px solid;
-	color: gray;
+	border:1px solid white;
+	color : black;
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,.13);
+	border-radius: 4px;
 }
 .navbar-default .navbar-nav > li > a {
 	color: white;
@@ -50,7 +53,7 @@ a:hover, a:focus{
 }
 .bg-putih{
 	padding: 10px;
-	background-color: white;
+	background-color: #F0FFF0;
 }
 .skl-radius{
 	border-radius: 4px;

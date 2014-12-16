@@ -10,16 +10,16 @@
 						
 						<div class="sambungfloat"></div>
 					<!--<div class="skl-content">agenda</div>-->
-					<div class="skl-content">
+					<div class="skl-content garis">
 						<div class="row">
-							<div class="col-md-12 ">
+							<div class="col-md-12">
 							<marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3" direction="up" width="100%" height="40%" align="left">
-								<a href="" target="new">>>Pentas Seni tengah semester</a></br>
-								<a href="" target="new">>>Teritorial Drama Musical di gedung panca wati bakti</a></br>
-								<a href="" target="new">>>Debat English Contest se-eks kresidenan besuki dan tapal kuda region</a></br>
-								<a href="" target="new">>>Pentas Seni tengah semester</a></br>
-								<a href="" target="new">>>Teritorial Drama Musical di gedung panca wati bakti</a></br>
-								<a href="" target="new">>>Debat English Contest se-eks kresidenan besuki dan tapal kuda region</a></br>
+								<a href="" target="new">&rsaquo;&rsaquo; Pentas Seni tengah semester</a></br>
+								<a href="" target="new">&rsaquo;&rsaquo; Teritorial Drama Musical di gedung panca wati bakti</a></br>
+								<a href="" target="new">&rsaquo;&rsaquo; Debat English Contest se-eks kresidenan besuki dan tapal kuda region</a></br>
+								<a href="" target="new">&rsaquo;&rsaquo; Pentas Seni tengah semester</a></br>
+								<a href="" target="new">&rsaquo;&rsaquo; Teritorial Drama Musical di gedung panca wati bakti</a></br>
+								<a href="" target="new">&rsaquo;&rsaquo; Debat English Contest se-eks kresidenan besuki dan tapal kuda region</a></br>
 							</marquee>
 							</div>
 							<div class="sambungfloat"></div>
@@ -31,7 +31,7 @@
 					<div class="col-md-8 skl-content "></div>
 						
 						<div class="sambungfloat"></div>
-					<div class="skl-content">
+					<div class="skl-content garis">
 						<div class="row">
 							<div class="col-md-12 ">
 								<?php 
@@ -49,10 +49,15 @@
 					<div class="col-md-8 skl-content "></div>
 					<div class="sambungfloat"></div>
 					
-					<div class="skl-content">
+					<div class="skl-content garis">
 						<div class="row">
-							<div class="col-md-4 garis tbl-uf:hover">Gambar</div>
-						<div class="col-md-8 garis">Ini Isi</div>
+						
+						<div class="col-md-12">
+
+							<p>&radic; hari ini libur</p>
+							<p>&radic; kerja bakti</p>
+							<p>&radic; pelajaran jam ke 3-4 ditiadatan</p>
+						</div>
 						<div class="sambungfloat"></div>
 						</div>
 					</div>
