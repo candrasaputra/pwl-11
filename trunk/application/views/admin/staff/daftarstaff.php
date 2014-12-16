@@ -34,8 +34,8 @@
                                 <td><?php echo $n->tugas_staff?></td>
                                 <?php echo "
                                     <td>
-                                    <a class='btn btn-primary' href =edit_staff/$n->id_staff> <i class='fa fa-edit '></i> Edit</a>
-                                    <a class='btn btn-danger' href =delete_staff/$n->id_staff> <i class='fa fa-trash-o'></i> Delete</a>
+                                    <a class='btn btn-primary' href =editstaff/$n->id_staff> <i class='fa fa-edit '></i> Edit</a>
+                                    <a class='btn btn-danger' href =deletestaff/$n->id_staff> <i class='fa fa-trash-o'></i> Delete</a>
                                     </td>
                                 "?>
                             </tr>   

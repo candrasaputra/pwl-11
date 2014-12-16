@@ -9,12 +9,12 @@
 
                 <form method="POST" enctype="multipart/form-data" action="<?php echo site_url('admin/staff/proses_staff');?> ">
                 	<label>NIP</label><br/>
-                    <input type="text" name="nip" />
+                    <input type="text" name="nip" required/>
                     <br/>
                     <br/>
 
                     <label>Nama</label><br/>
-                    <input type="text" name="nama" />
+                    <input type="text" name="nama" required/>
                     <br/>
                     <br/>
 
@@ -27,17 +27,17 @@
                     <br/>
 
                     <label>Tanggal Lahir</label><br/>
-                    <input type="text" name="tgllahir" />
+                    <input type="text" name="tgllahir" required/>
                     <br/>
                     <br/>
 
                     <label>Tempat Lahir</label><br/>
-                    <input type="text" name="tempatlahir" />
+                    <input type="text" name="tempatlahir" required/>
                     <br/>
                     <br/>
 
                     <label>Email</label><br/>
-                    <input type="email" name="email" />
+                    <input type="email" name="email" required/>
                     <br/>
                     <br/>
 
@@ -47,12 +47,12 @@
                     <br/>
 
                     <label>HP</label><br/>
-                    <input type="text" name="hp" />
+                    <input type="text" name="hp" required/>
                     <br/>
                     <br/>
 
                     <label>Alamat</label><br/>
-                    <input type="text" name="alamat" />
+                    <input type="text" name="alamat" required/>
                     <br/>
                     <br/>
 
