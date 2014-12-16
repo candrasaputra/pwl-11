@@ -113,4 +113,21 @@ class Account extends CI_Model {
 		redirect(base_url('admin/akun/daftarakun'));
 	}
 
+	public function delete_akun($id){
+		$this->db->where('id_login', $id);
+		$this->db->delete('tbadmin');
+	}
+
+	function select_by_id($id){
+		$this->db->select('*');
+		$this->db->from('tbadmin');
+		$this->db->where('id_login', $id);
+
+		return $this->db->get();
+	}
+
+	function update_akun($id, $data){
+		$this->db->where('id_login', $id);
+		$this->db->update('tbadmin', $data);
+	}
 }	
