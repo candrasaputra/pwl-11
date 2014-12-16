@@ -68,7 +68,7 @@
 
                     <label>Foto</label><br/>
                     <input type="file" name="foto" />
-                    *jpg, jpeg, png
+                    *jpg, jpeg, gif, png
                     <br/>
                     <br/>
                     <input type="hidden" name="fotosaatini" value="<?php echo $staff->img_staff;?>" />

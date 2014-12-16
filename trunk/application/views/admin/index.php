@@ -12,16 +12,14 @@
         <link href="<?php echo base_url()?>assets/lte/css/morris/morris.css" rel="stylesheet" type="text/css" />
         <!-- jvectormap -->
         <link href="<?php echo base_url()?>assets/lte/css/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
-        <!-- Date Picker -->
-        <link href="<?php echo base_url()?>assets/lte/css/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
-        <!-- Daterange picker -->
-        <link href="<?php echo base_url()?>assets/lte/css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+        
         <!-- bootstrap wysihtml5 - text editor -->
         <link href="<?php echo base_url()?>assets/lte/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="<?php echo base_url()?>assets/lte/css/AdminLTE.css" rel="stylesheet" type="text/css" />
 
         <link href="<?php echo base_url()?>assets/lte/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
+        
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -47,7 +45,7 @@
         </div><!-- ./wrapper -->
 
         <!-- add new calendar event modal -->
-
+        
 
         <script src="<?php echo base_url()?>assets/lte/tambahan/jquery.min.js"></script>
         <script src="<?php echo base_url()?>assets/lte/tambahan/bootstrap.min.js" type="text/javascript"></script>
@@ -62,10 +60,7 @@
         <script src="<?php echo base_url()?>assets/lte/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
         <!-- jQuery Knob Chart -->
         <script src="<?php echo base_url()?>assets/lte/js/plugins/jqueryKnob/jquery.knob.js" type="text/javascript"></script>
-        <!-- daterangepicker -->
-        <script src="<?php echo base_url()?>assets/lte/js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
-        <!-- datepicker -->
-        <script src="<?php echo base_url()?>assets/lte/js/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
+       
         <!-- Bootstrap WYSIHTML5 -->
         <script src="<?php echo base_url()?>assets/lte/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
         <!-- iCheck -->
@@ -83,6 +78,8 @@
         <!-- DATA TABES SCRIPT -->
         <script src="<?php echo base_url()?>assets/lte/js/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
         <script src="<?php echo base_url()?>assets/lte/js/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+    
+
 
     </body>
 </html>
