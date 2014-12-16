@@ -19,7 +19,17 @@ class Siswa extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('page/Siswa');
+
+
+		$this->load->model('siswa_m');
+		$this->data['siswa'] = $this->siswa_m->get_siswa();
+
+		$this->data['page']  = 'page/siswa';
+		$this->data['title'] = 'Daftar Siswa';
+
+		$this->load->view('page/siswa', $this->data);
+	
+
 	}
 }
 
