@@ -61,7 +61,7 @@ class Staff extends MY_Controller{
 		$this->load->view('admin/index', $this->data);
 	}
 
-	public function delete_staff($id){
+	public function deletestaff($id){
 		$this->staff_m->delete_staff($id);
 		//$this->session->set_flashdata('message','Post deleted');
 		redirect('admin/staff/daftarstaff','refresh');
