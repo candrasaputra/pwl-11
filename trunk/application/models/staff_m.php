@@ -40,16 +40,16 @@ class Staff_m extends CI_Model {
 		return $this->db->get();
 	}
 
-	function select_by_id($id_staff){
+	function select_by_id($id){
 		$this->db->select('*');
 		$this->db->from('tbstaff');
-		$this->db->where('id_staff', $id_staff);
+		$this->db->where('id_staff', $id);
 
 		return $this->db->get();
 	}
 
-	function update_staff($id_staff, $data){
-		$this->db->where('id_staff', $id_staff);
+	function update_staff($id, $data){
+		$this->db->where('id_staff', $id);
 		$this->db->update('tbstaff', $data);
 	}
 }
