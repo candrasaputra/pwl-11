@@ -27,7 +27,7 @@ class Artikel extends MY_Controller{
         $data['kd_kat_artikel'] = $this->input->post('kd_kat');
         $data['status_artikel'] = $this->input->post('status');
         $this->artikel_m->insert_artikel($data);
-                
+
         redirect(base_url('admin/artikel/semuaartikel'));
     }
 
