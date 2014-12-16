@@ -20,7 +20,7 @@
                         <!-- Tasks: style can be found in dropdown.less -->
                         <li class="tasks-menu">
                             <a href="<?php echo base_url()?>" target="_blank">
-                                <i class="fa fa-eye"></i> Lihat situs
+                                <i class="fa fa-rocket"></i> Lihat situs
                             </a>
                         </li>
                         <!-- User Account: style can be found in dropdown.less -->
