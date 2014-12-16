@@ -46,8 +46,8 @@ class Info_m extends CI_Model {
 		return $this->db->get();
 	}
 
-	function update_info($id_info, $data){
-		$this->db->where('id_bt', $id_info);
+	function update_info($id, $data){
+		$this->db->where('id_bt', $id);
 		$this->db->update('tbinfo', $data);
 	}
 }
