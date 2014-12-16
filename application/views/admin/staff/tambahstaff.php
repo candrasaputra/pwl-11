@@ -66,7 +66,7 @@
 
                     <label>Foto</label><br/>
                     <input type="file" name="foto" />
-                    *jpg, jpeg, png
+                    *jpg, jpeg, gif, png
                     <br/>
                     <br/>
 

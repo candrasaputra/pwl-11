@@ -79,7 +79,6 @@ class Akun extends MY_Controller{
 	}
 	
 	public function proses_edit_akun(){
-        $data['username'] = $this->input->post('username');
         $data['nama'] = $this->input->post('nama');
         $data['email'] = $this->input->post('email');
         $data['hp'] = $this->input->post('hp');        

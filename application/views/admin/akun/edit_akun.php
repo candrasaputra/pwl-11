@@ -9,7 +9,7 @@
 
                 <form method="POST" enctype="multipart/form-data" action="<?php echo site_url('admin/akun/proses_edit_akun');?> ">
                 	<label>Username</label><br/>
-                    <input type="text" name="username" value="<?php echo $akun->username;?>" required/>
+                    <input type="text" placeholder="<?php echo $akun->username;?>" disabled/>
                     <br/>
                     <br/>
 <!--
@@ -35,9 +35,10 @@
 
                     <label>Foto</label><br/>
                     <input type="file" name="foto" />
-                    *jpg, jpeg, png
+                    *jpg, jpeg, gif, png
                     <br/>
                     <br/>
+                    
                     <input type="hidden" name="fotosaatini" value="<?php echo $akun->img;?>" />
                     <input type="hidden" name="kode" value="<?php echo $akun->id_login;?>" />
                     <input type="submit" value="Ubah" />

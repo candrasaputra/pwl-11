@@ -7,9 +7,9 @@
                 </ul>
                 <div class="tab-content">
 
-                <form method="POST" enctype="multipart/form-data" action="<?php echo site_url('admin/staff/proses_staff');?> ">
+                <form method="POST" enctype="multipart/form-data" action="<?php echo site_url('admin/dashboard/proses_edit_profile');?> ">
                 	<label>ID</label><br/>
-                    <input type="text" name="id" value="<?php echo $profile->id_login;?>" />
+                    <input type="text" name="id" placeholder="<?php echo $profile->id_login;?>" disabled/>
                     <br/>
                     <br/>
 
