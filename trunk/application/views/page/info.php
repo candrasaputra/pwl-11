@@ -8,7 +8,7 @@
 						<div class="col-md-12">
 
 							<?php foreach($info as $n):?>
-							<p>&radic; <?php echo $n->tgl_info?> <?php echo $n->judul_info?></p>
+							<p>&radic; <?php echo $n->tgl_info?></br> <?php echo $n->judul_info?></br></p>
 							<?php endforeach?>
 
 						</div>
