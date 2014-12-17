@@ -1,14 +1,14 @@
 <html>
 <head>
 	<title>SMP Prestasi</title>
-	 <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-	 <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
-	 <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
-	 <link rel="shortcut icon" href="assets/img"/>
-	 <link href="assets/css/sekolah.css" rel="stylesheet" type="text/css" />
-	 <link href="assets/css/sosmed.css" rel="stylesheet" type="text/css" />
-	 <link href="assets/css/galeristaff.css" rel="stylesheet" type="text/css" />
-	 <link rel="shortcut icon" type="image/ico" href="assets/img/favicon.ico">
+	 <link href="<?php echo base_url()?>assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	 <link href="<?php echo base_url()?>assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
+	 <script type="<?php echo base_url()?>text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+	 <link rel="shortcut icon" href="<?php echo base_url()?>assets/img"/>
+	 <link href="<?php echo base_url()?>assets/css/sekolah.css" rel="stylesheet" type="text/css" />
+	 <link href="<?php echo base_url()?>assets/css/sosmed.css" rel="stylesheet" type="text/css" />
+	 <link href="<?php echo base_url()?>assets/css/galeristaff.css" rel="stylesheet" type="text/css" />
+	 <link rel="shortcut icon" type="image/ico" href="<?php echo base_url()?>assets/img/favicon.ico">
 
 
 </head>
