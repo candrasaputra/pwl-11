@@ -13,7 +13,7 @@ class Home extends CI_Controller {
 	{
 		$this->data['agenda'] = $this->agenda_m->get_agenda();
 		$this->data['info'] = $this->info_m->get_info();
-		$this->data['artikel'] = $this->artikel_m->get_artikel();
+		$this->data['artikel'] = $this->artikel_m->get_artikel_publish();
 		$this->load->view('page/home', $this->data);
 	}
 }
