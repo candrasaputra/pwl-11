@@ -10,19 +10,19 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="assets/img/sekolah1.jpg" width="100%" height="60%"  alt="gambar">
+      <img src="<?php echo base_url()?>assets/img/sekolah1.jpg" width="100%" height="60%"  alt="gambar">
       <div class="carousel-caption">
         <b>kebersamaan dalam meraih cita-cita</b>
       </div>
     </div>
     <div class="item">
-      <img src="assets/img/sekolah7.jpg" width="100%" height="60%" alt="gambar">
+      <img src="<?php echo base_url()?>assets/img/sekolah7.jpg" width="100%" height="60%" alt="gambar">
       <div class="carousel-caption">
         <b>Carnival event Nasional</b> 
       </div>
     </div>
     <div class="item">
-      <img src="assets/img/sekolah5.jpg" width="100%" height="60%" alt="gambar">
+      <img src="<?php echo base_url()?>assets/img/sekolah5.jpg" width="100%" height="60%" alt="gambar">
       <div class="carousel-caption">
        <b>Jambore Region Jawa</b>
       </div>

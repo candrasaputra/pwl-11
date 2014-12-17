@@ -23,10 +23,11 @@
 				</div>	
 				<?php $this->load->view('page/info') ?>
 				<div class="sambungfloat"></div>
+
+				<?php $this->load->view('page/footer') ?>
 			</div>
 			
-			<!--ini footer-->
-			<?php $this->load->view('page/footer') ?>
+			<!--ini footer-->			
 		</div>
 	</div>
 

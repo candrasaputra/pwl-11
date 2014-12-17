@@ -1,7 +1,7 @@
 
 <?php $this->load->view('page/header') ?>
 <div>
-<script type="text/javascript" src="assets/js/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url()?>assets/js/jquery-1.4.1.min.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function () {
@@ -12,8 +12,8 @@ $(document).ready(function () {
 });
 </script>
 
-<link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" />
-<script type="text/javascript" src="assets/js/jquery-prettyPhoto.js"></script>
+<link rel="stylesheet" href="<?php echo base_url()?>assets/css/prettyPhoto.css" type="text/css" />
+<script type="text/javascript" src="<?php echo base_url()?>assets/js/jquery-prettyPhoto.js"></script>
 
 <div class="skl-content bg-putih skl-radius-ats">
 	<div class="col-md-12">
@@ -27,7 +27,7 @@ $(document).ready(function () {
 		<div class=" container skl-content ">
         <ul>
           <?php foreach($staff as $n):?>
-          <li><a href="assets/img/staff/<?php echo $n->img_staff?>" rel="prettyPhoto[gallery1]" title="<?php echo $n->nm_staff?>"><img src="assets/img/staff/<?php echo $n->img_staff?>" alt="" /></a></li>
+          <li><a href="<?php echo base_url()?>assets/img/staff/<?php echo $n->img_staff?>" rel="prettyPhoto[gallery1]" title="<?php echo $n->nm_staff?>"><img src="<?php echo base_url()?>assets/img/staff/<?php echo $n->img_staff?>" alt="" /></a></li>
           <?php endforeach?>
          
         </ul>
