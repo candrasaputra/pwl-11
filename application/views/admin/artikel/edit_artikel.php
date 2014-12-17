@@ -65,7 +65,7 @@
                                     <li class="active"><a href="#fa-icons" data-toggle="tab"><?php echo $title ?></a></li>
                                 </ul>
                                 <div class="tab-content">
-                                    <form method="post" action="<?php echo site_url('admin/artikel/proses_edit_artikel'); ?>">
+                                    <form method="post" enctype="multipart/form-data" action="<?php echo site_url('admin/artikel/proses_edit_artikel'); ?>">
                                         <p>Title</p>
                                         <input type="text" name="judul" style="width: 30%" value="<?php echo $artikel->judul_artikel;?>" />
                                         <br/>
@@ -73,7 +73,13 @@
                                         <p>Contents</p<br/>
                                     
                                         <textarea id="elm1" name="isi" rows="15" cols="80" style="width: 80%"><?php echo $artikel->isi_artikel;?></textarea>
-                                    
+                                        
+                                        <label>Foto</label><br/>
+                                        <input type="file" name="img" />
+                                        *jpg, jpeg, gif, png
+                                        <br/>
+                                        <br/>
+
                                         <p>Kategori</p>
                                         <select name="kd_kat">
                                             <?php foreach($kategori as $n):?>
@@ -90,6 +96,7 @@
                                         </select>
                                         <br/>
                                         <br/>
+                                        <input type="hidden" name="fotosaatini" value="<?php echo $artikel->img_artikel;?>" />
                                         <input type="hidden" name="kode" value="<?php echo $artikel->id_artikel;?>" />
                                         <input type="submit" value="simpan" name="tbKirim"/>
                                     </form>

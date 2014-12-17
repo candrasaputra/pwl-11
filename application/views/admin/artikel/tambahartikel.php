@@ -65,7 +65,7 @@
                                     <li class="active"><a href="#fa-icons" data-toggle="tab"><?php echo $title ?></a></li>
                                 </ul>
                                 <div class="tab-content">
-                                    <form method="post" action="<?php echo site_url('admin/artikel/proses_artikel'); ?>">
+                                    <form method="post" enctype="multipart/form-data" action="<?php echo site_url('admin/artikel/proses_artikel'); ?>">
                                         <p>Title</p>
                                         <input type="text" name="judul" style="width: 30%"/>
                                         <br/>
@@ -75,7 +75,7 @@
                                         <textarea id="elm1" name="isi" rows="15" cols="80" style="width: 80%"></textarea>
                                         
                                         <label>Foto</label><br/>
-                                        <input type="file" name="foto" />
+                                        <input type="file" name="img" />
                                         *jpg, jpeg, gif, png
                                         <br/>
                                         <br/>
@@ -96,7 +96,7 @@
                                         </select>
                                         <br/>
                                         <br/>
-                                        <input type="submit" value="publish" name="tbKirim"/>
+                                        <input type="submit" value="simpan" />
                                         <input type="reset" name="reset" value="Reset" />
                                     </form>
                                 </div><!-- /.tab-content -->

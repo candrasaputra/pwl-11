@@ -12,6 +12,7 @@
                         <thead>
                             <tr>
                                 <th>#</th>
+                                <th>Image</th>
                                 <th>Tanggal</th>
                                 <th>Judul</th>
                                 <th>Kategori</th>
@@ -24,6 +25,7 @@
                             <?php foreach($artikel as $n):?>
                             <tr>
                                 <td><?php echo $no; ?></td>
+                                <td><img width="160" height="160" src="<?php echo base_url()?>assets/img/artikel/<?php echo $n->img_artikel?>" /></td>
                                 <td><?php echo $n->tgl_artikel?></td>
                                 <td><?php echo $n->judul_artikel?></td>
                                 <td><?php echo $n->nm_kat_artikel?></td>
@@ -41,6 +43,7 @@
                         <tfoot>
                             <tr>
                                 <th>#</th>
+                                <th>Image</th>
                                 <th>Tanggal</th>
                                 <th>Judul</th>
                                 <th>Kategori</th>
