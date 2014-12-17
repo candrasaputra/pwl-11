@@ -53,4 +53,22 @@ class Siswa extends MY_Controller{
                 
         redirect(base_url('admin/siswa/kelas'));
     }
+
+    public function editkelas($id){
+		$this->data['kelas'] = $this->siswa_m->select_by_id_kelas($id)->row();
+
+		$this->data['page']  = 'admin/siswa/edit_kelas';
+		$this->data['title'] = 'Kelas';
+
+		$this->load->view('admin/index', $this->data);
+	}
+
+	public function proses_edit_kelas(){
+        $data['kd_kelas'] = $this->input->post('kode');
+        $data['nm_kelas'] = $this->input->post('nama');
+        $id = $this->input->post('kode');
+        $this->siswa_m->update_kelas($id, $data);
+                
+        redirect(base_url('admin/siswa/kelas'));
+    }
 }
