@@ -66,6 +66,25 @@ class Siswa extends MY_Controller{
         redirect(base_url('admin/siswa/daftarsiswa'));
     }
 
+    public function editsiswa($id){
+    	$this->data['kelas'] = $this->siswa_m->get_kelas();
+		$this->data['siswa'] = $this->siswa_m->select_by_id_siswa($id)->row();
+
+		$this->data['page']  = 'admin/siswa/edit_siswa';
+		$this->data['title'] = 'Daftar Siswa';
+
+		$this->load->view('admin/index', $this->data);
+	}
+
+	public function proses_edit_kelas(){
+        $data['kd_kelas'] = $this->input->post('kode');
+        $data['nm_kelas'] = $this->input->post('nama');
+        $id = $this->input->post('kode');
+        $this->siswa_m->update_kelas($id, $data);
+                
+        redirect(base_url('admin/siswa/daftarsiswa'));
+    }
+
 	public function kelas(){
 		$this->data['kelas'] = $this->siswa_m->get_kelas();
 
@@ -104,12 +123,4 @@ class Siswa extends MY_Controller{
 		$this->load->view('admin/index', $this->data);
 	}
 
-	public function proses_edit_kelas(){
-        $data['kd_kelas'] = $this->input->post('kode');
-        $data['nm_kelas'] = $this->input->post('nama');
-        $id = $this->input->post('kode');
-        $this->siswa_m->update_kelas($id, $data);
-                
-        redirect(base_url('admin/siswa/kelas'));
-    }
 }

@@ -47,4 +47,12 @@ class Siswa_m extends CI_Model {
 		$this->db->where('kd_kelas', $id);
 		$this->db->update('tbkelas', $data);
 	}
+
+	function select_by_id_siswa($id){
+		$this->db->select('*');
+		$this->db->from('tbsiswa');
+		$this->db->where('nik_siswa', $id);
+
+		return $this->db->get();
+	}
 }
