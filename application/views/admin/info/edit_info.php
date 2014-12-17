@@ -4,6 +4,20 @@
         <meta charset="UTF-8">
         <title>AdminLTE | Dashboard</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <link rel="stylesheet" href="/resources/demos/style.css">
+    
+        <script>
+            $(function() {
+            $( "#datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+            });
+        </script>
+
         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <!-- Ionicons -->
@@ -109,17 +123,17 @@
                                     <li class="active"><a href="#fa-icons" data-toggle="tab">Edit Info</a></li>
                                 </ul>
                                 <div class="tab-content">
-                                    <form method="post" action="<?php echo site_url('admin/info/proses_info'); ?>">
+                                    <form method="post" action="<?php echo site_url('admin/info/proses_edit_info'); ?>">
                                         <p>Title</p>
-                                        <input type="text" name="judul" style="width: 30%" value="<?php echo $info->judul_info;?>" />
+                                        <input type="text" name="judul" style="width: 30%" value="<?php echo $info->judul_info;?>" required/>
                                         <br/>
                                         <br/>
                                         <p>Date</p>
-                                        <input type="text" name="tgl" style="width: 30%" value="<?php echo $info->tgl_info;?>" />
+                                        <input type="text" id="datepicker" name="tgl" style="width: 30%" value="<?php echo $info->tgl_info;?>" required/>
                                         <br/>
                                         <br/>
                                         <p>Contents</p<br/>
-                                        <textarea id="elm1" name="isi" rows="15" cols="80" style="width: 80%"><?php echo $info->isi_info;?></textarea>
+                                        <textarea id="elm1" name="isi" rows="15" cols="80" style="width: 80%" required><?php echo $info->isi_info;?></textarea>
                                         <br/>
                                         <br/>
                                         <input type="hidden" name="kode" value="<?php echo $info->id_info;?>" />

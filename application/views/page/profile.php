@@ -53,9 +53,10 @@
 						
 						<div class="col-md-12">
 
-							<p>&radic; hari ini libur</p>
-							<p>&radic; kerja bakti</p>
-							<p>&radic; pelajaran jam ke 3-4 ditiadatan</p>
+							<?php foreach($info as $n):?>
+							<p>&radic; <?php echo $n->tgl_info?> <?php echo $n->judul_info?></p>
+							<?php endforeach?>
+
 						</div>
 						<div class="sambungfloat"></div>
 						</div>
