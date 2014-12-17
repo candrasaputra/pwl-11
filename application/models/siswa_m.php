@@ -30,4 +30,17 @@ class Siswa_m extends CI_Model {
 	function insert_kelas($data){
 		$this->db->insert('tbkelas', $data);
 	}
+
+	function select_by_id_kelas($id){
+		$this->db->select('*');
+		$this->db->from('tbkelas');
+		$this->db->where('kd_kelas', $id);
+
+		return $this->db->get();
+	}
+
+	function update_kelas($id, $data){
+		$this->db->where('kd_kelas', $id);
+		$this->db->update('tbkelas', $data);
+	}
 }
