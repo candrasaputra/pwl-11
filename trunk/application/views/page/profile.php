@@ -14,12 +14,11 @@
 						<div class="row">
 							<div class="col-md-12">
 							<marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3" direction="up" width="100%" height="40%" align="left">
-								<a href="" target="new">&rsaquo;&rsaquo; Pentas Seni tengah semester</a></br>
-								<a href="" target="new">&rsaquo;&rsaquo; Teritorial Drama Musical di gedung panca wati bakti</a></br>
-								<a href="" target="new">&rsaquo;&rsaquo; Debat English Contest se-eks kresidenan besuki dan tapal kuda region</a></br>
-								<a href="" target="new">&rsaquo;&rsaquo; Pentas Seni tengah semester</a></br>
-								<a href="" target="new">&rsaquo;&rsaquo; Teritorial Drama Musical di gedung panca wati bakti</a></br>
-								<a href="" target="new">&rsaquo;&rsaquo; Debat English Contest se-eks kresidenan besuki dan tapal kuda region</a></br>
+								
+								<?php foreach($agenda as $n):?>
+								<a href="" target="new">&rsaquo;&rsaquo; <?php echo $n->judul_agenda?></a></br>
+								<?php endforeach?>
+
 							</marquee>
 							</div>
 							<div class="sambungfloat"></div>
