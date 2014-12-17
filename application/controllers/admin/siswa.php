@@ -8,6 +8,7 @@ class Siswa extends MY_Controller{
     }
 
 	public function tambahsiswa(){
+		$this->data['kelas'] = $this->siswa_m->get_kelas();
 
 		$this->data['page']  = 'admin/siswa/tambahsiswa';
 		$this->data['title'] = 'Tambah Siswa';
@@ -24,6 +25,46 @@ class Siswa extends MY_Controller{
 
 		$this->load->view('admin/index', $this->data);
 	}
+
+	public function proses_siswa(){
+        $data['nik_siswa'] = $this->input->post('nik');
+        $data['nm_siswa'] = $this->input->post('nama');
+        $data['kd_kelas'] = $this->input->post('kdkelas');
+        $data['alamat_siswa'] = $this->input->post('alamat');
+        $data['tgl_lahir_siswa'] = $this->input->post('tgllahir');
+        $data['tmp_lahir_siswa'] = $this->input->post('tempatlahir');
+        $data['hp_siswa'] = $this->input->post('hp');
+        $data['agama_siswa'] = $this->input->post('agama');
+        $data['jk_siswa'] = $this->input->post('jk');
+        $data['email_siswa'] = $this->input->post('email');
+        $data['tgl_masuk_siswa'] = $this->input->post('tglmasuk');
+        $data['wali_siswa'] = $this->input->post('wali');
+        $data['status_siswa'] = $this->input->post('status');
+
+        $namafolder="assets/img/siswa/"; //folder tempat menyimpan file
+		if (!empty($_FILES["foto"]["tmp_name"]))
+		{
+		    $jenis_gambar=$_FILES['foto']['type'];
+		    if($jenis_gambar=="image/jpeg" || $jenis_gambar=="image/jpg" || $jenis_gambar=="image/gif" || $jenis_gambar=="image/x-png")
+		    {           
+		        $gambar = $namafolder . basename($_FILES['foto']['name']);       
+		        if (move_uploaded_file($_FILES['foto']['tmp_name'], $gambar)) {
+		            //echo "Gambar yang di upload: ".basename($_FILES['foto']['name']);
+		            $data['img_siswa'] = basename($_FILES['foto']['name']);
+		        } else {
+		           echo "Gambar gagal dikirim";
+		        }
+		   } else {
+		        echo "Jenis gambar yang anda kirim salah. Harus .jpg .gif .png";
+		   }
+		} else {
+		    $data['img_siswa'] = "default.jpg";
+		}
+
+        $this->siswa_m->insert_siswa($data);
+                
+        redirect(base_url('admin/siswa/daftarsiswa'));
+    }
 
 	public function kelas(){
 		$this->data['kelas'] = $this->siswa_m->get_kelas();
