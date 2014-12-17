@@ -8,6 +8,11 @@
                 <div class="tab-content">
 
                 <form method="POST" enctype="multipart/form-data" action="<?php echo site_url('admin/akun/proses_akun');?> ">
+                <?php 
+                        $this->form_validation->set_rules('pass', 'Password', 'required|matches[pass2]'); // check apakah password sama dengan password2
+
+        $this->form_validation->set_rules('pass2', 'Konfirmasi Password', 'required');
+                 ?>
                 	<label>Username</label><br/>
                     <input type="text" name="username" required/>
                     <br/>
@@ -15,6 +20,11 @@
 
                     <label>Password</label><br/>
                     <input type="password" name="pass" required/>
+                    <br/>
+                    <br/>
+
+                    <label>Re Password</label><br/>
+                    <input type="password" name="pass2" required/>
                     <br/>
                     <br/>
 
