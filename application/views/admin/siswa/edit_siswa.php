@@ -7,7 +7,7 @@
                 </ul>
                 <div class="tab-content">
 
-                <form method="POST" enctype="multipart/form-data" action="<?php echo site_url('admin/siswa/proses_siswa');?> ">
+                <form method="POST" enctype="multipart/form-data" action="<?php echo site_url('admin/siswa/proses_edit_siswa');?> ">
                 	<label>NIK</label><br/>
                     <input type="text" name="nik" value="<?php echo $siswa->nik_siswa;?>" required/>
                     <br/>
@@ -21,7 +21,7 @@
                     <label>Kode Kelas</label><br/>
                     <select name="kdkelas">
                     <?php foreach($kelas as $n):?>
-                    	<option value="<?php echo $n->kd_kelas?>"><?php echo $n->nm_kelas?></option>
+                    	<option value="<?php echo $n->kd_kelas?>" <?php if($n->kd_kelas == $siswa->kd_kelas){echo("selected");}?>><?php echo $n->nm_kelas?></option>
                     <?php endforeach?>
                     </select>
                     <br/>
@@ -49,19 +49,19 @@
 
                     <label>Agama</label><br/>
                     <select name="agama">
-                    	<option>islam</option>
-                    	<option>kristen</option>
-                    	<option>protestan</option>
-                    	<option>hindu</option>
-                    	<option>budha</option>
+                    	<option <?php if($siswa->agama_siswa == 'islam'){echo("selected");}?>>islam</option>
+                    	<option <?php if($siswa->agama_siswa == 'kristen'){echo("selected");}?>>kristen</option>
+                    	<option <?php if($siswa->agama_siswa == 'protestan'){echo("selected");}?>>protestan</option>
+                    	<option <?php if($siswa->agama_siswa == 'hindu'){echo("selected");}?>>hindu</option>
+                    	<option <?php if($siswa->agama_siswa == 'budha'){echo("selected");}?>>budha</option>
                     </select>
                     <br/>
                     <br/>
 
                     <label>Jenis Kelamin</label><br/>
                     <select name="jk">
-                    	<option>laki-laki</option>
-                    	<option>perempuan</option>
+                    	<option <?php if($siswa->jk_siswa == 'laki-laki'){echo("selected");}?>>laki-laki</option>
+                    	<option <?php if($siswa->jk_siswa == 'perempuan'){echo("selected");}?>>perempuan</option>
                     </select>
                     <br/>
                     <br/>
@@ -83,8 +83,8 @@
 
                     <label>Status</label><br/>
                     <select name="status">
-                    	<option>aktif</option>
-                    	<option>alumni</option>
+                    	<option <?php if($siswa->status_siswa == 'aktif'){echo("selected");}?>>aktif</option>
+                    	<option <?php if($siswa->status_siswa == 'alumni'){echo("selected");}?>>alumni</option>
                     </select>
                     <br/>
                     <br/>
@@ -95,6 +95,7 @@
                     <br/>
                     <br/>
 
+                    <input type="hidden" name="fotosaatini" value="<?php echo $siswa->img_siswa;?>" />
                     <input type="submit" value="Simpan" />
                 </form>
 
