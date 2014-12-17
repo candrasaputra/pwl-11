@@ -51,7 +51,24 @@ class Akun extends MY_Controller{
 		    $data['img'] = "default.jpg";
 		}
 
-        $this->account->insert_akun($data);
+		$this->form_validation->set_rules('username', 'Username', 'is_unique[tbadmin.username]');
+		$this->form_validation->set_rules('pass', 'Password', 'required|matches[pass2]'); // check apakah password sama dengan password2
+        $this->form_validation->set_rules('pass2', 'Konfirmasi Password', 'required');
+
+        if ($this->form_validation->run() == FALSE){
+        	$this->data['page']  = 'admin/akun/tambahakun';
+			$this->data['title'] = 'Tambah Akun';
+			$this->data['message'] = validation_errors();
+			$this->data['error'] = true;
+
+			$this->load->view("admin/index", $this->data); // menampilkan error yang dihasilkan
+
+		}else{
+
+			$this->account->insert_akun($data);
+
+		}
+        
 	}
 
 	public function daftarakun(){		
@@ -109,4 +126,5 @@ class Akun extends MY_Controller{
                 
         redirect(base_url('admin/akun/daftarakun'));
     }
+
 }
