@@ -54,6 +54,7 @@ class Account extends CI_Model {
         $sess['c_img'] = '';
 
         $this->session->unset_userdata($sess);
+        session_destroy();
         $this->session->sess_destroy();
 	}
 
