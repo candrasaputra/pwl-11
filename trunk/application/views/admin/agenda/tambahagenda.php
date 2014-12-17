@@ -127,16 +127,16 @@
                                 <div class="tab-content">
                                     <form method="post" action="<?php echo site_url('admin/agenda/proses_agenda'); ?>">
                                         <p>Title</p>
-                                        <input type="text" name="judul" style="width: 30%"/>
+                                        <input type="text" name="judul" style="width: 30%" required/>
                                         <br/>
                                         <br/>
                                         <p>Date</p>
-                                        <input type="text" id="datepicker" name="tgl" style="width: 30%"/>
+                                        <input type="text" id="datepicker" name="tgl" style="width: 30%" required/>
                                         <br/>
                                         <br/>
                                         <p>Contents</p<br/>
                                     
-                                        <textarea id="elm1" name="isi" rows="15" cols="80" style="width: 80%"></textarea>
+                                        <textarea id="elm1" name="isi" rows="15" cols="80" style="width: 80%" required></textarea>
                                     
                                         
 

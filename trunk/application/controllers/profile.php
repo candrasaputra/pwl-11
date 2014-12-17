@@ -6,10 +6,12 @@ class Profile extends CI_Controller {
         parent::__construct();
         $this->load->model('profile_m');
         $this->load->model('agenda_m');
+        $this->load->model('info_m');
     }
 
     public function index(){
     	$this->data['agenda'] = $this->agenda_m->get_agenda();
+        $this->data['info'] = $this->info_m->get_info();
         $this->data['profile'] = $this->profile_m->select_by_id()->row();
 
         $this->load->view('page/profile', $this->data);

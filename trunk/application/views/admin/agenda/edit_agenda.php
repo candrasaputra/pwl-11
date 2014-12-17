@@ -4,6 +4,20 @@
         <meta charset="UTF-8">
         <title>AdminLTE | Dashboard</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <link rel="stylesheet" href="/resources/demos/style.css">
+    
+        <script>
+            $(function() {
+            $( "#datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+            });
+        </script>
+
         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <!-- Ionicons -->
@@ -111,16 +125,16 @@
                                 <div class="tab-content">
                                     <form method="post" action="<?php echo site_url('admin/agenda/proses_edit_agenda'); ?>">
                                         <p>Title</p>
-                                        <input type="text" name="judul" style="width: 30%" value="<?php echo $agenda->judul_agenda;?>" />
+                                        <input type="text" name="judul" style="width: 30%" value="<?php echo $agenda->judul_agenda;?>" required/>
                                         <br/>
                                         <br/>
                                         <p>Date</p>
-                                        <input type="text" name="tgl" style="width: 30%" value="<?php echo $agenda->tgl_agenda;?>" />
+                                        <input type="text" id="datepicker" name="tgl" style="width: 30%" value="<?php echo $agenda->tgl_agenda;?>" required/>
                                         <br/>
                                         <br/>
                                         <p>Contents</p<br/>
                                     
-                                        <textarea name="isi" rows="15" cols="80" style="width: 80%"><?php echo $agenda->isi_agenda;?></textarea>
+                                        <textarea name="isi" rows="15" cols="80" style="width: 80%" required><?php echo $agenda->isi_agenda;?></textarea>
                                     
                                         
 
