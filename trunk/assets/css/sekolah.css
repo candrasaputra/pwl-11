@@ -34,7 +34,11 @@ a:hover, a:focus{
 .skl-content{
 	padding: 21.5px;
 	border-bottom: 1px solid #f0ad4e;
+	border-left: 1px solid white;
 
+}
+.skl-content:hover{
+	border-left: 1px solid orange;
 }
 .biru-tua{
 	background-color: #06213F;
