@@ -77,7 +77,6 @@ class Siswa extends MY_Controller{
 	}
 
 	public function proses_edit_siswa(){
-        $data['nik_siswa'] = $this->input->post('nik');
         $data['nm_siswa'] = $this->input->post('nama');
         $data['kd_kelas'] = $this->input->post('kdkelas');
         $data['alamat_siswa'] = $this->input->post('alamat');
@@ -114,7 +113,7 @@ class Siswa extends MY_Controller{
 		$id = $this->input->post('nik');
         $this->siswa_m->update_siswa($id, $data);
                 
-        //redirect(base_url('admin/siswa/daftarsiswa'));
+        redirect(base_url('admin/siswa/daftarsiswa'));
     }
 
 	public function proses_edit_kelas(){

@@ -9,7 +9,7 @@
 
                 <form method="POST" enctype="multipart/form-data" action="<?php echo site_url('admin/siswa/proses_edit_siswa');?> ">
                 	<label>NIK</label><br/>
-                    <input type="text" name="nik" value="<?php echo $siswa->nik_siswa;?>" required/>
+                    <input type="text" name="nik" placeholder="<?php echo $siswa->nik_siswa;?>" disabled/>
                     <br/>
                     <br/>
 
@@ -94,7 +94,7 @@
                     *jpg, jpeg, gif, png
                     <br/>
                     <br/>
-
+                    <input type="hidden" name="nik" value="<?php echo $siswa->nik_siswa;?>" />
                     <input type="hidden" name="fotosaatini" value="<?php echo $siswa->img_siswa;?>" />
                     <input type="submit" value="Simpan" />
                 </form>
