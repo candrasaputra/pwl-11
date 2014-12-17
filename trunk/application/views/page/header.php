@@ -3,7 +3,7 @@
 	<title>SMP Prestasi</title>
 	 <link href="<?php echo base_url()?>assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
 	 <link href="<?php echo base_url()?>assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
-	 <script type="<?php echo base_url()?>text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+	 <script type="text/javascript" src="<?php echo base_url()?>/assets/js/jquery-2.1.1.js"></script>
 	 <link rel="shortcut icon" href="<?php echo base_url()?>assets/img"/>
 	 <link href="<?php echo base_url()?>assets/css/sekolah.css" rel="stylesheet" type="text/css" />
 	 <link href="<?php echo base_url()?>assets/css/sosmed.css" rel="stylesheet" type="text/css" />
