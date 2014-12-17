@@ -28,7 +28,7 @@
                             <?php foreach($siswa as $n):?>
                             <tr>
                                 <td><?php echo $no; ?></td>
-                                <td><img width="160" height="160" src="<?php echo base_url()?>assets/img/staff/<?php echo $n->img_siswa?>" /></td>
+                                <td><img width="160" height="160" src="<?php echo base_url()?>assets/img/siswa/<?php echo $n->img_siswa?>" /></td>
                                 <td><?php echo $n->nik_siswa?></td>
                                 <td><?php echo $n->nm_siswa?></td>
                                 <td><?php echo $n->jk_siswa?></td>
