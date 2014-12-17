@@ -17,9 +17,16 @@ class tampilcontent extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct()
+    {
+        parent::__construct();
+        $this->load->model('agenda_m');
+    }
+
 	public function index()
 	{
-		$this->load->view('page/tampilcontent');
+		$this->data['agenda'] = $this->agenda_m->get_agenda();
+		$this->load->view('page/tampilcontent', $this->data);
 	}
 }
 
