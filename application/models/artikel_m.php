@@ -21,6 +21,15 @@ class Artikel_m extends CI_Model {
 		return $rs->result();
 	}
 
+	public function get_artikel_publish(){
+		$this->db->join('tbkat_artikel', 'tbkat_artikel.kd_kat_artikel = tbartikel.kd_kat_artikel');
+		$this->db->order_by('tgl_artikel');
+		$this->db->where('status_artikel', "publish");
+		$rs = $this->db->get('tbartikel');
+
+		return $rs->result();
+	}
+
 	function insert_artikel($data){
 		$this->db->insert('tbartikel', $data);
 	}
@@ -64,15 +73,6 @@ class Artikel_m extends CI_Model {
 	public function delete_kategori($id){
 		$this->db->where('kd_kat_artikel', $id);
 		$this->db->delete('tbkat_artikel');
-	}
-
-	public function get_artikel_publish(){
-
-		$this->db->order_by('tgl_artikel');
-		$this->db->where('status_artikel', "publish");
-		$rs = $this->db->get('tbartikel');
-
-		return $rs->result();
 	}
 
 	function select_by_id_kategori($id){

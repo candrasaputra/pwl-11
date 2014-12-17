@@ -1,3 +1,17 @@
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+    
+<script>
+    $(function() {
+    $( "#datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+    $( "#datepicker2" ).datepicker({ dateFormat: 'yy-mm-dd' });
+    });
+</script>
+
 <section class="content">
     <div class='row'>
         <div class='col-xs-12'>
@@ -33,7 +47,7 @@
                     <br/>
 
                     <label>Tanggal Lahir</label><br/>
-                    <input type="text" name="tgllahir" value="<?php echo $siswa->tgl_lahir_siswa;?>" required/>
+                    <input type="text" id="datepicker" name="tgllahir" value="<?php echo $siswa->tgl_lahir_siswa;?>" required/>
                     <br/>
                     <br/>
 
@@ -72,7 +86,7 @@
                     <br/>
 
                     <label>Tanggal Masuk</label><br/>
-                    <input type="text" name="tglmasuk" value="<?php echo $siswa->tgl_masuk_siswa;?>" />
+                    <input type="text" id="datepicker2" name="tglmasuk" value="<?php echo $siswa->tgl_masuk_siswa;?>" />
                     <br/>
                     <br/>
 
