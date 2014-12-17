@@ -7,7 +7,7 @@
                 </ul>
                 <div class="tab-content">
 
-                <form method="POST" enctype="multipart/form-data" action="<?php echo site_url('admin/siswa/proses_siswa');?> ">
+                <form method="POST" enctype="multipart/form-data" action="<?php echo site_url('admin/siswa/proses_edit_siswa');?> ">
                 	<label>NIK</label><br/>
                     <input type="text" name="nik" required/>
                     <br/>
