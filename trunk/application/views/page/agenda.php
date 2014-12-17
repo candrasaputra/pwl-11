@@ -12,7 +12,7 @@
 							<marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3" direction="up" width="100%" height="40%" align="left">
 							
 								<?php foreach($agenda as $n):?>
-								<a href="<?php echo base_url()?>tampilagenda" target="new">&rsaquo;&rsaquo; <?php echo $n->judul_agenda?></a></br>
+								<a href="<?php echo base_url()?>home/tampilagenda/<?php echo $n->id_agenda?>" target="new">&rsaquo;&rsaquo; <?php echo $n->judul_agenda?></a></br>
 								<?php endforeach?>
 
 							</marquee>
