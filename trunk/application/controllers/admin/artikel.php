@@ -19,13 +19,36 @@ class Artikel extends MY_Controller{
 	}
 
 	public function proses_artikel(){
+        $namafolder="assets/img/artikel/"; //folder tempat menyimpan file
+		if (!empty($_FILES["img"]["tmp_name"]))
+		{
+		    $jenis_gambar=$_FILES['img']['type'];
+		    if($jenis_gambar=="image/jpeg" || $jenis_gambar=="image/jpg" || $jenis_gambar=="image/gif" || $jenis_gambar=="image/x-png")
+		    {           
+		        $gambar = $namafolder . basename($_FILES['img']['name']);       
+		        if (move_uploaded_file($_FILES['img']['tmp_name'], $gambar)) {
+		            //echo "Gambar yang di upload: ".basename($_FILES['img']['name']);
+		            $data['img_artikel'] = basename($_FILES['img']['name']);
+		        } else {
+		           echo "Gambar gagal dikirim";
+		        }
+		   } else {
+		        echo "Jenis gambar yang anda kirim salah. Harus .jpg .gif .png";
+		   }
+		} else {
+		    $data['img_artikel'] = "default.jpg";
+		}
+
         date_default_timezone_set("Asia/Jakarta");
-                
+          
         $data['judul_artikel'] = $this->input->post('judul');
         $data['isi_artikel'] = $this->input->post('isi');
         $data['tgl_artikel'] = date("y-m-d H:i:s");
         $data['kd_kat_artikel'] = $this->input->post('kd_kat');
         $data['status_artikel'] = $this->input->post('status');
+
+        
+
         $this->artikel_m->insert_artikel($data);
 
         redirect(base_url('admin/artikel/semuaartikel'));
@@ -42,6 +65,26 @@ class Artikel extends MY_Controller{
 	}
 
     public function proses_edit_artikel(){
+    	$namafolder="assets/img/artikel/"; //folder tempat menyimpan file
+		if (!empty($_FILES["img"]["tmp_name"]))
+		{
+		    $jenis_gambar=$_FILES['img']['type'];
+		    if($jenis_gambar=="image/jpeg" || $jenis_gambar=="image/jpg" || $jenis_gambar=="image/gif" || $jenis_gambar=="image/x-png")
+		    {           
+		        $gambar = $namafolder . basename($_FILES['img']['name']);       
+		        if (move_uploaded_file($_FILES['img']['tmp_name'], $gambar)) {
+		            //echo "Gambar yang di upload: ".basename($_FILES['img']['name']);
+		            $data['img_artikel'] = basename($_FILES['img']['name']);
+		        } else {
+		           echo "Gambar gagal dikirim";
+		        }
+		   } else {
+		        echo "Jenis gambar yang anda kirim salah. Harus .jpg .gif .png";
+		   }
+		} else {
+		    $data['img_artikel'] = $this->input->post('fotosaatini');
+		}
+		
         date_default_timezone_set("Asia/Jakarta");
                 
         $data['judul_artikel'] = $this->input->post('judul');
