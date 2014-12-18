@@ -9,12 +9,10 @@
 
                 <form method="POST" enctype="multipart/form-data" action="<?php echo site_url('admin/akun/proses_akun');?> ">
                     <?php if($this->input->post('submit')){ 
+                        echo $message;  // bagian untuk menampilkan message
+                    }
 
-    echo $message;  // bagian untuk menampilkan message
-
-}
-
-?>
+                    ?>
                 	<label>Username</label><br/>
                     <input type="text" name="username" required/>
                     <br/>
