@@ -15,7 +15,7 @@ class Artikel_m extends CI_Model {
 
 	public function get_artikel(){
 		$this->db->join('tbkat_artikel', 'tbkat_artikel.kd_kat_artikel = tbartikel.kd_kat_artikel');
-		$this->db->order_by('tgl_artikel');
+		$this->db->order_by('tgl_artikel', 'DESC');
 		$rs = $this->db->get('tbartikel');
 
 		return $rs->result();
@@ -23,7 +23,7 @@ class Artikel_m extends CI_Model {
 
 	public function get_artikel_publish(){
 		$this->db->join('tbkat_artikel', 'tbkat_artikel.kd_kat_artikel = tbartikel.kd_kat_artikel');
-		$this->db->order_by('tgl_artikel');
+		$this->db->order_by('tgl_artikel', 'DESC');
 		$this->db->where('status_artikel', "publish");
 		$rs = $this->db->get('tbartikel');
 

@@ -147,7 +147,6 @@ class Artikel extends MY_Controller{
 	}
 
 	public function proses_kategori(){
-        $data['kd_kat_artikel'] = $this->input->post('kode');
         $data['nm_kat_artikel'] = $this->input->post('nama');
         $this->artikel_m->insert_kategori($data);
                 

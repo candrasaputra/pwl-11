@@ -19,10 +19,6 @@
                     <form method="POST" action="<?php echo site_url('admin/artikel/proses_kategori'); ?>">
                     <table hight="80px">
                         <tr>
-                            <td width="45%">Kode </td>
-                            <td><input type="texbox" name="kode" class="form-control" required/></td>
-                        </tr>
-                        <tr>
                             <td>Nama Kategori </td>
                             <td><input type="texbox" name="nama" class="form-control" required/></td>
                         </tr>
