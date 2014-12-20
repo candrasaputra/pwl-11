@@ -136,7 +136,7 @@
                                         <br/>
                                         <p>Contents</p<br/>
                                     
-                                        <textarea id="elm1" name="isi" rows="15" cols="80" style="width: 80%" required></textarea>
+                                        <textarea id="elm1" name="isi" rows="15" cols="80" style="width: 80%"></textarea>
                                     
                                         
 

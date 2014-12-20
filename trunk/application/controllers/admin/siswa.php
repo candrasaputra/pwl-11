@@ -147,7 +147,6 @@ class Siswa extends MY_Controller{
 	}
 
 	public function proses_kelas(){
-        $data['kd_kelas'] = $this->input->post('kode');
         $data['nm_kelas'] = $this->input->post('nama');
         $this->siswa_m->insert_kelas($data);
                 

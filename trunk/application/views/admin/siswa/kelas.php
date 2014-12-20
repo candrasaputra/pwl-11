@@ -19,10 +19,6 @@
                     <form method="POST" action="<?php echo site_url('admin/siswa/proses_kelas'); ?>">
                     <table hight="80px">
                         <tr>
-                            <td width="45%">Kode </td>
-                            <td><input type="texbox" name="kode" class="form-control" required/></td>
-                        </tr>
-                        <tr>
                             <td>Nama Kelas </td>
                             <td><input type="texbox" name="nama" class="form-control" required/></td>
                         </tr>
